@@ -1,0 +1,228 @@
+{
+  "main": {
+    "id": "38e40cfe8e9db369",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1ebbf738c0e877f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d382d1154590328f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "85d9c5ae020dff5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0382ee639e24112d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f10850565f56aaf9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "3575b47248196904",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "11804f266d59b863",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9525ad950b2f6fc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "60f1c83c34913d22",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73b5b53bf88f3d5a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos"
+            }
+          },
+          {
+            "id": "3ef7e4b9a3918a83",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "62f02bef0fc590c7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "5f417b51118d79cb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "12b3e94dfe10ab26",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "d382d1154590328f",
+  "lastOpenFiles": [
+    "governance/roadmap-canonico.md.tmp.25712.1bbed2d05ea3",
+    "governance/roadmap-canonico.md.tmp.25712.edf05fd3227b",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.64812b683c23",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.430d44419d06",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.3ed7a7885910",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.ffda415c8cd7",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.0a6436903c33",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.c5202667940d",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.5ff1357b1714",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.b020349906e6",
+    "governance/pacote-soberano-2026-08-02-rd-91.md.tmp.25712.386901142399",
+    "governance/relatorio-transicao-2026-08-02-emenda-sf-10.md",
+    "governance/pacote-soberano-2026-08-02-rd-91.md",
+    "governance/fitness/FIT-2026-025-emenda-de-sf-10.md",
+    "decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md",
+    "rfcs/RFC-0027-separacao-de-proponente-e-aprovador-na-spec-c1.md",
+    "governance/relatorio-transicao-2026-08-02-primeira-spec.md",
+    "governance/fitness/FIT-2026-024-primeira-spec.md",
+    "products/nxtrack/specs/SPC-001-governanca-de-dado-pessoal-do-nxtrack.md",
+    "decisions/ADR-0031-primeira-spec-governanca-de-dado-pessoal-do-nxtrack.md",
+    "rfcs/RFC-0026-primeira-spec-governanca-de-dado-pessoal-do-nxtrack.md",
+    "governance/relatorio-transicao-2026-08-01-fechamento-rd-33.md",
+    "governance/relatorio-transicao-2026-08-01-aplicacao-nxtrack.md",
+    "products/nxtrack/carta.md",
+    "memory/operacional/MSG-2026-0009-ato-soberano-admissao-do-nxtrack.md",
+    "CLAUDE.md",
+    "governance/roadmap-canonico.md",
+    "governance/pacote-soberano-2026-08-01-nxtrack.md",
+    "governance/relatorio-transicao-2026-08-01-portao-nxtrack.md",
+    "governance/fitness/FIT-2026-023-admissao-do-nxtrack.md",
+    "decisions/ADR-0030-admissao-do-nxtrack-como-primeiro-produto.md",
+    "rfcs/RFC-0025-admissao-do-nxtrack-como-primeiro-produto.md",
+    "governance/atos-superados.md",
+    "memory/operacional/MSG-2026-0008-ato-soberano-emendas-e1-e-e3.md",
+    "governance/relatorio-transicao-2026-07-31-emendas-de-instrumento.md",
+    "governance/pacote-soberano-2026-07-31-emendas-de-instrumento.md",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-02-AREAS-01-03/AC-03-VID-013.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-02-AREAS-01-03/AC-03-VID-012.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-02-AREAS-01-03/AC-03-VID-011.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-02-AREAS-01-03/AC-03-VID-010.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-02-AREAS-01-03/AC-03-VID-009.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-02-AREAS-01-03/AC-03-VID-008.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-02-AREAS-01-03/AC-03-VID-007.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-04-AREA-05/AC-05-VID-026.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-04-AREA-05/AC-05-VID-025.jpg",
+    "_SAIDA-COMPANY-OS/90_INTELIGENCIA-MULTIMIDIA-CODEX/QUADROS-CHAVE/LOTE-02-AREAS-01-03/AC-03-VID-006.jpg"
+  ]
+}
