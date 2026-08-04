@@ -1,0 +1,135 @@
+COLETOR DE CUSTO EM DINHEIRO
+Missao G2, Ordem 2 — 2026-08-04 — fencing_token 32
+================================================================================
+
+O QUE E
+-------
+A multiplicacao que faltava entre duas coisas que ja existiam e nunca se
+encontraram:
+
+  (a) a telemetria de token do lucaX, que grava o numero DO FORNECEDOR
+      (`message.usage` do transcript), 214 registros desde 2026-07-15;
+  (b) o catalogo de preco do SuperCondutor, que o `consult` ja le em runtime.
+
+`lucaX/scripts/hub_operacao.py` ja nomeava este coletor como o que FALTA, com o
+motivo escrito e o precedente A-231 ("o CFO contava 1,8 bilhao de tokens como
+US$ 0,00"). Este diretorio fecha essa lacuna.
+
+
+COMO RODAR
+----------
+    python coletor_custo.py
+    python coletor_custo.py --json saida.json
+    python coletor_custo.py --raiz OUTRO_CAMINHO
+
+    python controle_positivo.py     <- as 3 provas; saida 0 se todas passarem
+
+Nao precisa de rede, chave, nem dependencia externa. Somente leitura.
+NUNCA escreve no lucaX: a fronteira da Missao G2 negou escrita naquele
+repositorio, e ler nao e escrever.
+
+
+O NUMERO, E O QUE ELE E
+-----------------------
+A saida se chama `custo_de_entrada_no_pico_usd` e o rotulo e `estimado`.
+Ela NAO se chama "gasto", e a diferenca nao e estilo:
+
+  - e so o lado da ENTRADA. Saida custa 5x a entrada em todo modelo do
+    catalogo e nao esta na conta.  -> o numero e MENOR que o real
+  - e PICO de uma mensagem, nao a soma dos turnos da sessao.
+                                    -> o numero e MENOR que o real
+  - soma entrada fresca + cache lido + cache criado e cobra os tres a preco
+    cheio de entrada. Cache lido custa uma fracao.
+                                    -> o numero e MAIOR que o real
+
+As tres nao se cancelam de forma conhecida. Quem citar isto como fatura esta
+citando outra coisa.
+
+Medicao de 2026-08-04 sobre o corpus vivo:
+    US$ 23,50 de teto de entrada, 214 registros
+    146 deles (68%) NAO precificados — 13,7 milhoes de tokens fora da conta,
+    contados a parte e jamais somados como zero.
+
+
+O QUE ELE NAO COBRE
+-------------------
+Sao 8 itens, e eles NAO moram neste arquivo: eles viajam DENTRO de toda saida
+do coletor, impressos em toda execucao, sem flag que suprima. A regra da casa e
+que proxy declarada vale e proxy silenciosa e a familia do MAJOR #3 — o
+artefato que AFIRMA a propriedade em vez de exerce-la.
+
+O primeiro deles e o maior, e vale repetir aqui:
+
+    sessao-sem-eventlog-nao-existe-aqui — so grava quem passa pelo hook
+    SubagentStop do lucaX. A sessao PRINCIPAL nao grava nada. E os TRES
+    repositorios onde a fabrica trabalha (LucaX Enterprise OS, SSC-Plus,
+    LucaX-Enterprise-Research) NAO TEM diretorio .claude/: todo trabalho feito
+    neles e invisivel para este coletor. Nao ha numero que estime essa lacuna.
+
+Ou seja: este coletor mede o custo dos SUBAGENTES DO lucaX. Ele nao mede o
+custo desta fabrica.
+
+
+POR QUE NAO HA NENHUM ARQUIVO .md AQUI
+--------------------------------------
+Deliberado, e declarado no lease (token 32) e na docstring do coletor.
+
+O instrumento de baseline (`IR-BL/5`) conta `find $ALVOS -name "*.md"` sob as
+entradas ACERVO. Um `.md` neste diretorio viraria ARTEFATO MEDIDO — a contagem
+iria de 253 para 254 e a impressao digital mudaria. Isso e PROMOVER AO ACERVO
+CANONICO, que o despacho da Missao G2 proibe expressamente.
+
+Isto nao e driblar o contador. Ferramenta nao e artefato, e o precedente e o
+proprio `baseline.sh` — o instrumento mais citado deste acervo — que vive FORA
+dele, em `_missao-*/ferramentas/`.
+
+CONSEQUENCIA QUE FICA ABERTA, com dono e gatilho: enquanto nao houver ato do
+Fundador, este coletor nao tem sede documentada em `.md`, nao entra no catalogo
+de artefatos e nao tem rastreabilidade normativa. Ele roda; ele nao e citavel
+como artefato do acervo.
+
+
+POR QUE NAO NA RAIZ DO REPOSITORIO
+----------------------------------
+O portao de raiz do IR-BL/5 e lista fechada POSITIVA: so passam as 15 entradas
+declaradas. Uma pasta nova na raiz faz a baseline RECUSAR MEDIR com saida 2 —
+familia RD-53/RD-81, cinco ocorrencias ja registradas, e a recusa e o portao
+funcionando, nao falha.
+
+Declarar uma entrada nova exigiria emitir IR-BL/6 com fundamento normativo
+citado. Ha precedente exato: `products` entrou em IR-BL/2 pelo nono ato
+soberano, e `skills` entrou em IR-BL/5 depois que o ADR-0034 criou a primeira
+Skill. As duas por ato do Fundador. Nao e materia da G2.
+
+`governance/` ja e entrada declarada, e ja hospeda registro nao-normativo
+(o `roadmap-canonico.md` tem "autoridade: nenhuma"). Por isso a sede e aqui.
+
+
+DEPENDENCIA EXTERNA AO REPOSITORIO — LEIA ANTES DE MOVER
+--------------------------------------------------------
+Este coletor le TRES caminhos que vivem FORA do LucaX Enterprise OS:
+
+    lucaX/nucleo/reforco/orcamento_subagente.jsonl
+    lucaX/nucleo/reforco/voo_subagente.jsonl
+    lucaX/My_WorkSpace/Meus_projetos/SuperCondutor/config/catalogo-llms.json
+
+Se o lucaX for movido, renomeado ou arquivado, o coletor para com
+"ERRO — insumo ausente" e saida 2. Ele NAO devolve zero: insumo ausente nao
+vira custo zero, pelo mesmo motivo que modelo sem preco nao vira preco zero.
+Ajuste com `--raiz`.
+
+
+ONDE ISTO PODE MELHORAR, EM ORDEM DE ALIVIO
+-------------------------------------------
+1. Gravar `session_id` no `orcamento_subagente.jsonl`. Hoje a sessao vem de
+   uma juncao por `(ts, agente)` com o voo, e 123 dos 214 registros nao acham
+   par. Uma linha no `juiz.py` do lucaX resolveria — mas o lucaX esta fora da
+   fronteira de escrita desta missao.
+2. Gravar tambem `output_tokens`. Sem ele, metade da fatura e invisivel, e e a
+   metade cara.
+3. Separar `cache_read` de `input` no registro. Hoje vem somados e sao cobrados
+   ao mesmo preco, o que faz o numero ser teto e nao valor.
+4. Ligar um hook equivalente nos tres repositorios da fabrica. Enquanto eles
+   nao tiverem `.claude/`, o custo do trabalho que importa continua invisivel.
+
+Os quatro sao no lucaX ou nos tres repos, nao aqui.
