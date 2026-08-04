@@ -2,16 +2,16 @@
 id: FND-11
 titulo: Framework de Specifications do LucaX Enterprise OS
 tipo: fundacao
-versao: 1.0.0
+versao: 1.1.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-GOV
 proprietario: DEP-GOV
 aprovador: SOBERANO
 criado_em: 2026-07-29
-atualizado_em: 2026-07-29
+atualizado_em: 2026-08-02
 revisao_prevista: 2027-01-28
-decisoes_relacionadas: [ADR-0005, ADR-0008, ADR-0009, ADR-0012, ADR-0015, ADR-0018, ADR-0019, ADR-0020, ADR-0021, ADR-0022]
+decisoes_relacionadas: [ADR-0005, ADR-0008, ADR-0009, ADR-0012, ADR-0015, ADR-0018, ADR-0019, ADR-0020, ADR-0021, ADR-0022, ADR-0032]
 substitui: []
 substituido_por: null
 resumo: Da sede fundacional a norma da Spec — contrato, semantica, perfis, autoridade derivada, DoR, DoD, ciclo, relacoes, mudanca e economia de contexto — em SF-01 a SF-32.
@@ -97,6 +97,17 @@ alcance por exigir `C3`.
 > vem. *"Transformacao"* e o que foi feito ao texto. *"Equivalencia"* e o veredito sobre o
 > **merito**. **Uma unica regra tem alteracao de merito, e ela esta nomeada.**
 
+> **Alcance temporal desta secao (`1.1.0`).** A tabela de §2.2 e a medicao de diff de §2.1
+> descrevem **a recepcao das 32 regras em `1.0.0`**, e continuam exatas quanto a ela. **A
+> versao `1.1.0` emendou 1 celula do corpo** — §5, linha *Aprovacao*, coluna `C1 · T2` —
+> por [ADR-0032](../decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md),
+> `C3`, para sanar `RD-91`. **Consequencia declarada, nao silenciosa:** a partir de `1.1.0`
+> a matriz de §5 **difere em 1 celula** da matriz de `ADR-0021 §5.3`, que e artefato `M1` e
+> **nunca se emenda** (`AC-10`, `CC-01`). **Prevalece esta**, por ser a sede canonica
+> ([ADR-0022](../decisions/ADR-0022-sede-canonica-do-framework-de-specifications.md) §5.4);
+> a copia de `ADR-0021 §5.3` fica **historica e superada quanto a essa celula**, e o
+> registro disso e o achado `RD-98`.
+
 ### 2.1 Classes de transformacao — tres, e apenas tres
 
 | Classe | Definicao | Quantas regras |
@@ -124,7 +135,7 @@ regras.**
 | **SF-07** | §5.2 | `T-IDENTICA` | **Integral** |
 | **SF-08** | §5.2 | `T-IDENTICA` | **Integral** |
 | **SF-09** | §5.2 | `T-IDENTICA` — inclusive a tabela dos **21 blocos** e a fonte de cada exigencia | **Integral** |
-| **SF-10** | §5.3 | `T-IDENTICA` — inclusive a matriz de **50 celulas** e a declaracao `PJ-02` que a governa | **Integral** |
+| **SF-10** | §5.3 | `T-IDENTICA` **na recepcao de `1.0.0`** — inclusive a matriz de **50 celulas** e a declaracao `PJ-02` que a governa. **`1.1.0` emendou 1 celula da matriz** *(linha Aprovacao × coluna `C1 · T2`)*, por `ADR-0032` | **Integral na recepcao.** A divergencia posterior e **declarada** em §2 e no historico, nunca silenciosa |
 | **SF-11** | §5.4 | `T-IDENTICA` | **Integral** |
 | **SF-12** | §5.4 | `T-IDENTICA` | **Integral** |
 | **SF-13** | §5.4 | `T-IDENTICA` | **Integral** |
@@ -243,7 +254,7 @@ regras.**
 **Mapeamento `C0`–`C3` × `Tipo 1/2` para as dez etapas do ciclo — projecao declarada:**
 
 > **Declaracao de projecao (`PJ-02`).**
-> **Fonte:** `FND-04 §2`, `§2.1`, `§2.2`, `§6` · `FND-07 §2.3`, `§2.4`, `§5` · `FND-09 §8.2`
+> **Fonte:** `FND-04 §2`, `§2.1`, `§2.2`, **`§3.1`**, `§6` · `FND-07 §2.3`, `§2.4`, `§5` · `FND-09 §8.2`
 > linha `SPC` e `AU-05` · `FND-10 §5.2`, `§5.4`, `§6.1` · `FND-01 §6.2` · `ADR-0018` ·
 > `ADR-0019` · `ADR-0020` `PA-01` a `PA-14`.
 > **Campos projetados:** apenas **etapa × titular** e a condicao de eficacia.
@@ -257,7 +268,7 @@ regras.**
 | **Autoria** | proprietario | **DEP-PRD** | **DEP-PRD** | **DEP-PRD** | **DEP-PRD** |
 | **Revisao** | — | **revisor ≠ autor** | **DEP-ENG + DEP-QAR** | **DEP-ENG + DEP-QAR** | **DEP-ENG + DEP-QAR** |
 | **Liberacao de `QG-1`** | nao se aplica | **DEP-EXE** | **DEP-EXE** | **DEP-EXE** | **DEP-EXE** |
-| **Aprovacao** | proprietario | proprietario **+ revisor** | **DEP-EXE** + parecer **DEP-GOV** | **DEP-EXE** propoe | **SOBERANO**, indelegavel |
+| **Aprovacao** | proprietario | **DEP-EXE** + revisor | **DEP-EXE** + parecer **DEP-GOV** | **DEP-EXE** propoe | **SOBERANO**, indelegavel |
 | **Ratificacao** | **nao exigida** | **nao exigida** | **nao exigida** | **SOBERANO** | **SOBERANO** |
 | **Registro / promulgacao** | `atualizado_em` + CORRECAO | **DEP-GOV** | **DEP-GOV**, e o registro **precede** a execucao (`CV-02`) | **DEP-GOV**, **apos** o ato | **DEP-GOV**, apos ato indelegavel |
 | **Vigencia / ativacao** | ja `ativo` | nomeado na criacao | **nomeado**; supletivamente o custodiante (`PA-07`) | **nomeado**, **apos** `ratificacao: ratificada` (`LM-02`) | **nomeado**, com `IR-09` por DEP-QAR |
@@ -397,3 +408,4 @@ BLOQUEANTE**.
 | Versao | Data | Autor | Mudanca |
 |---|---|---|---|
 | 1.0.0 | 2026-07-29 | DEP-GOV | **Sede fundacional** da norma da `Spec`. Recebe `SF-01` a `SF-32` de [ADR-0021](../decisions/ADR-0021-framework-de-specifications.md) **declarando, regra por regra, origem, transformacao e equivalencia** (§2): **30** regras `T-IDENTICA` *(byte a byte)*, **1** `T-REFERENCIAL` *(`SF-05`)* e **1** `T-MERITO-DECLARADO` *(`SF-32`)*. **A unica alteracao de merito e o regime de mutabilidade** — de `M1` *(nunca se emenda; corrige-se por ADR sucessor)* para `M2` *(emenda por versao, com ratificacao do SOBERANO)* —, e ela esta isolada em §2.3, **com o tradeoff declarado no sentido correto: a sede melhor e mais protegida e mais caro de mudar**. Preserva integralmente o contrato de **21 blocos**, a semantica normativa *(3 verbos, 6 campos por requisito, 6 naturezas de enunciado, 5 metodos de verificacao, 10 adjetivos vedados)*, os **7 perfis**, a matriz de **50 celulas** `C0`–`C3` × `Tipo 1/2` como **projecao declarada** (`PJ-02`), a cadeia de **9 elos**, as **6 relacoes** *(com `conflita` declarada achado e nao aresta)*, o **`DoR` de 9**, o **`DoD` de 10**, o regime de mudanca da `Spec` e a economia de contexto. **`0` regras renumeradas · `0` titulares criados · `0` portoes criados ou removidos · `0` celulas de `FND-09 §8.2` alteradas · `0` bytes no vinculo `Spec` × `Produto`.** §13 registra que **nenhuma `Spec` e criavel** — `RD-33`, aberto e bloqueante — e que **promover a sede nao desbloqueia nada**. §14 declara os **cinco limites**, comecando por *"nenhuma `Spec` real existe: as 32 regras sao determinadas, nao observadas"*. **Nao vigora sem ato** (FND-01 §9). |
+| 1.1.0 | 2026-08-02 | DEP-GOV | Emenda **C3** por [ADR-0032](../decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md), que sana **`RD-91`**: **§5**, matriz de `SF-10`, linha *Aprovacao*, coluna **`C1 · T2`**, passa de `proprietario + revisor` para **`DEP-EXE + revisor`**, **em cascata** com a emenda da fonte — `FND-09 §8.2`, linha `SPC` **1.6.0** —, na mesma mudanca, como `ADR-0019 §4` *(Alternativa E)* fixou e `CV-04` exige. **`1` celula de `50`.** A declaracao `PJ-02` de §5 acrescenta **`FND-04 §3.1`** a lista de fontes, porque o valor projetado passa a derivar tambem dela. **O defeito nao era desta projecao:** as duas metades da colisao — `Proposta = DEP-PRD` e `Aprovacao = proprietario + revisor` — **reproduziam literalmente** `FND-09 §8.2` linha `SPC` e `FND-04 §2.1` linha `C1`, e por `PJ-03` e `FND-01 §10` **emendar so aqui nao sanaria nada**; por isso a fonte foi emendada primeiro. **`0` regras `SF-*` alteradas em texto normativo** — `SF-10` continua remetendo, nunca decidindo —, **`0` titulares criados** *(`DEP-EXE` ja consta de `FND-04 §2` e desta mesma matriz em `C2`)*, **`0` alteracoes em `DoR`, `DoD`, criterio de aceite ou qualquer regra de conteudo de `Spec`**, **`0` celulas fora da emendada**, **`0` bytes em `FND-04`**. **`SPC-001` NAO e reclassificada:** nasceu `C2 · Tipo 2` validamente, e §2 declara que a emenda **nao retroage**. **`C0 · T2` permanece colapsada e declarada** em `RD-91`. §2 ganha **nota de alcance temporal**: a partir daqui a matriz difere em **1** celula da copia de `ADR-0021 §5.3`, artefato `M1` que nunca se emenda — **prevalece esta**, por `ADR-0022 §5.4`, e o registro e `RD-98`. **Nao vigora sem ato** (FND-01 §9; `LM-02`; `SF-32`). |

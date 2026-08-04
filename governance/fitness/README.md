@@ -2,7 +2,7 @@
 id: IDX-fitness
 titulo: Registro de Aptidao Arquitetural (FIT)
 tipo: relatorio
-versao: 1.14.0
+versao: 1.15.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-QAR
@@ -48,9 +48,27 @@ Toda verificacao de aptidao arquitetural emitida. O mecanismo esta em
 
 | Sequencia | Ultimo atribuido | Proximo | Reinicia |
 |---|---|---|---|
-| `FIT-2026-NNN` | **025** | **026** | A cada ano |
+| `FIT-2026-NNN` | **028** | **029** | A cada ano |
 
 > Numero **nunca e reaproveitado** (FND-03 §2.3). Atribuido por DEP-GOV.
+
+> **Contador exercido, nao lido — Missao 1.13.14.** Antes de atribuir **`030`**, testou-se a
+> existencia de `FIT-2026-030-*` contra a **copia datada anterior as edicoes**
+> *(`_backups/LucaX Enterprise OS-2026-08-03-antes-do-adr-sucessor/`)*: **`FIT-2026-029` ✅ existe ·
+> `FIT-2026-030` ✅ NAO existe**. `SF-32`: criar o artefato e incrementar o contador sao **a mesma
+> mudanca** (`CV-04`, `IX-02`).
+>
+> **Contador exercido, nao lido — Missao 1.13.13.** Antes de atribuir **`029`**, testou-se a
+> existencia de `FIT-2026-029-*` contra a **copia datada anterior as edicoes**
+> *(`_backups/LucaX Enterprise OS-2026-08-03-antes-da-terceira-skill/`)*: **`FIT-2026-028` ✅ existe ·
+> `FIT-2026-029` ✅ NAO existe**. `SF-32`: criar o artefato e incrementar o contador sao **a mesma
+> mudanca** (`CV-04`, `IX-02`).
+>
+> **Contador exercido, nao lido — Missao 1.13.12.** Antes de atribuir **`028`**, testou-se a
+> existencia de `FIT-2026-028-*` contra a **copia datada anterior as edicoes**
+> *(`_backups/LucaX Enterprise OS-2026-08-03-pre-missao-1-13-12/`)*: **`FIT-2026-027` ✅ existe ·
+> `FIT-2026-028` ✅ NAO existe**. `SF-32`: criar o artefato e incrementar o contador sao **a mesma
+> mudanca**.
 
 > **Contador exercido, nao lido — Missao 1.13.4.4.** Antes de atribuir **`023`**, contaram-se
 > **22** arquivos `FIT-2026-*` no acervo e testou-se a existencia de `FIT-2026-023`: **nao
@@ -92,6 +110,11 @@ Toda verificacao de aptidao arquitetural emitida. O mecanismo esta em
 | [**FIT-2026-023**](FIT-2026-023-admissao-do-nxtrack.md) | **`RFC-0025`, `ADR-0030` e o SEGUNDO exercicio do portao de `ADR-0007`** — o primeiro sob a norma emendada. **Os dois objetos avaliados entraram em VIGOR em 2026-08-01**, pelo nono ato: `ADR-0030` `ativo` · `ratificada`, `RFC-0025` `aprovado`, e o Produto [`PRO-nxtrack`](../../products/nxtrack/carta.md) criado. **As 4 ressalvas seguem ABERTAS**, com dono e gatilho — o item **V** do ato as manteve expressamente, e `RECOGNIZE` **declara que nao avaliou merito** | **C2** | `apto-com-ressalva` | **4** | **nao exigida** *(`ADR-0015`, `FT-10`)* | **2026-08-01** |
 | [**FIT-2026-024**](FIT-2026-024-primeira-spec.md) | **`SPC-001`, `ADR-0031` e `RFC-0026` — a PRIMEIRA `Spec` do acervo.** `FIT` **exigido, nao opcional**: a classe do objeto e `C2`, e `SF-24` item **(9)** o poe no `DoD`. Mede **27 de 32** regras `SF-*` saindo de *determinadas* para *observadas*, **1** reproducao **barrada antes de escrita** e o custo de contexto nas **duas** direcoes — desce a `13` linhas na consulta enderecada, sobe `311` na leitura integral. **Contador exercido, nao lido:** testou-se a existencia de `FIT-2026-024` contra a copia datada — **nao existia** | **C2** | `apto-com-ressalva` | **4** | **nao exigida** *(`ADR-0015`, `FT-10`)* | **2026-08-02** |
 | [**FIT-2026-025**](FIT-2026-025-emenda-de-sf-10.md) | **`ADR-0032`, `RFC-0027` e os 4 candidatos — a emenda que sana `RD-91`.** `FIT` **exigido, nao opcional**: a classe e `C3`, e `CC-04`/`CV-07` o poem em `QG-6`. Mede **27 linhas** de norma nova contra **3 artefatos por `Spec`** economizados, e conta **4 de 4** incompatibilidades de `FND-04 §3.1` dissolvidas em `C1 · T2`. **`1` reproducao barrada antes de escrita** — a emenda confinada a `FND-11 §5`, que **nao sanaria** | **C3** | `apto-com-ressalva` | **4** | **nao exigida** *(`ADR-0015`, `FT-10`)* | **2026-08-02** |
+| [**FIT-2026-026**](FIT-2026-026-framework-de-skills.md) | **`ADR-0033` — a instituicao do Framework de Skills** | **`apto-com-ressalva`** | `QG-6` liberado. **`R1`, e nao bloqueia:** `TPL-skill` **nao produz `Skill` conforme** — omite `gatilho` **e** `capabilities` do frontmatter, contra os *atributos minimos* de `FND-09 §E-13`, medido com controle positivo. **NAO impede** a Skill de funcionar: os campos sao exigidos pela norma e podem ser escritos a mao (`AC-07`), e `0` Skills existem, logo `0` fichas nao conformes foram produzidas. `RD-122` ABERTO. **DEP-QAR NAO recomenda liberar `GO-TO-SKILLS` aqui** — liberar portao e ato de autoridade, nao materia de parecer (`FT-10`) |
+| [**FIT-2026-027**](FIT-2026-027-primeira-skill.md) | **`ADR-0034` e a primeira `Skill`** | **`apto-com-ressalva`** | `QG-6` liberado, **13 verificacoes**, 11 verdes. **`R1`** — `TPL-skill` omite `capabilities` e `gatilho` (`RD-122`), **nao bloqueia**: escritos a mao sem criar campo novo. **`R2`** — **o Framework nao saiu ileso do primeiro uso**: `SK-09` **defeituosa** *(erro de categoria: conta atributo de frontmatter como bloco de corpo)*, `SK-10` e `SK-24` **insuficientes**. **3 em 26 (11,5%)** contra **5 em 32 (15,6%)** de `SPC-001`. Corrigi-los exige **`ADR` sucessor**, porque `ADR-0033` e `M1` |
+| [**FIT-2026-028**](FIT-2026-028-segunda-skill.md) | **`ADR-0035` e a segunda `Skill`** | **`apto-com-ressalva`** | `QG-6` liberado, **16 verificacoes**, 13 verdes. **`R1` — DEP-QAR corrige o proprio registro:** `SK-24` nunca foi *"incalculavel"* *(a mediana de um elemento e esse elemento)*; ela e **calculavel e VAZIA ate `n = 3`**, demonstrado por algebra. A conclusao de `FIT-2026-027` sobrevive; o fundamento e que estava errado. **`R2` — os tres defeitos sao do FRAMEWORK**, por reaparecerem identicos em caso disjunto; **`0` defeitos novos no segundo uso**. **`R3` — `RD-122` exercido pela segunda vez**, e a repeticao o converte de peculiaridade do caso em **propriedade do template**. **DEP-QAR recomenda ESPERAR a terceira `Skill`** para o `ADR` sucessor: `SK-09` e `SK-10` tem sinal maduro, **`SK-24` nao** |
+| [**FIT-2026-029**](FIT-2026-029-terceira-skill.md) | **`ADR-0036` e a terceira `Skill`** | **`apto-com-ressalva`** | `QG-6` liberado, **10 verificacoes verdes**, **4 ressalvas**. **`R1` — recusa a leitura confortavel de `SK-24`:** os dois *"nao"* anteriores eram **impossibilidade algebrica** e este e **propriedade das instancias**; **a serie util tem `1` elemento**, e com `3` pontos a mediana **nao e estavel**. **`R2` — `SK-09` e `SK-10` FECHAM**, e a terceira prova mais que a segunda porque **o autor conhecia os defeitos e escreveu contra eles, e eles ocorreram assim mesmo**. **`R3` — `RD-122` pela terceira vez.** **`R4` — a ancoragem do veredito nao tem portao, e o merito e de UM produto so.** **DEP-QAR recomenda ABRIR o `ADR` sucessor AGORA, e NAO esperar a quarta `Skill`** |
+| [**FIT-2026-030**](FIT-2026-030-sucessor-parcial-do-framework-de-skills.md) | **`ADR-0037` e o sucessor parcial do Framework** | **`apto-com-ressalva`** | `QG-6` liberado, **13 verificacoes verdes**, **3 ressalvas**. **`R1` — o Framework passa a ter DUAS sedes vigentes** e o custo de contexto **sobe**; a unica coisa que unifica e a promocao a `FND`, **`C3` com ato**, e o ponto de cruzamento **nao se estima** (`CE-04`). **`R2` — `SK-22` e `SK-25` entraram em `SK-27` por LEITURA, nao por reprovacao observada**, e `SK-25` **nunca fora exercida**; homologados porque `SK-27` **nao reescreve enunciado, so acrescenta piso**. **`R3` — o custo do rito NAO caiu:** `4 = 5 − 1`, e o `1` e a ficha. **DEP-QAR confere na fonte a corroboracao de `SK-22` no piso `n = 2`, e homologa a exclusao de `R4` DECLARANDO o proprio conflito de interesse**, por te-la levantado |
 | [**FIT-2026-018**](FIT-2026-018-vigencia-do-framework-de-specifications.md) | **A APLICACAO do setimo ato soberano** — os **14** objetos em vigor, a ordem, a atomicidade, a integridade e a reconciliacao | **C3** | `apto-com-ressalva` | **3** | **nao exigida** *(`ADR-0015`, `FT-10`)* | 2026-07-30 |
 | [**FIT-2026-017**](FIT-2026-017-convergencia-pre-ratificacao.md) | **RFC-0020, ADR-0024, ADR-0025, PS-2026-011, PS-2026-012, PS-2026-013, PS-2026-009 2.0.0**, os **6** candidatos novos e a cascata de indices | **C3** | `apto-com-ressalva` | **3** | **nao exigida** *(`FT-10`)* | 2026-07-30 |
 | [**FIT-2026-016**](FIT-2026-016-canonizacao-e-propagacao.md) | **RFC-0018, ADR-0022, PS-2026-009, RFC-0019, ADR-0023, PS-2026-010, PT-2026-008**, os **6** candidatos e a cascata de indices | **C3** | `apto-com-ressalva` | **4** | **nao exigida — por `FT-10`** | **2026-07-29** |

@@ -2,16 +2,16 @@
 id: DEP-EXE
 titulo: Gabinete Executivo
 tipo: carta
-versao: 1.1.0
+versao: 1.2.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
 proprietario: DEP-EXE
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-07-29
+atualizado_em: 2026-08-02
 revisao_prevista: 2027-01-28
-decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0004, ADR-0011, ADR-0018, ADR-0019, ADR-0023]
+decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0004, ADR-0011, ADR-0018, ADR-0019, ADR-0023, ADR-0032]
 substitui: []
 substituido_por: null
 classe: comando
@@ -155,7 +155,7 @@ exercida por **DEP-KMS**.
 | **Empate entre areas de Linha** — arbitragem | A3 | DEP-GOV se envolver norma | FND-02 §3 e §7, nivel N2 |
 | Liberacao de **QG-0** | A3 | — | FND-01 §6.2, linha QG-0 |
 | Liberacao de **QG-1** | A3 | **DEP-PRD** *(autor da spec)* · **DEP-QAR** *(verificabilidade do criterio de aceite)* | FND-01 §6.2, linha `QG-1`, pos-[ADR-0018](../../decisions/ADR-0018-liberacao-do-portao-qg-1.md) |
-| **Aprovar Spec** (`SPC`) **quando a classe do efeito for `C2`** | A3 | DEP-GOV *(parecer)*; DEP-ENG + DEP-QAR *(revisores da spec)* | FND-04 §2, `C2`; FND-09 §8.2, linha `SPC`, pos-[ADR-0019](../../decisions/ADR-0019-aprovador-e-ratificador-de-spec.md) — *aprova conforme classe*. **`C0`/`C1`: o proprietario. `C3`: SOBERANO** |
+| **Aprovar Spec** (`SPC`) **quando a classe do efeito for `C1` ou `C2`** | A3 | DEP-GOV *(parecer, em `C2`)*; DEP-ENG + DEP-QAR *(revisores da spec)* | FND-04 §2, `C1` e `C2`, e **§3.1**; FND-09 §8.2, linha `SPC`, pos-[ADR-0019](../../decisions/ADR-0019-aprovador-e-ratificador-de-spec.md) e **[ADR-0032](../../decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md)** — *aprova conforme classe*. **`C0`: o proprietario. `C3`: SOBERANO** |
 | **Aprovar o veredito de aptidao (`FIT`)** | A3 | DEP-GOV *(forma)* | FND-09 §8.2, linha `FIT` |
 | **Aprovar Carta de Agente, Subagente e Skill** | A3 | DEP-GOV + DEP-QAR *(revisao)* | FND-09 §8.2, linhas `AGT`, `SUB`, `SKL` |
 | **Homologar** escopo e prioridade de produto decididos por DEP-PRD | A3 | DEP-PRD, DEP-ENG | FND-01 §7.3, coluna *Ratifica* |
@@ -257,7 +257,7 @@ exercida por **DEP-KMS**.
 | **Carta de Departamento** | `DEP` | **Autor**; nunca aprovador | `departments/<dep>/` |
 | **Fitness Check** | `FIT` | **Aprovador**; nunca autor nem executor | `governance/fitness/` |
 | **Revisao Arquitetural** | `FIT` *(corretude)* | **Aprovador** | Ao lado do que revisa |
-| **Spec** | `SPC` | **Liberador de `QG-1`**; **aprovador quando a classe do efeito for `C2`**; **nunca autor nem revisor** | fase futura — `products/<slug>/specs/` |
+| **Spec** | `SPC` | **Liberador de `QG-1`**; **aprovador quando a classe do efeito for `C1` ou `C2`**; **nunca autor nem revisor** | fase futura — `products/<slug>/specs/` |
 | Carta de Agente / Subagente / Skill | `AGT` `SUB` `SKL` | **Aprovador** | fase futura |
 | ADR | `ADR` | **Autor** *(quando a materia for de coordenacao ou portfolio)*; **aprovador** conforme a classe | `decisions/` |
 | RFC | `RFC` | Autor | `rfcs/` |
@@ -504,3 +504,4 @@ de Linha e responde pela entrega do que foi priorizado.
 |---|---|---|---|
 | 1.1.0 | 2026-07-29 | DEP-EXE | Emenda **C2 · Tipo 2** por **ADR-0023**, que **propaga** `ADR-0018` e `ADR-0019` — ambos **ratificados** — a esta Carta, fechando **RD-31** quanto a DEP-EXE. **O portao `QG-1` passa a ter titular declarado em Carta, onde antes tinha `0` ocorrencias medidas.** **Onze blocos alterados:** `§3` *(responsabilidade **X-13**)*, `§5` *(liberacao de `QG-1` e aprovacao de Spec `C2`)*, `§5.2` *(o portao na tabela, e a nota que explica por que `QG-1` **satisfaz** a regra de portao em vez de excepciona-la)*, `§6.1` *(entrada: spec submetida)*, `§6.2` *(saida: registro da liberacao)*, `§7` *(o tipo `SPC`)*, `§10` *(impedimento novo **I-10** — liberar o portao nao concede autoridade sobre o artefato)*, `§10.1` *(risco novo **RX-8**)*, `§10.2` *(incompatibilidade de papel)*, `§11` *(indicador **KX-15**, com valor **0** medido)*, `§12.3` *(destino do portao na extincao)* e `§13.3`. **Nenhum titular, portao, papel, classe ou direito decisorio foi criado:** `QG-1` e de DEP-EXE por **ADR-0018** e a aprovacao de `C2` e de DEP-EXE por **FND-04 §2**, ambos anteriores a esta emenda; **7 portoes antes, 7 depois**; **DEP-ENG e DEP-QAR permanecem os revisores da Spec** e **DEP-PRD segue decidindo escopo e criterio de aceite**. **I-5 e I-10 vedam expressamente que o portao vire via para decidir merito.** |
 | 1.0.0 | 2026-07-28 | DEP-EXE | Criacao como piloto da classe **Comando**, sob o contrato de ADR-0011. Doze blocos preenchidos. Permanece em `em-revisao`: aprovar Carta de Departamento e ato do **SOBERANO** (DC-09), e o ato de 2026-07-28 **nao a alcanca** — ela nao existia na data (LM-03, [MSG-2026-0001 §3](../../memory/operacional/MSG-2026-0001-ato-soberano-ratificacao-cartas-piloto.md)). |
+| 1.2.0 | 2026-08-02 | DEP-EXE | Emenda **C3 · Tipo 2** por [ADR-0032](../../decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md), **propagacao obrigatoria** (`CV-04`) da emenda de `FND-09 §8.2` **1.6.0** e `FND-11 §5` **1.1.0** que sana **`RD-91`**. **Duas afirmacoes desta Carta ficariam falsas ou incompletas, e as duas foram corrigidas:** `§5` *(aprovar Spec — passa de `C2` para **`C1` ou `C2`**, e a nota `"C0/C1: o proprietario"` passa a `"C0: o proprietario"`)* e `§7` *(linha `Spec` — aprovador em `C1` ou `C2`)*. **Recebo materia, e ela e estreita:** aprovar `Spec` de classe **`C1`**, porque `FND-09 §8.2` poe **DEP-PRD** como proponente de toda `Spec` e `FND-04 §3.1` declara **nula** (`LV-03`) a aprovacao em que `Proponente = Aprovador`. **Nenhuma autoridade nova foi criada:** ja aprovo `Spec` em `C2` desde `ADR-0019`, e `C1` e **degrau abaixo** de `C2` — sem `RFC`, sem `ADR`, sem `FIT`, sem ratificacao. **`I-10` permanece intacto:** aprovar **nao** e definir, redigir ou alterar conteudo de `Spec`, que segue sendo materia de **DEP-PRD** (`FND-01 §7.3`). **Liberar `QG-1` e aprovar continuam atos distintos** (`FND-01 §6.2`, nota pos-`ADR-0018`; `ADR-0019` `H3`), e o acumulo dos dois em `C1` e **o mesmo** que a norma ja aceita em `C2` nesta mesma linha da matriz. **`0` Capabilities, portoes, papeis, impedimentos ou niveis de autonomia alterados** — `A3` antes e depois, **7 portoes antes e 7 depois**. **`0` linhas de historico editadas.** **Nao vigora sem ato** (`LM-02`). |

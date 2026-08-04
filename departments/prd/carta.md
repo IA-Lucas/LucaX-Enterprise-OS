@@ -2,16 +2,16 @@
 id: DEP-PRD
 titulo: Produto e Estrategia
 tipo: carta
-versao: 1.1.0
+versao: 1.2.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
 proprietario: DEP-EXE
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-07-29
+atualizado_em: 2026-08-02
 revisao_prevista: 2027-01-28
-decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0011, ADR-0018, ADR-0019, ADR-0023]
+decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0011, ADR-0018, ADR-0019, ADR-0023, ADR-0032]
 substitui: []
 substituido_por: null
 classe: linha
@@ -123,7 +123,7 @@ passa, ou **se** o produto existe no portfolio.
 | **Estimar** prazo ou esforco tecnico | DEP-ENG | FND-02 §3 |
 | Alterar Carta de Capability para acomodar esta Carta | custodio da Capability | PR-2, PR-3 de ADR-0011 |
 | **Liberar o portao `QG-1`** sobre a spec que eu escrevo | **DEP-EXE** | FND-01 §6.2, *Regra de portao* e nota pos-[ADR-0018](../../decisions/ADR-0018-liberacao-do-portao-qg-1.md) |
-| **Aprovar a Spec de classe `C2` ou `C3`** que eu escrevo | **DEP-EXE** *(`C2`, com parecer de DEP-GOV)* · **SOBERANO** *(`C3`)* | FND-04 §2; FND-09 §8.2, linha `SPC`, pos-[ADR-0019](../../decisions/ADR-0019-aprovador-e-ratificador-de-spec.md) |
+| **Aprovar a Spec de classe `C1`, `C2` ou `C3`** que eu escrevo | **DEP-EXE** *(`C1` e `C2`; em `C2`, com parecer de DEP-GOV)* · **SOBERANO** *(`C3`)* | FND-04 §2 e **§3.1**; FND-09 §8.2, linha `SPC`, pos-[ADR-0019](../../decisions/ADR-0019-aprovador-e-ratificador-de-spec.md) e **[ADR-0032](../../decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md)** |
 | **Aprovar a propria Carta, ou revisa-la** | **SOBERANO** *(aprova)* · **DEP-GOV** *(revisa)* | RM-06b; FND-09 §8.2 |
 
 ## 5. O que decido — autoridade e portoes
@@ -135,7 +135,7 @@ passa, ou **se** o produto existe no portfolio.
 | Quando um requisito esta **suficientemente definido** | A2 | DEP-ENG | FND-02 §3 |
 | **Criterio de aceite funcional** | A2 | DEP-QAR *(verificabilidade)* | FND-02 §3; QG-1 |
 | **Submissao da spec a `QG-1`** — declarar que os tres itens estao presentes e verificaveis | A2 | DEP-QAR *(verificabilidade)* | FND-01 §6.2, nota *"Sobre QG-1 e a regra de portao"*. **A liberacao do portao e de DEP-EXE** |
-| **Aprovar Spec** (`SPC`) **de classe `C0` ou `C1`**, como proprietario | A2 | DEP-ENG + DEP-QAR *(revisores)* | FND-09 §8.2, linha `SPC`: **aprova conforme classe (FND-04 §2)**, com **`C1` como piso** (FND-04 §6). **`C2` aprova DEP-EXE; `C3`, o SOBERANO** |
+| **Aprovar Spec** (`SPC`) **de classe `C0`**, como proprietario | A2 | DEP-ENG + DEP-QAR *(revisores)* | FND-09 §8.2, linha `SPC`: **aprova conforme classe (FND-04 §2)**, com **`C1` como piso** (FND-04 §6). **`C1` aprova DEP-EXE** *(pos-[ADR-0032](../../decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md): sou o proponente de toda `Spec`, e `FND-04 §3.1` veda `Proponente = Aprovador`)*; **`C2` aprova DEP-EXE; `C3`, o SOBERANO** |
 | **Propor** Carta de Produto | A2 | DEP-QAR *(revisor)* | FND-09 §8.2, linha `PRO`: propoe/cria |
 | Decisao de **design** — forma, comportamento e linguagem | A2 | DEP-ENG *(viabilidade)*, DEP-GRW *(consistencia de linguagem)* | FND-02 §3, "Possui"; `CAP-design` |
 | **Curadoria da camada PRD** | A2 | DEP-KMS *(alocacao entre camadas)* | FND-06 §2.1 |
@@ -150,7 +150,7 @@ passa, ou **se** o produto existe no portfolio.
 | **Criar ou encerrar produto** | **SOBERANO** | FND-01 §7.3; FND-09 §8.2, linha `PRO` |
 | **Aprovar e ratificar Carta de Produto** | **SOBERANO** | FND-09 §8.2, linha `PRO` |
 | **Liberar `QG-1`** | **DEP-EXE** | FND-01 §6.2, pos-ADR-0018 |
-| **Aprovar Spec `C2` ou `C3`** | **DEP-EXE** *(`C2`, com parecer de DEP-GOV)* · **SOBERANO** *(`C3`)* | FND-04 §2; FND-09 §8.2, linha `SPC` |
+| **Aprovar Spec `C1`, `C2` ou `C3`** | **DEP-EXE** *(`C1` e `C2`; em `C2`, com parecer de DEP-GOV)* · **SOBERANO** *(`C3`)* | FND-04 §2 e **§3.1**; FND-09 §8.2, linha `SPC` |
 | Se a entrega passa em QG-3 | **DEP-QAR** | FND-01 §6.2 |
 | Como se constroi | **DEP-ENG** | FND-01 §7.3 |
 | Prioridade **entre** produtos | **DEP-EXE** | FND-02 §3 |
@@ -221,7 +221,7 @@ proibe que o portao seja liberado por quem produziu o artefato.
 
 | Tipo documental | Entidade | Meu papel | Onde vive |
 |---|---|---|---|
-| **Spec** | `SPC` | **Autor e proponente**; **aprovador apenas quando a classe do efeito for `C0` ou `C1`** (FND-04 §2); **nunca revisor do proprio** e **nunca liberador de `QG-1`** | fase futura — `products/<slug>/specs/` |
+| **Spec** | `SPC` | **Autor e proponente**; **aprovador apenas quando a classe do efeito for `C0`** (FND-04 §2 e **§3.1**, pos-`ADR-0032`); **nunca revisor do proprio** e **nunca liberador de `QG-1`** | fase futura — `products/<slug>/specs/` |
 | **Carta de Produto** | `PRO` | **Autor e proponente**; nunca aprovador nem ratificador | fase futura — `products/` |
 | Memoria **PRD** | `MEM` | **Dono da camada** | `memory/produto/` |
 | **ADR** *(de escopo)* | `ADR` | **Autor**; nunca aprovador do proprio | `decisions/` |
@@ -443,3 +443,4 @@ resultado verificavel.
 |---|---|---|---|
 | 1.1.0 | 2026-07-29 | DEP-EXE | Emenda **C2 · Tipo 2** por **ADR-0023**, que **propaga** `ADR-0018` e `ADR-0019` — ambos **ratificados** — a esta Carta, fechando **RD-31** quanto a DEP-PRD. **Oito afirmacoes tornadas falsas foram corrigidas:** `§3 P-8`, `§5` *(liberacao de `QG-1`)*, `§5` *(aprovar Spec, com a citacao de `FND-09 §8.2` que nao existe mais)*, `§5.2` *(a tabela de portoes)*, `§5.2` *(a nota "unico portao que DEP-PRD libera sozinho")*, `§7` *(Spec — "autor e aprovador")*, `§10.1 RP-1` e `§12.3`. **Seis blocos adicionais foram revisados e ajustados** — `§4` e `§5.1` *(duas linhas cada, declarando o que nao compete)*, `§8` *(escalonamento)*, `§8.2` *(handoff)*, `§10` *(impedimento novo **I-12**)*, `§10.2` *(incompatibilidade de papel)*, `§11 KP-6` *(passa a medir submissoes)* e `§13.3`. **`RP-1` nao foi apagado: foi declarado EXTINTO NA FONTE** (MM-09) — o risco que a Carta 1.0.0 registrava com impacto **Alto** deixou de existir porque `QG-1` passou a ser liberado por quem **nao** produz a spec. **`RD-41` corrigido no mesmo ato:** `§7` alojava a `Spec` em `projects/`, contra `FND-03 §3.6`, `FND-04 §6` e `FND-10 §4.4`, que a alojam em `products/<slug>/specs/`. **Nenhum titular, portao, papel, classe ou direito decisorio foi criado:** `DEP-EXE` detem `QG-1` por `ADR-0018` e aprova `C2` por `FND-04 §2`, ambos anteriores a esta emenda; **DEP-ENG e DEP-QAR permanecem os revisores da Spec** (`I-2` intacto); **DEP-PRD segue decidindo escopo e criterio de aceite**, e **segue aprovando Spec `C0` e `C1`** como proprietario. **7 portoes antes, 7 depois.** |
 | 1.0.0 | 2026-07-28 | DEP-EXE | Criacao — **setima Carta do sistema**, terceira do rollout. Doze blocos preenchidos. Declara o unico portao do sistema liberado **sem contraditorio previo** *(QG-1)* e a mitigacao assimetrica correspondente (RP-1). Permanece em `em-revisao`: aprovar Carta de Departamento e ato do **SOBERANO** (DC-09). |
+| 1.2.0 | 2026-08-02 | DEP-EXE | Emenda **C3 · Tipo 2** por [ADR-0032](../../decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md), **propagacao obrigatoria** (`CV-04`) da emenda de `FND-09 §8.2` **1.6.0** e `FND-11 §5` **1.1.0** que sana **`RD-91`**. **Quatro afirmacoes desta Carta ficariam falsas ou incompletas, e as quatro foram corrigidas:** `§4` *(o que nao me compete — aprovar a Spec que eu escrevo passa a `C1`, `C2` ou `C3`)*, `§5` *(aprovar Spec `C0` ou `C1` como proprietario — passa a **`C0`** apenas)*, `§5.1` *(o que nao decido — passa a `C1`, `C2` ou `C3`)* e `§7` *(linha `Spec` — aprovador apenas em `C0`)*. **O que mudou de titular, e e por isso que a Carta muda:** a aprovacao de `Spec` em **`C1`** sai de **DEP-PRD**, que a propoe, e vai para **DEP-EXE** — nao por conveniencia, mas porque `FND-09 §8.2` poe DEP-PRD como proponente de **toda** `Spec` e `FND-04 §3.1` declara **nula** (`LV-03`) a aprovacao em que `Proponente = Aprovador`. **DEP-PRD nao perde materia:** segue **autor, proponente e proprietario** da `Spec`, segue decidindo **escopo e criterio de aceite** (`FND-01 §7.3`) e segue aprovando **`C0`**. **`0` Capabilities, portoes, papeis, impedimentos ou niveis de autonomia alterados** — `A2` antes e depois. **`0` linhas de historico editadas:** a linha `1.1.0` conserva *"segue aprovando Spec `C0` e `C1`"*, que era **verdadeira quando escrita** e agora e **superada por esta versao**, nunca reescrita (`AC-10`, `LV-04`). **Nao vigora sem ato** (`LM-02`). |

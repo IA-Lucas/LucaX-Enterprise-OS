@@ -2,16 +2,16 @@
 id: IDX-departamentos
 titulo: Indice e Projecao Comparativa das Nove Cartas de Departamento
 tipo: relatorio
-versao: 1.6.0
+versao: 1.7.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-GOV
 proprietario: DEP-GOV
 aprovador: DEP-EXE
 criado_em: 2026-07-28
-atualizado_em: 2026-07-30
+atualizado_em: 2026-08-02
 revisao_prevista: 2027-01-28
-decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0008, ADR-0011, ADR-0018, ADR-0023, ADR-0025]
+decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0008, ADR-0011, ADR-0018, ADR-0023, ADR-0025, ADR-0032]
 substitui: []
 substituido_por: null
 projecao_de: [departments/*/carta.md, capabilities/CAP-*.md, foundation/02-estrutura-organizacional.md]
@@ -71,10 +71,10 @@ Responder, em **uma leitura**, o que distingue e o que iguala os nove departamen
 
 | # | Departamento | Classe | Arquivo | Versao | Estado | Ratificacao |
 |---|---|---|---|---|---|---|
-| 1 | **DEP-EXE** — Gabinete Executivo | Comando | [`exe/carta.md`](exe/carta.md) | **1.1.0** | **`ativo`** | **ratificada** — [MSG-2026-0007](../memory/operacional/MSG-2026-0007-ato-soberano-vigencia-do-framework-de-specifications.md) |
+| 1 | **DEP-EXE** — Gabinete Executivo | Comando | [`exe/carta.md`](exe/carta.md) | **1.2.0** | **`ativo`** | **ratificada** — [MSG-2026-0010](../memory/operacional/MSG-2026-0010-ato-soberano-emenda-que-sana-rd-91.md) *(1.1.0 por [MSG-2026-0007](../memory/operacional/MSG-2026-0007-ato-soberano-vigencia-do-framework-de-specifications.md))* |
 | 2 | **DEP-GOV** — Governanca e Conformidade | Guarda | [`gov/carta.md`](gov/carta.md) | 1.0.0 | **`ativo`** | **ratificada** — [MSG-2026-0004](../memory/operacional/MSG-2026-0004-ato-soberano-cartas-emenda-constitucional-e-regime-do-fitness-check.md) |
 | 3 | **DEP-QAR** — Qualidade e Risco | Guarda | [`qar/carta.md`](qar/carta.md) | **1.2.0** | **`ativo`** | **ratificada** — [MSG-2026-0005](../memory/operacional/MSG-2026-0005-ato-soberano-aplicacao-dep-qar.md) |
-| 4 | **DEP-PRD** — Produto e Estrategia | Linha | [`prd/carta.md`](prd/carta.md) | **1.1.0** | **`ativo`** | **ratificada** — [MSG-2026-0007](../memory/operacional/MSG-2026-0007-ato-soberano-vigencia-do-framework-de-specifications.md) |
+| 4 | **DEP-PRD** — Produto e Estrategia | Linha | [`prd/carta.md`](prd/carta.md) | **1.2.0** | **`ativo`** | **ratificada** — [MSG-2026-0010](../memory/operacional/MSG-2026-0010-ato-soberano-emenda-que-sana-rd-91.md) *(1.1.0 por [MSG-2026-0007](../memory/operacional/MSG-2026-0007-ato-soberano-vigencia-do-framework-de-specifications.md))* |
 | 5 | **DEP-ENG** — Engenharia | Linha | [`eng/carta.md`](eng/carta.md) | **1.1.0** | **`ativo`** | **ratificada** — [MSG-2026-0006](../memory/operacional/MSG-2026-0006-ato-soberano-aplicacao-integral.md) |
 | 6 | **DEP-OPS** — Operacoes | Linha | [`ops/carta.md`](ops/carta.md) | **1.1.0** | **`ativo`** | **ratificada** — [MSG-2026-0007](../memory/operacional/MSG-2026-0007-ato-soberano-vigencia-do-framework-de-specifications.md) |
 | 7 | **DEP-GRW** — Crescimento e Receita | Linha | [`grw/carta.md`](grw/carta.md) | **1.1.0** | **`ativo`** | **ratificada** — [MSG-2026-0007](../memory/operacional/MSG-2026-0007-ato-soberano-vigencia-do-framework-de-specifications.md) |
@@ -93,6 +93,16 @@ sob o **mesmo regime de prova**: `H-P` **projetado antes** e reproduzido nos **6
 cinco, `H-N` **invariante** nas cinco, e `IR-09` reconstruindo `H-A` nas cinco. **Seis das nove
 Cartas ja passaram por `O4` com `H-P` publicado antes da escrita.**
 
+**Duas passaram a 1.2.0 pelo DECIMO ato, em 2026-08-02**
+([MSG-2026-0010](../memory/operacional/MSG-2026-0010-ato-soberano-emenda-que-sana-rd-91.md)),
+aplicado pela **Missao 1.13.5.2** em rito **MINISTERIAL**: `DEP-PRD` e `DEP-EXE`, por
+**propagacao obrigatoria** (`CV-04`) da emenda de `FND-09 §8.2` e `FND-11 §5` que sana
+**`RD-91`** — a aprovacao de `Spec` `C1` passa do **proprietario**, que a propoe, para
+**DEP-EXE**. **Sob o mesmo regime de prova, e uma exigencia a mais:** o `O4` correu **fora do
+acervo**, os dois `H-P` foram conferidos **antes** de o arquivo entrar, e so entao ele entrou —
+`H-P` **2 de 2**, `H-N` **invariante 2 de 2**, `IR-09` **2 de 2**. **Duas das nove Cartas ja
+passaram por `O4` DUAS vezes.**
+
 ## 2. Projecao comparativa — a leitura unica
 
 | Dimensao | EXE | GOV | QAR | PRD | ENG | OPS | GRW | KMS | TLS |
@@ -108,12 +118,13 @@ Cartas ja passaram por `O4` com `H-P` publicado antes da escrita.**
 | **Camada de memoria que possui** | — | **EST** | — | **PRD** | **TEC** | **OPR** | — | **APR** | — |
 | **Impedimentos declarados** | **10** | **12** | 7 | **12** | **9** | 11 | **13** | **11** | 11 |
 | **Indicadores** *(def / medidos / sem valor)* | 14/9/5 | **17**/14/3 | 11/8/3 | 13/7/6 | 12/7/5 | 14/9/5 | 14/8/6 | 16/13/3 | 12/7/5 |
-| **Carta integral** *(linhas)* | **506** | 457 | **388** | 445 | **402** | 438 | 444 | **464** | 425 |
+| **Carta integral** *(linhas)* | **507** | 457 | **388** | 446 | **402** | 438 | 444 | **464** | 425 |
 | **Recorte de decisao** *(linhas)* | **172** | 133 | **111** | 145 | **116** | 136 | 144 | **141** | 125 |
 
 **Totais medidos:** **23** custodias · **24** vinculos de exercicio · **7** portoes cobertos ·
 **5** camadas de memoria com dono · **96** impedimentos declarados · **123** indicadores
-definidos, **82** com valor medido · **3.969** linhas de Carta.
+definidos, **82** com valor medido · **3.971** linhas de Carta *(**3.969** antes do decimo ato:
+`DEP-EXE` **+1** e `DEP-PRD` **+1**)*.
 
 > **`Carta integral` e medido por `wc -l`; `Recorte de decisao` e projetado de §13.2 de cada
 > Carta.** Em **`DEP-OPS`, `DEP-GRW` e `DEP-TLS`** as duas fontes **divergem** — §13.2 declara
@@ -121,6 +132,15 @@ definidos, **82** com valor medido · **3.969** linhas de Carta.
 > nao o declarado: achado **`RD-49`**, **aberto**, familia de `RC-01` e `RD-46`. **Nao e
 > corrigivel por edicao** — as tres Cartas foram **ratificadas** em 2026-07-30 (`LV-04`), e a
 > correcao exige **ato novo**.
+>
+> ⚠️ **A divergencia passou de tres Cartas para CINCO em 2026-08-02, e as duas novas sao as que
+> o decimo ato emendou.** `DEP-EXE` §13.2 declara **506** e o arquivo tem **507**; `DEP-PRD`
+> declara **445** e tem **446**. **A causa esta medida:** o candidato ganhou **exatamente uma
+> linha** cada — a do proprio historico de versoes — e **§13.2 nao foi remedida junto**. Achado
+> **`RD-105`**, dono **DEP-EXE**, gatilho *"proxima emenda a `DEP-PRD` ou `DEP-EXE`"*. **NAO
+> corrigido, e a razao e mais estreita que a de `RD-49`:** §13.2 vive dentro de `H-N`, e edita-la
+> **quebraria o `H-P` que o item VI do ato manda reproduzir**. **`Recorte de decisao` NAO se
+> moveu** *(172 e 145)*: as secoes 5 e 10 sofreram **substituicao de linha, nunca acrescimo**.
 
 ### 2.1 O que a comparacao mostra — e nao mostraria Carta a Carta
 
@@ -134,7 +154,7 @@ definidos, **82** com valor medido · **3.969** linhas de Carta.
 | **C-6** | **Dois departamentos operam em A1: GRW e TLS** | Ambos por **natureza do objeto**, nao por desconfianca: saida externa e adocao de ferramenta sao **Tipo 1** (PI-06). **Um e de Linha, outro de Plataforma** — A1 nao e propriedade de classe |
 | **C-7** | **DEP-KMS e o unico que exerce sem custodiar** | `CAP-comunicacao`, custodiada por DEP-EXE. **Unico membro de OW-02** no acervo — achado **P1**, ainda com **1** membro |
 | **C-8** | **A Guarda responde ao Soberano; todo o resto responde a DEP-EXE** | ES-02 integralmente refletido nas nove. **Zero** excecoes |
-| **C-9** | **A menor Carta e a de DEP-QAR (388) e a maior e a de DEP-EXE (506) — variacao de 30%** | A variacao acompanha **numero de custodias e de interfaces**, nao a classe. **A distancia cresceu de 24% para 30% com `DEP-EXE` 1.1.0**, que recebeu a titularidade de `QG-1` |
+| **C-9** | **A menor Carta e a de DEP-QAR (388) e a maior e a de DEP-EXE (507) — variacao de 31%** | A variacao acompanha **numero de custodias e de interfaces**, nao a classe. **A distancia cresceu de 24% para 30% com `DEP-EXE` 1.1.0**, que recebeu a titularidade de `QG-1` |
 | **C-10** | **O recorte de decisao custa entre 29% e 34% da Carta nas nove** | **Faixa estreita**, medida com o mesmo metodo em todas. O instrumento de DC-10 e **reproduzivel entre autores e entre classes**. O teto subiu de 33% para **34%** *(`DEP-EXE`)* |
 
 ### 2.2 Verificacao das treze dimensoes do contrato — **as nove, uma a uma**
@@ -342,6 +362,7 @@ que produz — 9 de 9 declaram o impedimento correspondente. 0 violacoes.**
 ## Historico de versoes
 | Versao | Data | Autor | Mudanca |
 |---|---|---|---|
+| 1.7.0 | 2026-08-02 | DEP-GOV | Emenda **MENOR** da aplicacao do **DECIMO ato soberano** ([MSG-2026-0010](../memory/operacional/MSG-2026-0010-ato-soberano-emenda-que-sana-rd-91.md)), Missao 1.13.5.2, rito **MINISTERIAL**: **`DEP-EXE`** e **`DEP-PRD`** passam a **1.2.0** — **507** e **446** linhas —, por **propagacao obrigatoria** (`CV-04`) da emenda de `FND-09 §8.2` **1.6.0** e `FND-11 §5` **1.1.0** que sana **`RD-91`**: a aprovacao de `Spec` `C1` passa do **proprietario**, que a propoe, para **DEP-EXE**. **`3` linhas em cada Carta**, todas sobre quem aprova `Spec` `C1`. **`H-P` conferido `2` de `2`**, **`H-N` invariante `2` de `2`**, **`IR-09` `2` de `2`**. **Cinco atos soberanos alcancam agora as nove Cartas**, e nenhuma acumula fonte (`CM-09`). **§2 remedida:** *Carta integral* **506 → 507** e **445 → 446**; totais a **3.971**; **`C-9`** passa a *"maior e `DEP-EXE` (507), variacao de 31%"*. **`Recorte de decisao` NAO se moveu** — as secoes 5 e 10 sofreram **substituicao, nunca acrescimo**. ⚠️ **`RD-105` ABERTO e declarado, nao corrigido:** as duas Cartas passam a declarar em `§13.2` **506** e **445** onde ha **507** e **446** — a divergencia de `RD-49` vai de **tres** Cartas a **cinco**. **Corrigi-la quebraria o `H-P` que o item VI manda reproduzir.** **`0` bytes nas outras sete Cartas.** |
 | 1.0.0 | 2026-07-28 | DEP-GOV | Criacao na **Missao 1.9**, com a cobertura **9/9** alcancada. Indexa as nove Cartas e projeta a comparacao unica: quatro classes, 23 custodias, sete portoes cobertos, cinco camadas com dono, **92** impedimentos e **11** pares de interface verificados. **Fecha DR-4.** Registra **sete lacunas** e tres achados novos — **RC-05**, **RC-06** e a reincidencia de **RC-01**. |
 | 1.1.0 | 2026-07-29 | DEP-GOV | Emenda **MENOR** da **Missao 1.10**: acrescenta **§2.2**, a verificacao das **treze dimensoes do contrato** sobre as nove Cartas — **117** verificacoes, **113** conformes, **4** achados —, e **tres lacunas novas**: **L-9** *(RD-03)*, **L-10** *(RD-02)* e **L-11** *(RD-01)*. **Nenhuma Carta foi alterada** e **nenhuma linha da projecao anterior foi removida**; a cobertura permanece **9/9 documental** e **4/9 vigente**. Esta continua sendo a **unica** projecao comparativa das nove — nenhuma segunda foi criada. |
 | 1.3.0 | 2026-07-29 | DEP-GOV | Emenda **MENOR** da **Missao 1.11**: `DEP-QAR` passa a **1.2.0** · **388** linhas, pela aplicacao do ato de 2026-07-29 — **`RC-01` fechado** e **L-6 fechada**, com `wc -l` e §13.2 declarando o mesmo numero. Total de linhas de Carta: **3.918 → 3.919**. §2.2 recebe **nota de estado posterior** que **nao reescreve** a medicao da Missao 1.10 (MEM-APR-0004). **L-10 passa a *tratada pelo rito*** — RFC-0012 → ADR-0016 → PS-2026-004 —, e a medicao mostrou que a lacuna e de **quatro** celulas, nao duas. **Tres lacunas novas: L-12 *(RD-10)*, L-13 *(RD-11)* e L-14 *(RD-14, severidade Alta)*.** **Nenhuma Carta alem de `DEP-QAR` foi alterada.** |

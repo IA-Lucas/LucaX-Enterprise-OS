@@ -2,16 +2,16 @@
 id: FND-09
 titulo: Enterprise Meta Model do LucaX Enterprise OS
 tipo: fundacao
-versao: 1.5.0
+versao: 1.6.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-GOV
 proprietario: DEP-GOV
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-07-29
+atualizado_em: 2026-08-02
 revisao_prevista: 2027-01-28
-decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005, ADR-0006, ADR-0008, ADR-0017, ADR-0019]
+decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005, ADR-0006, ADR-0008, ADR-0017, ADR-0019, ADR-0032]
 ratificacao: ratificada
 resumo: Declara o universo fechado de 21 entidades, suas relacoes, estados, autoridade e regras de evolucao.
 perfil_contexto: nucleo
@@ -897,7 +897,7 @@ FND-04 §2.
 | TPL | DEP-GOV + dono do tipo | DEP-GOV | DEP-GOV | — | DEP-GOV |
 | PRO | DEP-PRD | DEP-QAR | SOBERANO | **SOBERANO** | **SOBERANO** |
 | PRJ | DEP-EXE | DEP-GOV | DEP-EXE | SOBERANO se Tipo 1 | DEP-EXE, ao atingir criterio de encerramento |
-| SPC | DEP-PRD | DEP-ENG + DEP-QAR | conforme classe (FND-04 §2) | SOBERANO se C3 ou Tipo 1 | DEP-PRD |
+| SPC | DEP-PRD | DEP-ENG + DEP-QAR | conforme classe (FND-04 §2); em **C1**, **DEP-EXE** | SOBERANO se C3 ou Tipo 1 | DEP-PRD |
 | MEM | qualquer DEP | DEP-KMS | DEP-KMS; **DEP-GOV se camada EST** | SOBERANO se EST | DEP-KMS, por TTL ou refutacao |
 | MSG | qualquer ATOR | destinatario | destinatario (aceite) | — | expira por TTL |
 
@@ -908,6 +908,20 @@ FND-04 §2.
 > do veredito `inapto` e **processual** e independe de ato do Soberano (`FT-14`). **Nenhum
 > titular foi ampliado por esta alteracao: uma materia saiu da mesa do ratificador, e nenhuma
 > entrou.**
+
+> **Sobre a linha `SPC`, coluna *Aprova*, em `C1`.** Esta celula **nao redefine FND-04 §2**:
+> ela **aplica FND-04 §3.1** ao unico caso em que a propria matriz torna o default de §2
+> impossivel. Para `SPC`, esta tabela poe **DEP-PRD** como quem **propoe/cria** e como quem
+> **aposenta** — logo, proprietario —, e `FND-04 §2` atribui a aprovacao `C1` ao
+> **proprietario**. As duas leituras juntas produzem `Proponente = Aprovador`, que
+> `FND-04 §3.1` declara **nula** por **`LV-03`**, Linha Vermelha de `FND-01`, **nivel 1** da
+> hierarquia normativa. **Entre um default de §2 e uma incompatibilidade absoluta de §3.1,
+> prevalece a incompatibilidade** — e o aprovador passa a ser o titular que `FND-04 §2` ja
+> nomeia no degrau seguinte: **DEP-EXE**. **Nenhum titular foi ampliado:** `DEP-EXE` ja
+> aprova `Spec` `C2` na mesma linha desta tabela. **A classe NAO muda:** `C1` continua `C1`,
+> com **Nota de Decisao** como instrumento (`FND-04 §2`, `FND-07 §2.3`), **sem** `RFC`,
+> **sem** `ADR`, **sem** `FIT` e **sem** ratificacao. **`C0` NAO e alcancado por esta emenda,
+> e o colapso de `C0` permanece declarado** em `RD-91`.
 
 ### 8.3 Regras de autoridade
 
@@ -1261,3 +1275,4 @@ de ser necessaria (FND-01 §9).
 | 1.3.0 | 2026-07-28 | DEP-QAR | Emenda C2 por **ADR-0008**: §7.1 deixa de reproduzir o grafo de transicoes de FND-03 §5.1 e passa a referencia-lo (PJ-01), fechando a ressalva **R2** de FIT-2026-001; §7.3 declara-se projecao dos eixos ortogonais (PJ-02); §7.2 explicita a excecao de `MEM`, unica entidade com perfil por camada — correcao de contradicao interna entre a regra e a propria tabela. Nenhuma norma alterada em conteudo. **Ratificacao de ADR-0003 e ADR-0006 registrada em INC-2026-001 §11** — campo `ratificacao` atualizado para `ratificada`. |
 | 1.4.0 | 2026-07-29 | DEP-GOV | Emenda **C3** por **ADR-0017**, que fecha o achado **RD-09**: a linha `FIT` de **§8.2** deixa de declarar *"Ratifica: SOBERANO se C3"* e passa a **`—`**, alinhando a matriz a regra vigente **`FT-10`** de ADR-0015, e §8.2 recebe **uma nota normativa** que distingue o parecer da mudanca avaliada. **Uma celula e uma nota.** Nenhum titular foi ampliado, nenhum parecer virou norma, nenhum `FIT` historico foi editado (`FT-15`) e nenhuma outra linha da matriz foi tocada. |
 | 1.5.0 | 2026-07-29 | DEP-GOV | Emenda **C3** por **ADR-0019**: **§8.2**, linha **`SPC`**, passa *Aprova* de `DEP-PRD (QG-1)` para **`conforme classe (FND-04 §2)`** e *Ratifica* de `—` para **`SOBERANO se C3 ou Tipo 1`**, alinhando a linha ao padrao ja usado pela linha `ADR`; a matriz recebe **uma nota** que **registra o conflito como erro desta tabela**, cumprindo a segunda metade da regra de precedencia do proprio §8.2. Fecha **RD-15**. Declara que **aprovar o artefato e liberar o portao sao atos distintos** e que a classe de uma Spec e a do **efeito** (AL-01), com **C1 como piso** (FND-04 §6). **Nenhum titular ampliado.** **Aplicada sobre a 1.4.0 de ADR-0017, na ordem declarada em PS-2026-008 §5.** |
+| 1.6.0 | 2026-08-02 | DEP-GOV | Emenda **C3** por **ADR-0032**, que sana **`RD-91`** na fonte: **§8.2**, linha **`SPC`**, coluna *Aprova*, passa de `conforme classe (FND-04 §2)` para **`conforme classe (FND-04 §2); em C1, DEP-EXE`**, e §8.2 recebe **uma nota** que declara a derivacao. **Uma celula e uma nota.** O defeito era medido e nao lido: para `SPC`, esta tabela poe **DEP-PRD** como quem propoe/cria **e** como quem aposenta *(logo, proprietario)*, e `FND-04 §2` da a aprovacao `C1` ao **proprietario** — de modo que `Proponente = Aprovador`, que `FND-04 §3.1` torna **nula** por **`LV-03`**, Linha Vermelha de **nivel 1**. **Nao redefine `FND-04 §2`: aplica `FND-04 §3.1`**, e por isso a celula continua **derivada**, como o cabecalho de §8.2 e `FND-01 §10` exigem. **Nenhum titular ampliado** — `DEP-EXE` ja aprova `Spec` `C2` nesta mesma linha. **A classe nao muda:** `C1` segue `C1`, com **Nota de Decisao**, sem `RFC`, sem `ADR`, sem `FIT` e sem ratificacao — a segunda `Spec` volta a custar **2** instrumentos contra os **5** da primeira. **`0` entidades, tipos, relacoes, estados ou portoes tocados · `0` outras celulas de §8.2 alteradas · `0` bytes em `FND-04`.** **`C0 · T2` NAO e sanado** e segue declarado em `RD-91`; **as linhas `PRJ` e `TPL` de §8.2 tem o mesmo defeito, foram MEDIDAS nesta missao e NAO sao tocadas** — achados `RD-96` e `RD-97`, com dono e gatilho. **Nao vigora sem ato** (FND-01 §9; `LM-02`). |

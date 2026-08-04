@@ -2,16 +2,16 @@
 id: IDX-foundation
 titulo: Indice da Fundacao Organizacional
 tipo: relatorio
-versao: 1.7.0
+versao: 1.8.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-GOV
 proprietario: DEP-GOV
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-07-30
+atualizado_em: 2026-08-02
 revisao_prevista: 2027-01-28
-decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0006, ADR-0007, ADR-0008, ADR-0022]
+decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0006, ADR-0007, ADR-0008, ADR-0022, ADR-0032]
 substitui: []
 substituido_por: null
 resumo: Indexa os onze documentos fundacionais, os 19 templates e a ordem de leitura, e projeta o estado de ratificacao da Fundacao.
@@ -39,10 +39,10 @@ projecao_de: INC-2026-001 §11
 > [ADR-0007](../decisions/ADR-0007-fronteira-greenfield-legado.md): o **LucaX Enterprise OS** e
 > greenfield e unica fonte normativa; o **LucaX Legacy** e externo e **nao tem autoridade**.
 
-> **✅ O decimo primeiro documento fundacional ESTA EM VIGOR.**
-> **[FND-11](11-framework-specifications.md) — Framework de Specifications**, **399 linhas**,
-> e a **sede canonica** de `SF-01` a `SF-32`, promulgada e ratificada pelo **ato soberano de
-> 2026-07-30** — `C3 · Tipo 1`, por
+> **✅ O decimo primeiro documento fundacional ESTA EM VIGOR, e foi EMENDADO.**
+> **[FND-11](11-framework-specifications.md) — Framework de Specifications**, **1.1.0**,
+> **411 linhas**, e a **sede canonica** de `SF-01` a `SF-32`. Nasceu com **399 linhas**,
+> promulgada e ratificada pelo **ato soberano de 2026-07-30** — `C3 · Tipo 1`, por
 > [ADR-0022](../decisions/ADR-0022-sede-canonica-do-framework-de-specifications.md), registrado
 > em [MSG-2026-0007](../memory/operacional/MSG-2026-0007-ato-soberano-vigencia-do-framework-de-specifications.md).
 > **`foundation/` passa a ter onze documentos.**
@@ -54,6 +54,20 @@ projecao_de: INC-2026-001 §11
 > **`RD-33`** — ✅ **FECHADO em 2026-08-01**. `S1` *(ato criando Produto)* foi **consumida e
 > aplicada**, e a `Spec` **de produto** passou a ser criavel; a de materia **nao-produto**
 > continua dependendo de `S2`, **deferida** — achado **`RD-88`**, ABERTO.
+>
+> **A EMENDA de 2026-08-02 — o DECIMO ato, e ela alcanca DOIS fundacionais.**
+> [MSG-2026-0010](../memory/operacional/MSG-2026-0010-ato-soberano-emenda-que-sana-rd-91.md),
+> aplicado pela **Missao 1.13.5.2** em rito **MINISTERIAL**, poe **`FND-11` 1.1.0** *(411)* e
+> **`FND-09` 1.6.0** *(1.278)* em vigor, `ativo` · `ratificada`, por
+> [ADR-0032](../decisions/ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1.md): a
+> aprovacao de `Spec` **`C1`** passa do **proprietario**, que e quem a propoe, para **DEP-EXE**,
+> porque `FND-04 §3.1` declara **nula** a aprovacao com acumulo de papel (`LV-03`).
+> **A sede da emenda e `FND-09 §8.2`, linha `SPC`, e a matriz de `SF-10` cascateia dela** — a
+> celula que o achado nomeava, em `FND-11 §5`, **reproduzia literalmente** `FND-09 §8.2`, e por
+> `PJ-03` emendar so a projecao **nao sanaria**. **`H-P` conferido `2` de `2`**, **`H-N`
+> invariante `2` de `2`**, **`IR-09` `2` de `2`**. **`foundation/` continua com onze
+> documentos** — **`0` criados, `0` removidos**, e **`0` bytes** nos outros nove.
+> **`RD-91` fecha so quanto a `C1`:** `C0 · T2` segue aberta, por decisao expressa do item V.
 
 ## Proposito
 Indexar os onze documentos fundacionais e seus templates, e explicar em que ordem devem ser

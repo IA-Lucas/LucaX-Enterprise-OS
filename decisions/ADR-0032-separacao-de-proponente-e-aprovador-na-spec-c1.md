@@ -3,7 +3,7 @@ id: ADR-0032-separacao-de-proponente-e-aprovador-na-spec-c1
 titulo: Emenda C3 que sana RD-91 — para Spec de classe C1, aprova DEP-EXE, porque FND-04 §3.1 veda ao proponente aprovar a si proprio
 tipo: adr
 versao: 1.0.0
-status: aprovado
+status: ativo
 camada_memoria: estrategica
 autor: DEP-GOV
 proprietario: DEP-GOV
@@ -22,7 +22,7 @@ resumo: Faz a aprovacao de Spec C1 passar do proprietario para DEP-EXE em FND-09
 perfil_contexto: sob-demanda
 confidencialidade: interno
 revisor: DEP-QAR
-ratificacao: pendente
+ratificacao: ratificada
 ---
 
 # ADR-0032: Para `Spec` de classe `C1`, aprova `DEP-EXE`

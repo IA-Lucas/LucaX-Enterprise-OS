@@ -10,6 +10,7 @@
 **Fase corrente:** nenhuma em execução
 **Fases concluídas:** Fase 0 — Governança e Inventário · Fase 1 — Rubrica · Fase 2 — Extração (2026-07-29) · Fase 3 — Síntese (2026-07-29, missão A3) · Missão A4 — Consolidação e Pacote de Integração (2026-07-29, decisão RESEARCH-READY) · **Missão A-FINAL — Fechamento e Congelamento (concluída em 2026-07-29, decisão RESEARCH-READY-FROZEN)**
 **Próxima fase:** **nenhuma nesta frente — a trilha paralela está encerrada e congelada. Não existe A5.** Promoção de qualquer item ocorre somente no Goal canônico correspondente, fora desta frente (§14).
+**Adendo de 2026-08-02 — remessa nova, universo disjunto:** ver **§15**. O congelamento **não foi levantado** e **A5 continua inexistente**; a §15 trata de **37 arquivos que chegaram ao acervo depois do congelamento** e que **não colidem** com nenhum dos 279 itens fichados.
 
 > Este arquivo existe para que outra IA retome o trabalho sem recomeçar. Leia-o inteiro antes de agir. Se você vai continuar esta frente, comece pela **§12**, que traz o estado da Fase 3 e o que ela entrega — a §9 descreve a Fase 2 **antes** de ela ser executada e está superada em três pontos, indicados ali.
 
@@ -510,3 +511,119 @@ A consolidação A4 foi feita por **leitura direta e ferramentas**, após **falh
 Fundamento: fechamento confirmado com contagens reproduzidas (§14.1); as duas semânticas de contagem reconciliadas e declaradas sem alteração de fichas (§14.2); congelamento sem A5 registrado (§14.3); consumo seletivo, roteamento, promoção futura e retomada definidos (§14.4–§14.7); proveniência declarada sem revisão independente inexistente (§14.8); validação íntegra (§14.9).
 
 **Após RESEARCH-READY-FROZEN, parar.** A próxima ação ocorre exclusivamente na trilha canônica: concluir 1.12.1, obter GO-TO-SPECS e reiniciar 1.13 consumindo apenas o pacote Specifications da A4.
+
+---
+
+## 15. Remessa de 2026-08-02 — extração sobre universo disjunto
+
+**Encerrada em 2026-08-02.** Esta seção registra uma entrega que **não é A5** e **não levanta o
+congelamento da §14.3**. Artefato produzido:
+[`EXTRACAO-LUCAX-REMESSA-2026-08-02.md`](EXTRACAO-LUCAX-REMESSA-2026-08-02.md).
+
+### 15.1 Por que isto não é A5
+
+Um lote de **37 arquivos** entrou no acervo de origem em 2026-08-02, foi triado por processo externo
+a esta frente — `00_COMECE-AQUI/RELATORIO-TRIAGEM-REMESSA-2026-08-02.md`, no acervo, **não editado
+aqui** — e aquele relatório encerra pedindo à IA do LucaX um relatório de extração de escopo fechado.
+
+A5 seria **reabrir o universo de 279 itens já fichados**. Este universo é **disjunto**: dos **35**
+conteúdos únicos da remessa, **0** colidem por `SHA-256` com os **236** hashes de
+`02_MANIFESTO-DAS-FONTES.md` — medido, com **2 controles positivos** para provar que o zero não é
+zero de busca morta. **Nenhuma das 279 fichas foi lida, alterada ou recontada. As 279 continuam 279.**
+
+A regra de retomada de §13/§14.7 foi cumprida: isolamento relido (§2), hashes reconferidos **antes**
+de avaliar (porta `V8`, bloqueio `B-04`), bloco de quatro linhas mantido, emenda registrada e não
+silenciosa.
+
+### 15.2 Colisão com a §14.6, declarada e resolvida no texto
+
+O §4 do contrato da triagem pede *"Decisão proposta: **adotar**, prototipar, investigar ou
+descartar"*. **`adotar` colide com a §14.6, que mantém `ADOPT` proibido.** A extração **substituiu o
+vocabulário do contrato pelo vocabulário fechado desta frente** — `RETAIN-AS-REFERENCE` · `RESEARCH`
+· `PILOT` · `ADAPT` · `REWRITE` · `REJECT` — e declarou a substituição em vez de a exercer em
+silêncio. **`ADOPT` = 0.**
+
+### 15.3 Contagens desta extração — medidas por ferramenta
+
+| Verificação | Resultado |
+|---|---|
+| Arquivos da remessa · bytes | **37** · **152.040.260** — os dois reproduzem a triagem |
+| Conteúdos únicos por `SHA-256` | **35** · trio idêntico confirmado (`5A3CFE1B…ED9378A` × 3) |
+| Colisão com o manifesto de 236 hashes | **0**, com **2** controles positivos |
+| Duração dos 31 vídeos únicos | **799,4 s = 13,32 min** · **33 de 33** com faixa de áudio |
+| Inspeção em primeira mão | **35 de 35** — **190** imagens lidas (186 quadros + 4 capturas) |
+| Áudio transcrito | **0** — `B-01` e `B-05` **continuam abertos** |
+| Cobertura de classe | **35 de 35**, **0 sem classe** · `ADOPT` **0** |
+| Fontes do acervo modificadas · repositórios executados · credenciais usadas | **0** · **0** · **0** |
+| Fichas de `07_FICHAS-DE-EVIDENCIA/` alteradas | **0** |
+
+### 15.4 Achados desta extração que valem para a frente inteira
+
+1. **`B-01`/`B-05` ganharam um candidato concreto.** `05_SKILLS-E-PROMPTS/Gravando 2026-08-02
+   105422.mp4` descreve a skill `/watch` (repositório público, MIT) com **modo `--no-whisper`,
+   só-quadros** — que é **a mesma técnica que esta extração exerceu à mão com `ffmpeg`**. Existe
+   agora prova de que o caminho quadros-sem-STT funciona neste ambiente. **A transcrição integral
+   segue dependendo de decisão do proprietário sobre credencial externa.**
+2. **`B-04` reconfirmado.** `09_SEGURANCA-E-QUALIDADE/_CONTEUDO.md` tem carimbo de **2026-08-02
+   11:47** e `INDICE-COMPLETO.md`/`LEIA-PRIMEIRO.md` de **11:48**, posteriores aos próprios arquivos
+   da remessa. O acervo continua sob escrita concorrente; **os 35 hashes valem para o instante em
+   que foram tomados**.
+3. **`_ENTRADA-NOVO-MATERIAL/` foi listada e está vazia — 0 arquivos.** A §11 a registrava como
+   *"nunca aberta"*. **Listar não é abrir conteúdo**; nada foi movido, criado ou apagado. A
+   observação de §11 fica **atualizada, não apagada**.
+4. **Dez divergências entre a triagem e a leitura em primeira mão** (`X-01` a `X-10`), incluindo
+   duas **contradições internas às próprias fontes** e um item que a triagem classificou `⭐` e a
+   leitura direta mostra ser o de maior valor arquitetural da remessa. **Nenhuma foi corrigida no
+   arquivo alheio** — o isolamento de §2 vale.
+5. **⚠ A tabela de roteamento da `§14.5` não bate com o roadmap vigente — medido, três defeitos.**
+   `§14.5` é a peça que responde *"para qual Goal vai cada candidato"*. Confrontada por ferramenta
+   com `governance/roadmap-canonico.md` em 2026-08-02, ela falha em três pontos:
+   - **`Skills → Goal 1.14` aponta para Goal inexistente.** A busca por *"Skill Framework"* no
+     roadmap devolve **0 ocorrências**. **Não existe Goal de Skill Framework na sequência.**
+   - **Deslocamento de um, de `1.14` em diante.** A `§14.5` diz `Tools & Models → 1.15`,
+     `Commands → 1.16`, `Workflows → 1.17`, `Agents → 1.18`, `Execution & Evaluation → 1.19`. O
+     roadmap vigente diz **`1.14` Tool & Model · `1.15` Command · `1.16` Workflow · `1.17` Agent ·
+     `1.18` Execution & Evaluation**. **Cada mapeamento está uma casa adiante do real.**
+   - **`Vertical Proof → 1.20` aponta para número que não existe.** Busca por *"1.20"* no roadmap:
+     **0 ocorrências**. A sequência **termina em `1.19`**, que é justamente a *Primeira Prova
+     Vertical Organizacional*.
+
+   **Causa, não suposição:** a própria `§14.5` declara que os números vieram *"do enunciado da
+   missão A-FINAL (ato do proprietário)"*, de **2026-07-29**. O roadmap andou depois disso. **A
+   tabela não foi inventada — envelheceu.**
+
+   **Consequência prática:** quem rotear um candidato desta remessa pela `§14.5` **entrega o item no
+   Goal errado**. Exemplo concreto: `/watch` é Skill; por `§14.5` iria para *"Goal 1.14"*, que é
+   **Tool & Model Framework**.
+
+   **Declarado e NÃO corrigido**, pela mesma razão do item 6: emendar a `§14.5` é reescrever o
+   registro de uma missão encerrada, e esta seção não tem autoridade para isso. **Novo membro da
+   família de `RD-101`** — *artefato que afirma propriedade que já não vale*. **Dono: o Fundador.
+   Gatilho: antes de rotear o primeiro candidato desta remessa para qualquer Goal.**
+
+6. **A `§14.5` desta ficha está desatualizada pelo que a trilha canônica já fez.** Ela manda
+   *"concluir 1.12.1, obter GO-TO-SPECS e reiniciar 1.13"*; `GO-TO-SPECS` **já foi exercido** e a
+   primeira `Spec` do acervo **já existe**. **Declarado aqui, não emendado lá** — corrigir §14.5
+   seria reescrever o registro de uma missão encerrada, e esta seção não tem autoridade para isso.
+
+### 15.5 Decisão e limite
+
+**Decisão: `EXTRACTION-DELIVERED`.** O contrato de escopo fechado da triagem foi cumprido e **a
+frente para de novo**. O congelamento da §14.3 **permanece em vigor**: não há A5, não há fase aberta
+e não há missão pendente nesta trilha.
+
+Os candidatos de §4 do relatório de extração só se movem **quando um Goal canônico precisar do item
+específico** — §14.7, palavra por palavra. **Toda remessa futura segue este mesmo caminho: universo
+disjunto, hashes reconferidos, vocabulário fechado, e registro em seção própria desta ficha.**
+
+**Roadmap canônico conferido, sem alteração — e a razão está medida.** `governance/roadmap-canonico.md`
+foi varrido por ferramenta nesta missão em busca de `_SAIDA-COMPANY-OS`, *Programa de Inteligência*,
+*acervo de terceiro*, *evidência externa*, *A4*, *RESEARCH-READY*, *Codex* e *multimídia*: **0
+ocorrências de qualquer um deles**. Esta frente **não tem item no roadmap canônico** — coerente com
+a própria §14, que lhe atribui **autoridade nenhuma** e manda a promoção ocorrer só no Goal
+correspondente. **Nada a assinalar, nada desatualizado por esta entrega, e nenhuma divergência que
+afete a sequência canônica** — a extração emitiu **0** artefatos normativos e **0** adoções.
+
+**Reconferência final de não-intrusão:** os **37** arquivos da remessa foram rehasheados **depois**
+de concluída a extração — **37 iguais, 0 divergentes**. As fontes saíram desta missão byte por byte
+como entraram.
