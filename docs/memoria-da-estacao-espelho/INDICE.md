@@ -1,0 +1,8 @@
+- [Relatorio da M-01 so na transcricao](m-01-relatorio-so-na-transcricao.md) — o relatorio nunca foi ao disco; os cinco achados sobre migrar os setores estao transcritos ali.
+- [Gravar o contrato fabrica-acervo custa C3](contrato-fabrica-acervo-custa-c3.md) — C3 se for para valer, C1 se for so registro; e nao cabe em `governance/`.
+- [Lista NUNCA APAGAR e custodia](nunca-apagar-custodia.md) — o que nenhum agente remove; caminho ausente significa "esta na principal", nunca "perdido".
+- [NUNCA APAGAR — lista longa com fundamentos](nunca-apagar-lista-longa.md) — os 7 itens com o fundamento medido de cada um; sede que saiu do `.scratch/` do acervo em 2026-08-08.
+- [Pacote para a máquina principal (M-02)](pacote-para-a-principal-m02.md) — as 5 tarefas que só a principal executa, 2 delas incidente; escrito para quem não viu a sessão.
+- [Retomada da M-01 — relatório de medição](retomada-m-01-2026-08-08.md) — resgatado de `%TEMP%` em 2026-08-08; ainda falta nascer em sede versionada (tarefa 3b).
+- [25 de 164 vereditos do lucaX são Juiz 1](veredictos-lucax-25-de-164-sao-juiz-1.md) — a taxa real do Juiz 2 é 53,2%, não os 45,1% da F37; e o KQ-8 segue vazio com razão.
+- [RQ-3 é do acervo, mas os 57 são lacuna do juiz.py](rq-3-e-do-acervo-mas-os-57-sao-lacuna-do-juiz-py.md) — não é violação de norma, e em fundamento gravado são 0 de 74, não 57.
