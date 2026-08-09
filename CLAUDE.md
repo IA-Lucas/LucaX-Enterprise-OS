@@ -1,3 +1,13 @@
+> # ⚠️ ESPELHO DE LEITURA — leia antes de qualquer coisa
+>
+> Esta maquina e ESPELHO DE LEITURA. O acervo real vive na maquina principal.
+> Caminho ausente significa 'esta na principal', nunca 'perdido'. A escrita
+> esta dispensada aqui por decisao do Fundador em 2026-08-08 — medir, entregar
+> como texto, e escrever la. Nao repor _leases nem baseline.sh: segunda sede
+> diverge.
+
+---
+
 # LucaX Enterprise OS — instrucoes permanentes de trabalho
 
 > Este arquivo **nao e artefato do acervo**: nao tem `id`, nao tem versao de
