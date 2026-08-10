@@ -18,6 +18,37 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **🔄 Conferência de 2026-08-10, ao emitir `BL-2026-08-10-01` — na mesma sessão que a emitiu.**
+> **Nenhum item muda de estado, e a sessão não era missão.** O Fundador pediu **sincronizar três
+> fontes divergentes** — a máquina principal, a **estação espelho encerrada em 2026-08-09** e o
+> GitHub —, e a sincronização produziu uma **emissão de baseline** no caminho. **Assinalado:
+> nada** — `espelho`, `GitHub`, `sincroniz` e `push` têm **`0`** ocorrências neste arquivo, e a
+> conferência que o `CLAUDE.md` exige registra-se **aqui**, não em item. **Conferido e ainda
+> correto:** os quatro `[!]` — Goals **`1.14`**, **`1.16`**, **`1.17`** e **`1.18`** — seguem
+> `[!]` e **intocados**; as três menções a `IR-BL/3` e `IR-BL/5` *(linhas 149, 402 e 1149)* estão
+> **todas em passado**, registrando o que valia no fechamento de cada missão, e por isso
+> **nenhuma ficou falsa** — **`0` afirmações no PRESENTE** sobre instrumento vigente.
+> **O que a sessão produziu:** **`IR-BL/6`** declara **`docs`** em **`NAO_ACERVO`** e desbloqueia
+> a baseline, que estava em **`EXIT=2`** desde o merge — **nona ocorrência da família
+> `RD-53`/`RD-81`, e a primeira ANUNCIADA POR ESCRITO antes de ocorrer**, pelo próprio autor que
+> a causou (`docs/README.md`). **A emenda é de classe mais fraca que as duas anteriores:**
+> `products` e `skills` entraram em `ACERVO`, o lado **medido**, e **mudaram** a contagem;
+> `docs` entra em `NAO_ACERVO`, e como `ALVOS` é construído só a partir de `$ACERVO`, ele **não
+> pode** mover número nenhum — **quatro provas de inércia** medem isso em vez de afirmá-lo.
+> ⭐ **O `ADR` foi cogitado, autorizado, MEDIDO e descartado — e a medição poupou `3` artefatos:**
+> **`0` de `6`** gerações do instrumento jamais tiveram `ADR`, e os atos que os precedentes citam
+> *(nono ato, `ADR-0034`)* são sobre o **fato** — Produto admitido, `Skill` criada —, **nunca
+> sobre o script**. O veículo correto é a **inscrição no catálogo**, e é o que se fez.
+> **Duas afirmações falsas saíram do `CLAUDE.md`, ambas família `RD-101`:** o cabeçalho
+> *"ESPELHO DE LEITURA"*, que chegou da máquina que deixou de existir, e a nota que apontava
+> **`IR-BL/3`** como vigente — **vencida havia duas gerações**, no parágrafo que instrui quem
+> mede. ⚠️ **A dívida de rotação de §10.0 do catálogo foi HERDADA por decisão expressa do
+> Fundador**, entre três opções apresentadas: **agora são CINCO emissões** com §10.0 rotulada
+> *"Baseline vigente"* nomeando `BL-2026-08-02-03`. **A fonte da baseline vigente é §2, nunca
+> §10.0.** **`0` atos · `0` `ADR` · `0` `RFC` · `0` `FIT` · `0` Fundacionais · `0` bytes no
+> medidor `IR-BL/5` · `0` bytes em `_SAIDA-COMPANY-OS/` · `0` achados novos inscritos.**
+> Detalhe integral em [`PT-2026-025`](relatorio-transicao-2026-08-10-sincronizacao-e-ir-bl-6.md).
+
 > **⚖️ Conferência de 2026-08-03, ao registrar a DECISÃO DO FUNDADOR sobre a promoção a `FND` —
 > na mesma sessão que a recebeu.**
 > **`Q1` deixa de estar aberta.** ⛔ **NÃO PROMOVER `ADR-0033` e `ADR-0037` a `FND` agora.**
