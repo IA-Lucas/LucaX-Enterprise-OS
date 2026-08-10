@@ -1,0 +1,17 @@
+# Ruido de interface do Obsidian — nao e artefato, nao e governanca.
+#
+# Vive AQUI, e nao na raiz, por uma razao MEDIDA na Missao 1.14 (2026-08-05):
+# o portao de raiz do IR-BL/5 percorre `ls -A` SO da raiz contra a lista
+# fechada ACERVO + NAO_ACERVO. Um `.gitignore` NA RAIZ nao esta em nenhuma das
+# duas listas e faz a baseline RECUSAR MEDIR — saida 2, stdout vazio, familia
+# RD-53/RD-81. Em SUBDIRETORIO ele passa com EXIT=0 e a impressao digital
+# 370107a3...549e fica intacta. Medido nas duas classes, `governance/` e aqui.
+#
+# LIMITE, declarado para quem ler depois: `.gitignore` NAO DESRASTREIA.
+# graph.json e workspace.json ja estao commitados e ja foram publicados. Este
+# arquivo NAO os tira do repositorio nem para de mostra-los como modificados.
+# Para isso e preciso `git rm --cached`, que e outra decisao e outro rito.
+# O que este arquivo faz hoje: barra o ruido FUTURO desta pasta.
+
+graph.json
+workspace.json
