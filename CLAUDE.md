@@ -1,13 +1,3 @@
-> # ⚠️ ESPELHO DE LEITURA — leia antes de qualquer coisa
->
-> Esta maquina e ESPELHO DE LEITURA. O acervo real vive na maquina principal.
-> Caminho ausente significa 'esta na principal', nunca 'perdido'. A escrita
-> esta dispensada aqui por decisao do Fundador em 2026-08-08 — medir, entregar
-> como texto, e escrever la. Nao repor _leases nem baseline.sh: segunda sede
-> diverge.
-
----
-
 # LucaX Enterprise OS — instrucoes permanentes de trabalho
 
 > Este arquivo **nao e artefato do acervo**: nao tem `id`, nao tem versao de
@@ -77,11 +67,33 @@ Regra permanente, gravada por **determinacao (c) do TERCEIRO DESPACHO do Soberan
 entrada nao declarada na raiz (portao de raiz, achado `RD-53`). A recusa e o
 portao funcionando, nao falha.
 
-**Instrumento vigente: `IR-BL/3`**, `sha256`
-`0d4f1b3db309c88ef44e1c8ef6aa6588230648c44880f6b772601660082f4ad7`, em
-`E:\LucasIA\Projetos\_missao-1-13-5-1-2026-08-02\ferramentas\baseline.sh`.
+**Instrumento vigente: `IR-BL/6`**, `sha256`
+`738624a23f2db3212937f629e7f31c2a42b836d450586694876722b2b69252e0`, em
+`E:\LucasIA\Projetos\_sincronizacao-2026-08-10\ferramentas\baseline.sh`.
 Lado `NAO_ACERVO`: `.obsidian`, `_SAIDA-COMPANY-OS`, `CLAUDE.md`, `.git`,
-`.gitattributes`.
+`.gitattributes`, `docs`.
+
+> ### ⚠️ Segunda correcao declarada, nao silenciosa — 2026-08-10
+>
+> Ate hoje este paragrafo apontava **`IR-BL/3`** como vigente. Estava vencido
+> havia **duas geracoes**: `IR-BL/4` (2026-08-03) trocou a impressao digital de
+> funcao-do-manifesto para funcao-do-**conteudo**, e `IR-BL/5` (2026-08-05)
+> declarou `skills` no lado medido. **Quem lesse este arquivo para saber com o
+> que medir pegaria o instrumento errado** — a familia `RD-101` outra vez,
+> dentro do paragrafo que instrui quem mede.
+>
+> `IR-BL/6` acrescenta `docs` ao lado `NAO_ACERVO` e **so isso**: um token na
+> lista, diff de codigo de uma linha contra `IR-BL/5`. `docs` entra no lado
+> **NAO medido** — `ALVOS` e construido so a partir de `ACERVO`, logo a entrada
+> **nao pode** mover artefato, linha, manifesto nem impressao, e as quatro
+> provas de inercia no cabecalho do instrumento demonstram isso em vez de
+> afirma-lo. Fundamento: **decisao direta do Fundador de 2026-08-10**, sem ADR
+> nem ato numerado — e o instrumento diz isso com todas as letras em vez de
+> fingir lastro que nao tem.
+>
+> Corrigido aqui **na mesma passagem e sem rito**, pelo mesmo motivo da
+> correcao de 2026-08-02 logo abaixo: este arquivo declara-se nao-artefato, e
+> por isso a correcao **nao exige** `ADR`, hash, baseline nem ato.
 
 > ### ⚠️ Correcao declarada, nao silenciosa — 2026-08-02
 >
