@@ -53,6 +53,14 @@ em `E:`**, arquivo ou diretorio; **`0`** `.db` sob caminho `consult`. **Esta na
 principal.** Registrado justamente porque **quem so olha esta maquina nao o ve** — e o
 que nao se ve e o que se apaga sem perceber.
 
+✅ **ACHADO E MEDIDO NA PRINCIPAL, 2026-08-12 (tarefa 1 do pacote M-02):** caminho real
+**`E:\LucasIA\_backups\separacao-2026-08-02`** — abre. Medido por ferramenta:
+**12.783 arquivos / 273.195.090 B**. O registro de 2026-08-02 dizia **12.782 / 271.809.829**:
+**os dois pares ficam registrados**, divergencia de `+1` arquivo / `+1.385.261 B` **nao
+reconciliada** — nao se escolheu um numero. `.db` medidos: **8 sob `consult/` + 16 sob
+`nxtrack/` = 24**; o fundamento desta entrada diz **9 do consult** — **os dois ficam**, e
+apagar continua proibido.
+
 ## 2. `basckup antigo` — fica em **DECIDIR**, nao em NUNCA APAGAR, nao em apagavel
 
 **DECISAO DO FUNDADOR, 2026-08-08: aguarda confirmacao de outra copia.**

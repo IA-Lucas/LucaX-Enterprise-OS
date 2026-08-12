@@ -38,6 +38,18 @@ de agenda) — as tarefas **1** e **2**. Não são o mesmo tipo de incidente:
 **Atualizado em 2026-08-08 pela missão M-03** — tarefas 2 (causa medida + correção),
 3b (arquivo resgatado do `%TEMP%`) e 4a (o git não tem as cópias da época).
 
+**ATUALIZADO EM 2026-08-12 PELA MAQUINA PRINCIPAL — o pacote FECHA, menos o que e decisao:**
+
+| Tarefa | Estado na principal, medido em 2026-08-12 |
+|---|---|
+| **1** | ✅ **ACHADO:** `E:\LucasIA\_backups\separacao-2026-08-02` existe. **12.783 arquivos / 273.195.090 B** *(registro: 12.782 / 271.809.829 — **os dois ficam**)*. `.db`: **8** `consult/` + **16** `nxtrack/` *(fundamento dizia 9 — os dois ficam)*. Entrada 1 da lista NUNCA-APAGAR atualizada com o caminho real |
+| **2** | ✅ sensor **vivo** na principal: `auditar_custo.py` roda sem traceback, `EXIT=0`. ⚠️ **2b/2c seguem DECISAO DO FUNDADOR:** `--relatorio` mostra `🔴 663/660` no `CLAUDE.md` do lucaX; o teto por arquivo segue decorativo; a ordem recomendada nao muda *(corte 2c antes da trava 2b)* |
+| **3** | ✅ **FECHADA:** os tres registros vivem em `docs/memoria-da-estacao-espelho/`, commitados e **publicados** *(push do Fundador, 2026-08-12, `origin/master = a258fe5`)*. `docs/` **deixa de ser exemplar unico** |
+| **4a** | ✅ **IRRECONCILIAVEL, declarado:** git com **1** unico commit *(`a929d46`, nasce com 322 linhas)*; as **4** copias existentes na maquina tem **322**; **nenhuma fonte de 190 nem de 130 existe**. Os dois enunciados **perderam a fonte** — escolher um seria inventar reconciliacao, e uma linha declarando FECHA *(regra do proprio bloco 4a)* |
+| **4b** | ✅ **FECHADA por redacao:** **1 pasta / 5 arquivos / 2 assuntos** *(prova_central 1 + tiers_declarados 4)* — a H2 contou **assuntos**, nao pastas |
+| **4c** | ✅ **FECHADA por medicao de contexto:** na principal `E:\LucasIA\Projetos\lucaX` e caminho **VIVO** *(e o proprio repo)*; **`0`** ponteiros para `E:\lucaX` *(caminho do espelho)* nos `.md` do lucaX; o numero **29 nunca teve fonte reproduzivel** e fica declarado como tal |
+| **5** | ⏳ segue esperando os vinte setores — **por desenho, nao por pendencia** |
+
 ---
 
 ## TAREFA 1 — ACHAR O `separacao-2026-08-02` 🔴 INCIDENTE
