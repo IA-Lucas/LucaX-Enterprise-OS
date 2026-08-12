@@ -105,6 +105,8 @@ deixou de acreditar tem valor proprio.
 | [MEM-APR-0004](MEM-APR-0004-projecao-revela-divergencia-antiga.md) | Projetar a mesma fonte por outro eixo revela divergencia antiga | media | 1 | `ativo` |
 | [**MEM-APR-0005**](MEM-APR-0005-medir-a-ausencia-na-fonte-errada.md) | **Buscar o termo em vez da funcao produz achado de lacuna onde ha titular declarado** | **alta** | **3** | `ativo` |
 | [**MEM-APR-0006**](MEM-APR-0006-exercer-o-contador-revela-o-defeito.md) | **Exercer o instrumento revela o defeito que ler o instrumento nao revela** | **alta** | **1** | `ativo` |
+| [**MEM-APR-0007**](MEM-APR-0007-plausibilidade-nao-e-verificacao.md) | **Plausibilidade nao e verificacao** — coerencia usada como evidencia, a causa n. 1 de reprovacao medida (9 de 17) | **alta** | **9** | `ativo` |
+| [**MEM-APR-0008**](MEM-APR-0008-campo-obrigatorio-com-escape-vazio.md) | **Campo obrigatorio com escape vazio e falso cumprimento** — o campo que aceita o valor que o esvazia (5 de 17) | **media** | **5** | `ativo` |
 
 **Contador oficial:** ultimo `MEM-APR-0006` · proximo **`MEM-APR-0007`**.
 

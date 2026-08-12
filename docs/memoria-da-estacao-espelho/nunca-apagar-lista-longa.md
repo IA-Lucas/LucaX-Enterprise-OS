@@ -89,6 +89,8 @@ com o registrado. E a **SEGUNDA COPIA existe**: criada e **VERIFICADA 468/468, s
 `E:\LucasIA\_backupsasckup-antigo_2026-08-12_segunda-copia`. A decisao sobre o original
 volta ao Fundador — agora com respaldo, nunca mais como exemplar unico.
 
+✅ **DECIDIDO E EXECUTADO em 2026-08-12 (Fundador: "pode apagar o antigo e acrescentar o novo no H:"):** copia nova criada em **`H:asckup-antigo_2026-08-12`** e VERIFICADA **`469/469`** contra a de `E:`; o antigo `H:asckup antigo` foi **APAGADO com prova** — pre-delete `468/468` presentes no novo, pos-delete amostra `12/12` identica H:==E:. **Estado final: DUAS sedes verificadas** (`H:asckup-antigo_2026-08-12` + `E:\LucasIA\_backupsasckup-antigo_2026-08-12_segunda-copia`), cada uma com `MANIFESTO-DA-COPIA.txt`. A entrada sai de DECIDIR para **RESOLVIDA**.
+
 ## 3. Destino novo do backup — gravado onde a regra vive
 
 **DECISAO DO FUNDADOR, 2026-08-08.** Gravada em

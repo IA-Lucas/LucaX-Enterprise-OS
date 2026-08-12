@@ -18,6 +18,17 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **🧠 Conferência de 2026-08-12 (terceira do dia), ao fechar a PROMOÇÃO sob token 41 — na mesma sessão.**
+> **Nenhum Goal muda de estado.** Por despacho do Fundador ("promova"): **as duas primeiras lições promovidas
+> de FORA do acervo** — `MEM-APR-0007` *(plausibilidade não é verificação, 9 occ)* e `MEM-APR-0008` *(campo
+> obrigatório com escape vazio, 5 occ)* —, nascidas na **primeira convocação da F34** (F42 da Oficina, Onda 5)
+> e revisadas por **reconto independente** que bateu dígito a dígito. O circuito fábrica→acervo fecha pela
+> primeira vez, e a ação das duas já está materializada pela segunda convocação (F43: contrato
+> `juiz-para-o-corpo`). **Placar da F34: 2 CONVOCADOS · 0 NÃO CONVOCADOS · 18 pendentes.** Em docs/: a entrada
+> 2 da NUNCA-APAGAR sai de DECIDIR para **RESOLVIDA** *(remanejo executado com prova: novo `H:` 469/469, antigo
+> apagado com pré 468/468 e pós 12/12, duas sedes finais)*. `0` atos · `0` ADR/RFC/FIT · nenhuma baseline
+> emitida *(delta no lease, token 41)*.
+
 > **🧹 Conferência de 2026-08-12 (segunda do dia), ao fechar a MANUTENÇÃO sob token 40 — na mesma sessão.**
 > **Nenhum Goal muda de estado.** A missão, aprovada pelo Fundador, fechou num ciclo só: **§10.0
 > ROTACIONADO** *(cinco emissões herdavam `BL-2026-08-02-03` no rótulo "vigente"; agora §10.0 aponta
