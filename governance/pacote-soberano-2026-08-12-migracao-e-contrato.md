@@ -2,7 +2,7 @@
 id: PS-2026-018
 titulo: Pacote de decisao soberana — o ato C3 que grava o contrato fabrica-acervo e migra os dez setores CONVOCADOS da F34
 tipo: relatorio
-versao: 1.0.0
+versao: 1.1.0
 status: ativo
 camada_memoria: operacional
 autor: DEP-GOV
@@ -97,6 +97,11 @@ Departamentos que os amparam *(linha 3 do contrato)*:
   e nao se inventa sede.
 - **Os DEZ `NAO CONVOCADO` nao migram** — linha 2 do contrato; cada um ja tem missao-teste
   definida a espera do objeto externo.
+- **A ORIGEM recebe carimbo `MIGRADO` no mesmo lote** *(acrescentado na reemissao 1.1.0)*: cada
+  documento de setor migrado, na Oficina, ganha carimbo externo apontando a Carta que passou a
+  ser a sede — **texto original intacto, sob o lease de la** —, para que o setor **nunca viva em
+  duas sedes com cara de fonte** *(a familia `RD-101`)*. Enquanto o carimbo nao existe, vale a
+  linha 4 do contrato: a autoridade esta no acervo.
 
 **III. DECLARA a excecao de segregacao, valida SO para este lote** *(decisao do Fundador de
 2026-08-08, gravada para nao ser redecidida)*: `DEP-GOV` revisa Carta de Departamento e seu
@@ -140,6 +145,15 @@ A missao de aplicacao **PARA e devolve ao Soberano** se: (a) a custodia declarad
 algum setor do item II *(lista nominal volta, nada se inventa)*; (b) qualquer `H-P` de Carta
 emendada nao reproduzir; (c) a baseline nao reproduzir antes da primeira escrita; (d) o
 secret-scan acusar em qualquer candidato.
+
+---
+
+## Reemissoes
+
+| Versao | Data | O que mudou |
+|---|---|---|
+| 1.1.0 | 2026-08-12 | **Revisao pedida pelo Fundador** *("revise e confirme que esta completa")*: o item II ganha a provisao do **carimbo `MIGRADO` na origem** — a revisao confrontou o §3 contra todas as decisoes fixadas e esta era a unica lacuna real *(dupla sede pos-migracao)*. Falso alarme descartado com medicao: o padrao de orcamento do legado e exclusao do DESMONTE *(F45 A3)*, nao das 4 partes que migram. `0` itens removidos, `0` decisoes reabertas |
+| 1.0.0 | 2026-08-12 | Emissao original, sob token 42 |
 
 ---
 
