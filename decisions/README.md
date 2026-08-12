@@ -2,14 +2,14 @@
 id: IDX-decisions
 titulo: Indice Oficial de Decisoes (ADR)
 tipo: relatorio
-versao: 1.13.0
+versao: 1.14.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-GOV
 proprietario: DEP-GOV
 aprovador: DEP-GOV
 criado_em: 2026-07-28
-atualizado_em: 2026-08-02
+atualizado_em: 2026-08-12
 revisao_prevista: null
 decisoes_relacionadas: [ADR-0001, ADR-0003, ADR-0004, ADR-0007, ADR-0008, ADR-0011]
 substitui: []
@@ -44,8 +44,9 @@ Todas as decisoes registradas do sistema. Propostas em aberto ficam em [`../rfcs
 
 | Campo | Valor |
 |---|---|
-| Ultimo numero atribuido | **0036** |
-| Proximo numero disponivel | **0037** |
+| Ultimo numero atribuido | **0038** |
+| Proximo numero disponivel | **0039** |
+| **⚠️ Contador exercido — e estava DEFASADO, quinta ocorrencia da familia de `RD-32` (Onda 3, 2026-08-12)** | O cabecalho dizia **`0036`/`0037`** enquanto `ADR-0037` existia desde 2026-08-03: a Missao 1.13.14 gravou a nota de exercicio e **nao moveu o cabecalho** — o contador que se corrige por nota continua errando por cabecalho. Antes de atribuir **`0038`**, testou-se a existencia contra a **copia datada anterior as edicoes** *(`_backups/LucaX-Enterprise-OS_2026-08-12_pre-onda-3/`)*: **`ADR-0037` ✅ existe · `ADR-0038` ✅ NAO existe** — `V1` de [MEM-APR-0006](../memory/aprendizado/MEM-APR-0006-exercer-o-contador-revela-o-defeito.md). Corrigido **`0036`/`0037` → `0038`/`0039`** |
 | **Contador exercido, nao lido (Missao 1.13.14)** | Antes de atribuir **`0037`**, testou-se a existencia de `ADR-0037-*.md` contra a **copia datada anterior as edicoes** *(`_backups/LucaX Enterprise OS-2026-08-03-antes-do-adr-sucessor/`)*: **`ADR-0036` ✅ existe · `ADR-0037` ✅ NAO existe** — `V1` de [MEM-APR-0006](../memory/aprendizado/MEM-APR-0006-exercer-o-contador-revela-o-defeito.md) |
 | **Contador exercido, nao lido (Missao 1.13.13)** | Antes de atribuir **`0036`**, testou-se a existencia de `ADR-0036-*.md` contra a **copia datada anterior as edicoes** *(`_backups/LucaX Enterprise OS-2026-08-03-antes-da-terceira-skill/`)*: **`ADR-0035` ✅ existe · `ADR-0036` ✅ NAO existe** — `V1` de [MEM-APR-0006](../memory/aprendizado/MEM-APR-0006-exercer-o-contador-revela-o-defeito.md) |
 | **Contador exercido, nao lido (Missao 1.13.12)** | Antes de atribuir **`0035`**, testou-se a existencia de `ADR-0035-*.md` contra a **copia datada anterior as edicoes** *(`_backups/LucaX Enterprise OS-2026-08-03-pre-missao-1-13-12/`)*: **`ADR-0034` ✅ existe · `ADR-0035` ✅ NAO existe** — `V1` de [MEM-APR-0006](../memory/aprendizado/MEM-APR-0006-exercer-o-contador-revela-o-defeito.md) |
@@ -100,6 +101,7 @@ Todas as decisoes registradas do sistema. Propostas em aberto ficam em [`../rfcs
 | [**ADR-0035**](ADR-0035-segunda-skill-varrer-credencial.md) | **Cria a SEGUNDA `Skill` do acervo** — `SKL-seguranca-varrer-credencial` —, `C2 · Tipo 2`, **`0` atos**, e **mede o que `n = 1` nao alcanca**. **`SK-24` foi CALCULADA e provada VAZIA:** mediana `181,5`, limiar `363`, maior instancia `188` — e a algebra mostra que com `2` instancias **nenhum valor pode disparar**, porque `b > a + b` exigiria `a < 0`. **`SK-09` e `SK-10` reprovaram IDENTICAMENTE em caso disjunto: o defeito e do FRAMEWORK, nao do caso.** **`SK-05`, `SK-12` e `SK-22` exercidas pela primeira vez** — cobertura acumulada **`25` de `26`**. **Custo `5` artefatos, igual ao da primeira: o custo e do RITO, nao da novidade.** **NAO abre o `ADR` sucessor** | **ativo** |
 | [**ADR-0036**](ADR-0036-terceira-skill-provar-restauracao-de-backup.md) | **Cria a TERCEIRA `Skill` do acervo** — `SKL-custodia-provar-restauracao-de-backup` —, `C2 · Tipo 2`, **`0` atos**, e **mede o PISO DE `n` de `SK-24`**. **⭐ A regra deixa de ser VAZIA:** mediana **`188`** *(`175`, `188`, `231`)*, limiar **`376`**, maior **`231`** — **nao dispara, mas pela primeira vez PODERIA**, porque em `n = 1` e `n = 2` disparar exigia `a < 0` e em `n = 3` exige `c > 2b`, que **tem solucao**. **`SK-09` e `SK-10` reprovam pela TERCEIRA vez, e com o autor CIENTE dos defeitos — o que ELIMINA a hipotese de defeito de LEITOR.** **Corrige a razao registrada de `SK-21`:** ela nao espera agentes, espera a **primeira ARESTA de dependencia**, e ha `0`. **Custo `5` pela terceira vez.** **NAO abre o `ADR` sucessor** | **ativo** |
 | [**ADR-0037**](ADR-0037-sucessor-parcial-do-framework-de-skills.md) | ⭐ **SUPERA PARCIALMENTE `ADR-0033`** pelo resultado **`AJUSTAR`** de `FND-07 §8.1`, e institui **`SK-27` a `SK-30`**. `C2 · Tipo 2`, **`0` atos**. **`ADR-0033` fica `ativo`, com `0` bytes e `22` regras vigentes** — superar o todo obrigaria a **reproduzir `22` regras** *(contra `PJ-01`)* e **proibiria por `LN-03`** toda relacao nova, e as `3` fichas ja a declaram. **`SK-27`** — piso de populacao/aresta, **com a classe VARRIDA: `5` membros, nao `2`**, e **`SK-25` jamais fora medida por missao alguma**. **`SK-28`** — `11` blocos + `1` atributo de frontmatter **nao e `12`**. **`SK-29`** — o rito da classe vem **inteiro**. **`SK-30`** — saidas plausiveis e erradas no **plural**. ⚠️ **`FIT-2026-029 R4` avaliado e deixado de FORA por `1` de `3` instancias** — a regra nova aplicada **contra o interesse da missao** | **ativo** |
+| [**ADR-0038**](ADR-0038-a-mente-reconhece-o-corpo.md) | ⭐ **A MENTE RECONHECE O CORPO.** `C2 · Tipo 2`, **`0` atos**, rito inteiro `RFC-0033 → ADR-0038 → FIT-2026-031` **por escolha expressa do Fundador** — a dispensa de RFC estava disponivel e **nao foi usada**. Institui as **4 camadas** *(Mente · Oficina · Corpo · Legado)* com caminhos reais; o **Corpo** (`lucax-enterprise`, FastAPI+LangGraph, provado em 2026-08-12: pilha Docker do zero, RLS `EXIT=0` como `app_rt`, 25 testes) e producao **FORA do acervo e do fence, por desenho**; **membrana `M1–M5`** — producao **nunca** escreve na Mente, norma sobe por `RFC → ADR`, evidencia volta como **proposta**, segredo **nao cruza**; a Policy Engine do Corpo e **PROJECAO de `FND-04`**, e em divergencia **prevalece a fonte** (`PJ-03`). Tradeoff declarado: o acervo passa a apontar para `3` repositorios que **nao mede** | **ativo** |
 
 ### Ratificacao — [INC-2026-001 §11](../governance/incidents/INC-2026-001-ratificacao-inferida.md), encerrado
 

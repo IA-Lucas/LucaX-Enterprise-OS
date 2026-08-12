@@ -18,6 +18,18 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **🔄 Conferência de 2026-08-12, ao fechar a Onda 3 — na mesma sessão que a fechou.**
+> **Nenhum item muda de estado.** A sessão executou a **Onda 3 do plano de 8 ondas do Corpo** *(plano que vive em
+> `lucax-enterprise/CLAUDE.md`, fora deste acervo)*: rito C2 **inteiro** — **`RFC-0033` → `ADR-0038` → `FIT-2026-031`**
+> *(`apto-com-ressalva`)* — sob `fencing_token` **38**: **a Mente reconhece o Corpo**, as 4 camadas com caminhos reais, a
+> membrana `M1–M5` e a Policy Engine como projeção de `FND-04`. O rito inteiro foi **escolha expressa do Fundador** entre três
+> opções apresentadas com a regra exata (`FND-04` linha `C2` + `CV-07`); a dispensa de RFC estava disponível e **não foi usada**.
+> ⚠️ **Os TRÊS contadores de sequência estavam defasados** *(família `RD-32`/`RD-95`, quinta ocorrência)* e foram corrigidos pelo
+> `V1` contra a cópia datada. **Nenhuma baseline emitida** *(precedente do token 30)*; o delta fica declarado na liberação do
+> token 38. **Assinalado: nada** — `Corpo`, `lucax-enterprise` e `Onda ` têm **`0`** ocorrências neste arquivo, medido antes de
+> escrever esta nota; os quatro `[!]` (Goals `1.14`, `1.16`, `1.17`, `1.18`) seguem **intocados**. `0` atos · `0` Fundacionais ·
+> `0` bytes no medidor · `0` bytes em `_SAIDA-COMPANY-OS/`.
+
 > **🔄 Conferência de 2026-08-10, ao emitir `BL-2026-08-10-01` — na mesma sessão que a emitiu.**
 > **Nenhum item muda de estado, e a sessão não era missão.** O Fundador pediu **sincronizar três
 > fontes divergentes** — a máquina principal, a **estação espelho encerrada em 2026-08-09** e o

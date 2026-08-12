@@ -2,7 +2,7 @@
 id: IDX-fitness
 titulo: Registro de Aptidao Arquitetural (FIT)
 tipo: relatorio
-versao: 1.15.0
+versao: 1.16.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-QAR
@@ -48,9 +48,11 @@ Toda verificacao de aptidao arquitetural emitida. O mecanismo esta em
 
 | Sequencia | Ultimo atribuido | Proximo | Reinicia |
 |---|---|---|---|
-| `FIT-2026-NNN` | **028** | **029** | A cada ano |
+| `FIT-2026-NNN` | **031** | **032** | A cada ano |
 
 > Numero **nunca e reaproveitado** (FND-03 §2.3). Atribuido por DEP-GOV.
+
+> **⚠️ Contador exercido — e estava DEFASADO EM DOIS, quinta ocorrencia da familia de `RD-32` (Onda 3, 2026-08-12).** O cabecalho dizia **`028`/`029`** enquanto `FIT-2026-029` **e** `FIT-2026-030` existiam desde 2026-08-03. Antes de atribuir **`031`**, testou-se a existencia de `FIT-2026-031-*` contra a **copia datada anterior as edicoes** *(`_backups/LucaX-Enterprise-OS_2026-08-12_pre-onda-3/`)*: **`FIT-2026-030` ✅ existe · `FIT-2026-031` ✅ NAO existe** — `V1`. Corrigido **`028`/`029` → `031`/`032`**.
 
 > **Contador exercido, nao lido — Missao 1.13.14.** Antes de atribuir **`030`**, testou-se a
 > existencia de `FIT-2026-030-*` contra a **copia datada anterior as edicoes**
@@ -115,6 +117,7 @@ Toda verificacao de aptidao arquitetural emitida. O mecanismo esta em
 | [**FIT-2026-028**](FIT-2026-028-segunda-skill.md) | **`ADR-0035` e a segunda `Skill`** | **`apto-com-ressalva`** | `QG-6` liberado, **16 verificacoes**, 13 verdes. **`R1` — DEP-QAR corrige o proprio registro:** `SK-24` nunca foi *"incalculavel"* *(a mediana de um elemento e esse elemento)*; ela e **calculavel e VAZIA ate `n = 3`**, demonstrado por algebra. A conclusao de `FIT-2026-027` sobrevive; o fundamento e que estava errado. **`R2` — os tres defeitos sao do FRAMEWORK**, por reaparecerem identicos em caso disjunto; **`0` defeitos novos no segundo uso**. **`R3` — `RD-122` exercido pela segunda vez**, e a repeticao o converte de peculiaridade do caso em **propriedade do template**. **DEP-QAR recomenda ESPERAR a terceira `Skill`** para o `ADR` sucessor: `SK-09` e `SK-10` tem sinal maduro, **`SK-24` nao** |
 | [**FIT-2026-029**](FIT-2026-029-terceira-skill.md) | **`ADR-0036` e a terceira `Skill`** | **`apto-com-ressalva`** | `QG-6` liberado, **10 verificacoes verdes**, **4 ressalvas**. **`R1` — recusa a leitura confortavel de `SK-24`:** os dois *"nao"* anteriores eram **impossibilidade algebrica** e este e **propriedade das instancias**; **a serie util tem `1` elemento**, e com `3` pontos a mediana **nao e estavel**. **`R2` — `SK-09` e `SK-10` FECHAM**, e a terceira prova mais que a segunda porque **o autor conhecia os defeitos e escreveu contra eles, e eles ocorreram assim mesmo**. **`R3` — `RD-122` pela terceira vez.** **`R4` — a ancoragem do veredito nao tem portao, e o merito e de UM produto so.** **DEP-QAR recomenda ABRIR o `ADR` sucessor AGORA, e NAO esperar a quarta `Skill`** |
 | [**FIT-2026-030**](FIT-2026-030-sucessor-parcial-do-framework-de-skills.md) | **`ADR-0037` e o sucessor parcial do Framework** | **`apto-com-ressalva`** | `QG-6` liberado, **13 verificacoes verdes**, **3 ressalvas**. **`R1` — o Framework passa a ter DUAS sedes vigentes** e o custo de contexto **sobe**; a unica coisa que unifica e a promocao a `FND`, **`C3` com ato**, e o ponto de cruzamento **nao se estima** (`CE-04`). **`R2` — `SK-22` e `SK-25` entraram em `SK-27` por LEITURA, nao por reprovacao observada**, e `SK-25` **nunca fora exercida**; homologados porque `SK-27` **nao reescreve enunciado, so acrescenta piso**. **`R3` — o custo do rito NAO caiu:** `4 = 5 − 1`, e o `1` e a ficha. **DEP-QAR confere na fonte a corroboracao de `SK-22` no piso `n = 2`, e homologa a exclusao de `R4` DECLARANDO o proprio conflito de interesse**, por te-la levantado |
+| [**FIT-2026-031**](FIT-2026-031-a-mente-reconhece-o-corpo.md) | **`ADR-0038` e `RFC-0033` — a Mente reconhece o Corpo** | **`apto-com-ressalva`** | `QG-6` liberado, **9 verificacoes verdes**, **3 ressalvas**. **`R1` — o acervo passa a apontar para `3` repositorios que NAO mede** e o ponteiro envelhece (`A-297`); dono **DEP-GOV**, gatilho: mudanca de caminho das camadas. **`R2` — os TRES contadores de sequencia estavam DEFASADOS** *(familia `RD-32`/`RD-95`; a Missao 1.13.14 gravou a nota e nao moveu o cabecalho)* — corrigidos nesta emissao, e **o sinal e reincidencia estrutural**. **`R3` — rito inteiro em sessao unica**, separacao **por papel** declarada; mitigacao: `F3`–`F5` e `F8` sao **mecanicos**, reproduziveis contra a copia datada e o git |
 | [**FIT-2026-018**](FIT-2026-018-vigencia-do-framework-de-specifications.md) | **A APLICACAO do setimo ato soberano** — os **14** objetos em vigor, a ordem, a atomicidade, a integridade e a reconciliacao | **C3** | `apto-com-ressalva` | **3** | **nao exigida** *(`ADR-0015`, `FT-10`)* | 2026-07-30 |
 | [**FIT-2026-017**](FIT-2026-017-convergencia-pre-ratificacao.md) | **RFC-0020, ADR-0024, ADR-0025, PS-2026-011, PS-2026-012, PS-2026-013, PS-2026-009 2.0.0**, os **6** candidatos novos e a cascata de indices | **C3** | `apto-com-ressalva` | **3** | **nao exigida** *(`FT-10`)* | 2026-07-30 |
 | [**FIT-2026-016**](FIT-2026-016-canonizacao-e-propagacao.md) | **RFC-0018, ADR-0022, PS-2026-009, RFC-0019, ADR-0023, PS-2026-010, PT-2026-008**, os **6** candidatos e a cascata de indices | **C3** | `apto-com-ressalva` | **4** | **nao exigida — por `FT-10`** | **2026-07-29** |
