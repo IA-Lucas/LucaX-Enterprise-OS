@@ -81,6 +81,14 @@ insubstituivel sob pretexto de limpeza de disco.
 APAGAR** (item 7 da lista abaixo). **`DECIDIR` nao e permissao provisoria para apagar —
 e proibicao provisoria de apagar.**
 
+✅ **CONDICAO SATISFEITA EM 2026-08-12, na principal (token 40):** o `basckup antigo` foi
+**ACHADO** — vive em **`H:asckup antigo`** *(o `E:\` do registro era o disco da estacao
+espelho, que deixou de existir)*: **468 arquivos / 2.720.021.923 B / 2.594 MB, batida exata**
+com o registrado. E a **SEGUNDA COPIA existe**: criada e **VERIFICADA 468/468, saida 0**
+(manifesto sha256 arquivo a arquivo) em
+`E:\LucasIA\_backupsasckup-antigo_2026-08-12_segunda-copia`. A decisao sobre o original
+volta ao Fundador — agora com respaldo, nunca mais como exemplar unico.
+
 ## 3. Destino novo do backup — gravado onde a regra vive
 
 **DECISAO DO FUNDADOR, 2026-08-08.** Gravada em
@@ -113,7 +121,7 @@ maquina PRINCIPAL.
 | # | Item | Estado no espelho, medido 2026-08-08 |
 |---|---|---|
 | 1 | **`separacao-2026-08-02`** — 283 MB, exemplar unico dos 9 `.db` do `consult` | **Ausente → na principal** |
-| 2 | **Os 4 backups do `Research`** | ✅ **Presentes, e sao 4:** `_backups-F11-2026-08-03` · `_backups-F12-2026-08-03` · `_fabrica\_backups` · `_fabrica\skills\backup-datado`. ⚠️ Somam **~0,2 MB** aqui — sao cascas, nao o volume |
+| 2 | **Os 4 backups do `Research`** | ✅ **Presentes, e sao 4:** `_fabrica\_backups\_backups-F11-2026-08-03` · `_fabrica\_backups\_backups-F12-2026-08-03` *(mudaram de SEDE em 2026-08-12 - purga S1.1, opcao A do Fundador, commit `b14a0da` da Oficina, manifesto 16/16 sha identicos; nao sairam da lista, mudaram de endereco)* · `_fabrica\_backups` · `_fabrica\skills\backup-datado`. ⚠️ Somam **~0,2 MB** aqui — sao cascas, nao o volume |
 | 3 | **Os 2 backups do `SSC-Plus`** | ⚠️ **Achei 1:** `06_p1a\evidencias\backups`. **O segundo esta na principal** — nao procurar aqui e concluir que nao existe |
 | 4 | **`backup-99freelas` do `lucaX`** | ✅ **Presente**, e e **arquivo**, nao diretorio: `My_WorkSpace\Meus_projetos\operacao-freelancer\perfil\backup-99freelas-antes-perfil-hibrido-2026-07-22.md` |
 | 5 | **Qualquer coisa em repositorio vivo com `git status` limpo** | `LucaX-Enterprise-OS`, `Research`, `SSC-Plus`, `lucaX` |

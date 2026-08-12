@@ -18,6 +18,26 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **🧹 Conferência de 2026-08-12 (segunda do dia), ao fechar a MANUTENÇÃO sob token 40 — na mesma sessão.**
+> **Nenhum Goal muda de estado.** A missão, aprovada pelo Fundador, fechou num ciclo só: **§10.0
+> ROTACIONADO** *(cinco emissões herdavam `BL-2026-08-02-03` no rótulo "vigente"; agora §10.0 aponta
+> `BL-2026-08-10-01` e o bloco antigo vive em §10.0.0, valores intactos)* · **`RD-80` FECHADO** *(este
+> arquivo entrou no catálogo, §4.6 — a única ausência histórica acabou)* · **`MSG-2026-0009`
+> meio-fechada** *(correção declarada no catálogo: caminho do nxtrack no lucaX MORTO e repositório
+> próprio EXISTE em `E:\LucasIA\Projetos
+xtrack`, medidos hoje; a emenda da Carta de Produto é rito
+> e fica para o ato da migração; preservar a âncora `tree b9b36be9…fb4b` vira exigência do desmonte
+> do lucaX, que **vai deixar de existir** por decisão do Fundador)* · **quarta cegueira**: gatilho NÃO
+> disparou, segue com o Agente 7, caso conferido vivo em `_missao-1-14-1-2026-08-05/` · **colisão de
+> número RESOLVIDA por convenção**: faixa **`M-`** para missão que não pertence a Goal nenhum —
+> **adotada por exercício**, não por decreto: `M-01`, `M-02` e `M-03` já usados em artefatos; Goal
+> `1.14` continua com o nome que tem. Em `docs/`: entrada 2 da NUNCA-APAGAR fecha a condição *(o
+> `basckup antigo` foi ACHADO em `H:\` na principal, 2.594 MB batida exata, e ganhou SEGUNDA CÓPIA
+> verificada `468/468`)*; caminhos da purga S1.1 emendados *(mudança de sede `b14a0da` da Oficina)*;
+> 2b/2c do sensor do lucaX **cancelados** *(o conceito virou o teto inteligente E4.T no Corpo)*.
+> `0` atos · `0` ADR/RFC/FIT · `0` bytes no medidor · nenhuma baseline emitida *(delta declarado no
+> lease)*.
+
 > **🔄 Conferência de 2026-08-12, ao fechar a Onda 3 — na mesma sessão que a fechou.**
 > **Nenhum item muda de estado.** A sessão executou a **Onda 3 do plano de 8 ondas do Corpo** *(plano que vive em
 > `lucax-enterprise/CLAUDE.md`, fora deste acervo)*: rito C2 **inteiro** — **`RFC-0033` → `ADR-0038` → `FIT-2026-031`**
