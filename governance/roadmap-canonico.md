@@ -18,6 +18,14 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **📜 Conferência de 2026-08-12 (quarta do dia), ao inscrever a MINUTA sob token 42 — na mesma sessão.**
+> **Nenhum Goal muda de estado.** A **F34 fechou 20/20** (10 CONVOCADO · 10 NÃO CONVOCADO — sede F42 §4 da
+> Oficina) e a minuta do **ato C3 único** está inscrita: [`PS-2026-018`](pacote-soberano-2026-08-12-migracao-e-contrato.md),
+> **NÃO assinada** — contrato fábrica↔acervo + migração dos 10 + segregação + aresta + PRO-nxtrack + F44 +
+> perfis + reversão, numa assinatura só (a economia medida pela M-01). A custódia da âncora do nXtrack está
+> feita (bundle nas duas sedes, sha `4c160d3e…`). Aguarda: **o despacho do Soberano sobre o PS-2026-018**.
+> `0` atos · nenhuma baseline emitida *(delta no lease, token 42)*.
+
 > **🧠 Conferência de 2026-08-12 (terceira do dia), ao fechar a PROMOÇÃO sob token 41 — na mesma sessão.**
 > **Nenhum Goal muda de estado.** Por despacho do Fundador ("promova"): **as duas primeiras lições promovidas
 > de FORA do acervo** — `MEM-APR-0007` *(plausibilidade não é verificação, 9 occ)* e `MEM-APR-0008` *(campo
