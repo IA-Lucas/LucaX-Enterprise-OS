@@ -912,16 +912,22 @@ completa na **QUINTA DIVERGÊNCIA**.
 ## ÉPICO 5 — Engenharia Reversa do LucaX Legacy
 *Somente depois de o novo sistema provar que funciona.*
 
-- [ ] Firewall de migração
-- [ ] Inventário somente leitura
-- [ ] Proveniência
+> **⚙️ Conferência de 2026-08-13 (sétima do dia), ao fechar a missão do token 53 — na mesma sessão.**
+> A Onda 7 abriu o épico de verdade: inventário completo (F50 + adendo), proveniência custodiada,
+> vereditos por área dados, e o piloto de migração EXECUTADO com rito inteiro (4 lições do acervo
+> do legado viraram `MEM-APR-0009..0012`). Restam por conta das ondas: mapeamento fino para
+> Capabilities, cutover e a retirada física — esta última só por ato explícito do Fundador.
+
+- [x] Firewall de migração *(exercido: legado somente leitura em todas as varreduras; admissão só por rito na Mente e por TDD/consumidor no Corpo)*
+- [x] Inventário somente leitura ✅ **F50 (Oficina `caf8ce2`) + adendo unificado (`2b7f7a6`): 14 áreas + `My_WorkSpace`, 0 sem veredito**
+- [x] Proveniência *(âncora `tree b9b36be9…fb4b` custodiada em bundle nas duas sedes, sha `4c160d3e…`; backups datados com manifesto sha256 por produto)*
 - [ ] Mapeamento para Capabilities
 - [ ] Extração de agentes, skills, specs e conhecimento
-- [ ] Fit-gap
-- [ ] ADOPT / ADAPT / REWRITE / RETIRE
-- [ ] Migração-piloto
-- [ ] Validação
-- [ ] Migração por ondas
+- [x] Fit-gap *(F50 §3/§4 no nível de área, com ledger do já-extraído; o refinamento por item segue dentro das ondas)*
+- [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
+- [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
+- [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope; filas: 174 precedentes, 134 ADRs, skills, séries de custo)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
