@@ -1019,6 +1019,27 @@ completa na **QUINTA DIVERGÊNCIA**.
 > Dockerfile, que não copiava `contracts/` e fazia o preflight E7.C morrer. Oficina
 > `1f22725`: F57 passa a **8/10**, restando somente `A-150/A-245` em E7.OD.
 
+> **⚙️ Conferência de 2026-08-13, ao fechar E7.OD no Corpo — F57 fecha 10/10.**
+> `A-150`/`A-245` atravessaram spec, vermelho, consumidor, reversão e suíte no commit
+> `c1bb01b`: `config/routing.yaml` já declarava `synthesizer` em `market_research` e
+> `realtime_social` sem nenhum consumidor (0 ocorrências em `app/`); `synthesize_node`
+> agora entra no grafo só quando a rota declara `synthesizer`, guardado fail-closed por
+> `app/orchestration/decomposicao.py` — `primary`/`reviewer`/`synthesizer` têm de ser três
+> donos distintos na mesma run, ou bloqueia antes de gastar token. A regra portada é o
+> núcleo anti-competição de A-245 ("duas partes com o mesmo ato pagam duas vezes"),
+> invertida para a forma estática do Corpo: aqui a falha é um único dono ocupando duas
+> partes, não duas partes com o mesmo ato. O planejador dinâmico de N partes e a execução
+> em ondas topológicas de Kahn do decompositor do legado **não portaram** — o Corpo já
+> decompõe estaticamente por papel, sem plano a validar. `RunRecord.synthesis` persiste
+> pela mesma engrenagem de checkpoint da E7.OP; a retomada volta em `synthesize` quando o
+> checkpoint tem `review` sem `synthesis`. Reversão dupla provada: sem o guard o par
+> repetido gastaria token; sem a aresta `review→synthesize`, a mesma rota completa sem
+> síntese (grafo reconstruído com a condicional pré-E7.OD). 18 testes novos; suíte
+> **253 → 271** (267 passed + 4 skipped, os mesmos que exigem Postgres real); mapa
+> **114/139**. Com E7.OD fechado, as 10 fibras do confronto de orquestração da Oficina
+> (`2b7ee3e`) estão todas refletidas no Corpo: 3 ADAPT (`A-190`→E7.OP, `A-150`/`A-245`→
+> E7.OD) e 7 REJECT (cascas e duplicações do SuperCondutor).
+
 > **Regra permanente de contagem, determinada pelo Fundador nesta continuação da Onda 7:**
 > `triado` **não** é `migrado`. Cada lote segue fonte integral → agrupamento por capacidade →
 > comparação com a sede nova → decisão `ADAPT`/`REWRITE`/`REJECT` por fibra → spec e vermelho
@@ -1034,7 +1055,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232 + E7.CU/A-263 + E7.OP/A-190; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: aprendizado **20/20 fechado**; F54: integridade **7/7 fechada**; F55: custo/contexto **6/6 fechado**; F57: **8/10 fechados**, restam A-150/A-245 em E7.OD; fila executável paralela: skills/agentes/Capabilities; F56 ingestão `A-083/A-180` aguarda objeto externo e não conta como migrada; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232 + E7.CU/A-263 + E7.OP/A-190 + E7.OD/A-150+A-245; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: aprendizado **20/20 fechado**; F54: integridade **7/7 fechada**; F55: custo/contexto **6/6 fechado**; F57: **10/10 fechados** (3 ADAPT/7 REJECT do confronto de orquestração); fila executável paralela: skills/agentes/Capabilities; F56 ingestão `A-083/A-180` aguarda objeto externo e não conta como migrada; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
