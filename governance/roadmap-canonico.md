@@ -1001,6 +1001,15 @@ completa na **QUINTA DIVERGÊNCIA**.
 > chegar, o fluxo integral reabre em E4.I; até lá eles não contam como migrados nem bloqueiam os
 > grupos executáveis.
 
+> **⚙️ Conferência de 2026-08-13, após F57 na Oficina.** Dez precedentes de
+> orquestração foram confrontados no commit `2b7ee3e`: **3 `ADAPT`** convergem em
+> **E7.OP** (persistência, `A-190`) e **E7.OD** (decomposição/agregação sem competição,
+> `A-150/A-245`); **7 `REJECT`** encerram as cascas e duplicações do SuperCondutor.
+> A ordem é obrigatória: E7.OP antes de E7.OD. As lacunas foram reproduzidas no Corpo:
+> 2 `synthesizer` declarados e 0 consumidos; grafo sem checkpointer; store em memória.
+> F57 ainda não conta as 3 adaptações como migradas — faltam specs, vermelhos, consumidores,
+> reversões e suíte.
+
 > **Regra permanente de contagem, determinada pelo Fundador nesta continuação da Onda 7:**
 > `triado` **não** é `migrado`. Cada lote segue fonte integral → agrupamento por capacidade →
 > comparação com a sede nova → decisão `ADAPT`/`REWRITE`/`REJECT` por fibra → spec e vermelho
@@ -1016,7 +1025,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232 + E7.CU/A-263; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: aprendizado **20/20 fechado**; F54: integridade **7/7 fechada**; F55: custo/contexto **6/6 fechado**; filas executáveis seguintes: skills/agentes/Capabilities e orquestração; F56 ingestão `A-083/A-180` aguarda objeto externo e não conta como migrada; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232 + E7.CU/A-263; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: aprendizado **20/20 fechado**; F54: integridade **7/7 fechada**; F55: custo/contexto **6/6 fechado**; F57: orquestração decidida, com **7/10 fechados** e E7.OP→E7.OD por executar; fila executável paralela: skills/agentes/Capabilities; F56 ingestão `A-083/A-180` aguarda objeto externo e não conta como migrada; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
