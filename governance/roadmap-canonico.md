@@ -947,6 +947,19 @@ completa na **QUINTA DIVERGÊNCIA**.
 > `cdf1320` triagem **50** fontes com `sha256` por arquivo; permanecem **125**. Candidatos
 > ainda não foram promovidos: o dedupe global espera o horizonte integral.
 
+> **⚙️ Conferência de 2026-08-13, ao fechar E7.BS no Corpo.** Os precedentes
+> `A-052`/`A-058`/`A-063` foram comparados com o E4.M e adaptados como uma única busca local
+> zero-token no commit `a62558c`: AST de símbolos, refino limitado e índice→detalhe na mesma
+> fotografia, com CLI real. O grafo duplicado, `query.py` por subprocesso, acervo-first,
+> última-palavra arbitrária, `rg` e cache “mais recente” foram recusados com motivo. Suíte do
+> Corpo: **226→237 verdes**; os três levers desligados produziram **3/3 vermelhos**.
+
+> **Regra permanente de contagem, determinada pelo Fundador nesta continuação da Onda 7:**
+> `triado` **não** é `migrado`. Cada lote segue fonte integral → agrupamento por capacidade →
+> comparação com a sede nova → decisão `ADAPT`/`REWRITE`/`REJECT` por fibra → spec e vermelho
+> antes do código → consumidor ativo → reversão e suíte. Só então a peça conta como migrada;
+> inaplicabilidade fecha por rejeição motivada, nunca por cópia, silêncio ou peça decorativa.
+
 - [x] Firewall de migração *(exercido: legado somente leitura em todas as varreduras; admissão só por rito na Mente e por TDD/consumidor no Corpo)*
 - [x] Inventário somente leitura ✅ **F50 (Oficina `caf8ce2`) + adendo unificado (`2b7f7a6`): 14 áreas + `My_WorkSpace`, 0 sem veredito**
 - [x] Proveniência *(âncora `tree b9b36be9…fb4b` custodiada em bundle nas duas sedes, sha `4c160d3e…`; backups datados com manifesto sha256 por produto)*
@@ -956,7 +969,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: 50 de 175 precedentes pendentes originais triados, 125 restantes; filas seguintes: skills, séries de custo; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: 50 de 175 precedentes pendentes originais triados, 125 restantes — e triagem não conta como migração antes da adaptação/rejeição motivada; filas seguintes: skills, séries de custo; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
