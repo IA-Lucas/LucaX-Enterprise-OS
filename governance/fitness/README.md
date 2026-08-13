@@ -48,7 +48,7 @@ Toda verificacao de aptidao arquitetural emitida. O mecanismo esta em
 
 | Sequencia | Ultimo atribuido | Proximo | Reinicia |
 |---|---|---|---|
-| `FIT-2026-NNN` | **035** | **036** | A cada ano |
+| `FIT-2026-NNN` | **036** | **037** | A cada ano |
 
 > Numero **nunca e reaproveitado** (FND-03 §2.3). Atribuido por DEP-GOV.
 
@@ -124,6 +124,7 @@ Toda verificacao de aptidao arquitetural emitida. O mecanismo esta em
 | [**FIT-2026-033**](FIT-2026-033-framework-de-workflows.md) | **`ADR-0040` e `RFC-0035` — o Framework de Workflows** | **`apto-com-ressalva`** | `QG-6` liberado, 6 verificacoes verdes, 3 ressalvas: `R1` 30 regras determinadas-nao-observadas *(0 Workflows)* · `R2` a contribuicao propria (`WF-19`–`25`) e a parte menos testada — a historia de `SK-12` outra vez, nomeada · `R3` `AW-2`/`AW-3` abertos, o primeiro Workflow real esbarra neles |
 | [**FIT-2026-034**](FIT-2026-034-framework-de-ferramentas-e-modelos.md) | **`ADR-0041` e `RFC-0036` — o Tool & Model Framework** | **`apto-com-ressalva`** | `QG-6` liberado, 6 verdes, 3 ressalvas: `R1` determinadas-nao-observadas *(0 `TOL`)* · **`R2` a via de uso esta BLOQUEADA por defeito alheio** *(`AF-1`/`AF-2` do template, pre-condicao nao cumprida — na cara)* · `R3` fallback e falha plausivel-e-errada sem instancia |
 | [**FIT-2026-035**](FIT-2026-035-framework-de-agentes.md) | **`ADR-0042` e `RFC-0037` — o Agent Framework** | **`apto-com-ressalva`** | `QG-6` liberado, 6 verdes, 3 ressalvas: `R1` determinadas-nao-observadas *(0 agentes)* · **`R2` a armadilha do piloto de guarda nomeada ANTES do desenho** *(`ES-02`: Guarda nunca coordenada por Linha)* · `R3` `AA-1` aberto *(colisao atenuada no cartao, viva nas fontes)* |
+| [**FIT-2026-036**](FIT-2026-036-framework-de-execucao-e-avaliacao.md) | **`ADR-0043` e `RFC-0038` — o Execution & Evaluation Framework** | **`apto-com-ressalva`** | `QG-6` liberado, 6 verdes, 3 ressalvas. **`AE-3` DISPARA nesta verificacao e esta NA CARA** *(DEP-QAR titular da materia — mitigacao do candidato + sinais mecanicos; segunda vez do precedente FIT-2026-030)*; e o padrao MEDIDO da fabrica: **a contribuicao propria e sempre a parte menos testada — quatro membros na serie** |
 | [**FIT-2026-018**](FIT-2026-018-vigencia-do-framework-de-specifications.md) | **A APLICACAO do setimo ato soberano** — os **14** objetos em vigor, a ordem, a atomicidade, a integridade e a reconciliacao | **C3** | `apto-com-ressalva` | **3** | **nao exigida** *(`ADR-0015`, `FT-10`)* | 2026-07-30 |
 | [**FIT-2026-017**](FIT-2026-017-convergencia-pre-ratificacao.md) | **RFC-0020, ADR-0024, ADR-0025, PS-2026-011, PS-2026-012, PS-2026-013, PS-2026-009 2.0.0**, os **6** candidatos novos e a cascata de indices | **C3** | `apto-com-ressalva` | **3** | **nao exigida** *(`FT-10`)* | 2026-07-30 |
 | [**FIT-2026-016**](FIT-2026-016-canonizacao-e-propagacao.md) | **RFC-0018, ADR-0022, PS-2026-009, RFC-0019, ADR-0023, PS-2026-010, PT-2026-008**, os **6** candidatos e a cascata de indices | **C3** | `apto-com-ressalva` | **4** | **nao exigida — por `FT-10`** | **2026-07-29** |

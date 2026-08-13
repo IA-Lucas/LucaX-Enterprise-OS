@@ -18,6 +18,13 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **🏁 Conferência de 2026-08-13 (sexta do dia), ao fechar o Goal 1.18 sob token 52 — na mesma sessão.**
+> **O Goal `1.18` sai de `[~]` para `[x]` — e com ele o BLOCO A DO 13º ATO FECHA INTEIRO: os quatro Frameworks
+> aprovados de manhã são norma à noite** (1.16 `ADR-0040` · 1.14 `ADR-0041` · 1.17 `ADR-0042` · 1.18 `ADR-0043`),
+> os quatro pelo mesmo método, com candidato remedido e contribuição própria nomeada. A fronteira dos agentes segue
+> intacta; os pilotos, o tipo `Evaluation` e as emendas de template são os próximos custos, cada um com dono e rito.
+> Pendentes do Soberano: as 4 decisões da ata F49 do Conselho. `0` atos · nenhuma baseline emitida.
+
 > **🤖 Conferência de 2026-08-13 (quinta do dia), ao fechar o Goal 1.17 sob token 51 — na mesma sessão.**
 > **O Goal `1.17` sai de `[~]` para `[x]`** — o Agent Framework é norma (`ADR-0042`, AR-01–AR-30), **com a fronteira
 > dos agentes intacta**: `FND-02 §10` sem um byte, 0 agentes criados, e os dois pilotos contrastantes ficam para rito
@@ -773,7 +780,7 @@ completa na **QUINTA DIVERGÊNCIA**.
       `FND-01 §7.2` e **arquétipos** em `FND-09 §4` — e **as duas famílias aparecem no
       mesmo cartão `E-11`**. **Espera decisão do Fundador.**
 
-- [~] **1.18 — Execution & Evaluation Framework.** *(APROVADO pelo 13º ato, 2026-08-13 — rito em fila, ordem despachada)* Distingue atividade
+- [x] **1.18 — Execution & Evaluation Framework.** ✅ **FECHADO em 2026-08-13 — `RFC-0038` → `ADR-0043` (EA-01–EA-28) → `FIT-2026-036`, sob token 52. O BLOCO A DO 13º ATO ESTA INTEIRO.** Distingue atividade
       executada ≠ resultado declarado ≠ comprovado ≠ aprovado. Registro,
       evidência, testes, avaliações determinísticas e por modelo, revisão
       humana, independência, scorecards, aceite, erro, incidente, custo,
