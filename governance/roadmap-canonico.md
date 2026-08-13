@@ -18,6 +18,13 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **📜 Conferência de 2026-08-13, ao registrar o DECIMO TERCEIRO ato sob token 46 — na mesma sessão.**
+> **QUATRO Goals mudam de estado: `1.16`, `1.14`, `1.17` e `1.18` saem de `[!]` para `[~]`** — aprovados pelo
+> despacho verbatim em [`MSG-2026-0013`](../memory/operacional/MSG-2026-0013-despacho-frameworks-e-fila.md), rito na
+> ordem de 2026-08-02 (Skills ✅ → 1.16 → 1.14 → 1.17 → 1.18). A fila viva B1–B7 está decidida (registros na Oficina);
+> condições suspensivas: B1 (5 registros por anexar) e B6 (dossiê do Conselho por apresentar). Bloco C delegado —
+> C1 (baseline nova) emite no próximo token; C4 aceita o crescimento das Cartas por ora. `0` Fundacionais.
+
 > **✅ Conferência de 2026-08-12 (sexta do dia), ao fechar a MIGRAÇÃO em 10/10 sob token 45 — na mesma sessão.**
 > **Nenhum Goal muda de estado.** O DECIMO SEGUNDO ato (*"aceito os pares da convocação"*, `MSG-2026-0012`) fechou
 > a devolução de §5(a): `gente`→ENG e `coo`→OPS migraram *(Cartas 1.3.0, §13.2 remedido)* — **a primeira migração
@@ -689,7 +696,7 @@ completa na **QUINTA DIVERGÊNCIA**.
       **ou (b)** surgir **consumidor que leia `ADR-0033` isolado, sem passar pelo catálogo** —
       **o que ocorrer primeiro**. **Decisão de registro: `0` `ADR`, `0` atos, `0` baseline nova.**
 
-- [!] **1.16 — Workflow Framework.** Estados, transições, papéis, handoffs,
+- [~] **1.16 — Workflow Framework.** *(APROVADO pelo 13º ato, 2026-08-13 — rito em fila, ordem despachada)* Estados, transições, papéis, handoffs,
       Pacotes de Contexto, portões, impedimentos, retries, timeouts,
       compensação, rollback, escalonamento, incidentes, intervenção humana,
       ato soberano, evidências, memória, retomada. Depende de papéis, nunca de
@@ -705,7 +712,7 @@ completa na **QUINTA DIVERGÊNCIA**.
       "Produto existe"**: junto com `SKL`, **é o componente mais barato do acervo**.
       **Espera decisão do Fundador.**
 
-- [!] **1.14 — Tool & Model Framework.** Model é classe de Ferramenta; sem
+- [~] **1.14 — Tool & Model Framework.** *(APROVADO pelo 13º ato, 2026-08-13 — rito em fila, ordem despachada)* Model é classe de Ferramenta; sem
       framework paralelo. Registro, permissões, classificação de dados,
       isolamento, sandbox, credenciais, custo, limites de contexto, seleção,
       fallback, roteamento, falhas, observabilidade, versionamento,
@@ -720,7 +727,7 @@ completa na **QUINTA DIVERGÊNCIA**.
       `FND-09 §8.2`): **a norma não custa ato; toda Ferramenta que ela governar custará.**
       **Espera decisão do Fundador** — admitir, manter fora do acervo, ou descartar.
 
-- [!] **1.17 — Agent Framework.** Identidade, Departamento, Capabilities,
+- [~] **1.17 — Agent Framework.** *(APROVADO pelo 13º ato, 2026-08-13 — rito em fila, ordem despachada)* Identidade, Departamento, Capabilities,
       missão, autoridade, limites, Specs, Skills, ferramentas, Commands,
       Workflows, memória, contexto, autonomia, escalonamento, avaliação, custo,
       ciclo de vida. Regra central: um agente não escreve, revisa e aprova
@@ -739,7 +746,7 @@ completa na **QUINTA DIVERGÊNCIA**.
       `FND-01 §7.2` e **arquétipos** em `FND-09 §4` — e **as duas famílias aparecem no
       mesmo cartão `E-11`**. **Espera decisão do Fundador.**
 
-- [!] **1.18 — Execution & Evaluation Framework.** Distingue atividade
+- [~] **1.18 — Execution & Evaluation Framework.** *(APROVADO pelo 13º ato, 2026-08-13 — rito em fila, ordem despachada)* Distingue atividade
       executada ≠ resultado declarado ≠ comprovado ≠ aprovado. Registro,
       evidência, testes, avaliações determinísticas e por modelo, revisão
       humana, independência, scorecards, aceite, erro, incidente, custo,
