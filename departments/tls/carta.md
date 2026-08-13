@@ -399,7 +399,7 @@ improvise acesso.
 |---|---|---|---|
 | Secoes 1, 2 e 4 | Saber o que DEP-TLS faz e o que nao faz | **52 linhas** | 2026-07-28 |
 | + secoes 5 e 10 | Decidir se DEP-TLS pode adotar ou habilitar algo | **125 linhas** | 2026-07-28 |
-| Carta integral | Auditoria, revisao estrutural, extincao | **424 linhas** | 2026-07-28 |
+| Carta integral | Auditoria, revisao estrutural, extincao | **425 linhas** | 2026-08-12 |
 
 > Carregar alem do recorte aplicavel exige **gatilho declarado** (CE-01, PC-01). O recorte de decisao custa **29% da Carta** — medido por
 > `sed`+`wc -l` sobre os intervalos das secoes.

@@ -2,14 +2,14 @@
 id: DEP-QAR
 titulo: Qualidade e Risco
 tipo: carta
-versao: 1.2.0
+versao: 1.3.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
 proprietario: DEP-EXE
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-07-28
+atualizado_em: 2026-08-12
 revisao_prevista: 2027-01-28
 decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0004, ADR-0005, ADR-0011]
 substitui: []
@@ -126,6 +126,23 @@ prioridade de quem o produziu.
 | Aprovar a propria Carta, ou revisa-la | **SOBERANO** *(aprova)* · DEP-GOV *(revisa)* | RM-06b; FND-09 §8.2 |
 | Alterar Carta de Capability para acomodar esta Carta | custodio da Capability | PR-2, PR-3 de ADR-0011 |
 
+### 4.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `qualidade`** *(F34: `CONVOCADO`; fonte `F37` da fabrica; amparo `CAP-qualidade`; extrato `sha256 5705e396b00f1cef…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F37-SETOR-QUALIDADE.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Com o `aprendizado` (área `23`, posição `5`)
+- Com o `tecnologia` (`F10`), sobre quem escreve o teste
+- Com o `atendimento` (`F36`), sobre defeito que o cliente reporta
+- Com o `agentops` (posição `4`), sobre revisão independente
+- forma, conformidade e rastreabilidade documental
+- numerar e registrar incidente
+- decidir o que construir, e o escopo
+- decidir como construir
+- conformidade com norma externa
+- onde um registro de memória pertence, e o que expira
+
 ## 5. O que decido — autoridade e portoes
 
 | Materia | Autonomia | Consulta obrigatoria | **Fonte da autoridade** |
@@ -155,6 +172,22 @@ prioridade de quem o produziu.
 | **QG-6** *(com DEP-GOV)* | A arquitetura ficou mais apta a evoluir? | Seis perguntas com **sinal observavel**; ressalva com dono e gatilho | FND-01 §6.2; FND-09 §10.7 |
 
 > **Nenhum portao novo e criado aqui.** Os sete sao de FND-01 §6.2; acrescentar e **C3**.
+
+### 5.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `qualidade`** *(F34: `CONVOCADO`; fonte `F37` da fabrica; amparo `CAP-qualidade`; extrato `sha256 5705e396b00f1cef…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F37-SETOR-QUALIDADE.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Quem produziu não verifica, em nenhum estrato.
+- Quem mede não conserta.
+- Quem executa não aprova o próprio veredito.
+- Reprovação zero é alarme, não excelência.
+- Três `apto` seguidos sem ressalva escalam ao Soberano.
+- Zero nunca sai sem controle positivo do mesmo perímetro, com o mesmo método.
+- Contador é exercido, não lido.
+- Número de cobertura sai sempre com o método ao lado.
+- Resultado declara a plataforma em que foi medido.
 
 ## 6. Interfaces — entradas, saidas e consumidores
 
@@ -236,6 +269,34 @@ prioridade de quem o produziu.
 | Artefato devolvido com defeitos | **Emito** | Lista de defeitos por item de DoD | — |
 | Objeto para verificacao de aptidao | **Recebo** de DEP-EXE | Objeto avaliado nomeado; produtor identificado | **Produtor = DEP-QAR** — devolvo por impedimento (I-1) |
 
+### 8.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `qualidade`** *(F34: `CONVOCADO`; fonte `F37` da fabrica; amparo `CAP-qualidade`; extrato `sha256 5705e396b00f1cef…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F37-SETOR-QUALIDADE.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Confere se pode agir nesta mudança
+- Exige o critério de aceite declarado ANTES
+- Tenta refutar, não confirmar
+- Calibra o instrumento antes de citá-lo como prova
+- Conta o objeto, não lê o contador
+- Recusa `feito` como prova
+- Recusa afirmação verificável sem fonte
+- Recusa achado sem severidade, dono e gatilho
+- Recusa veto sem fundamento
+- Recusa julgar mérito, prioridade e escopo
+- Recusa relaxar teste para fechar verde
+- Risco Tipo 1, dado vivo exposto, credencial em texto
+- Veto contestado pela Linha
+- Impedimento próprio que deixe a verificação sem executor
+- Licitude que dependa de fonte externa ao acervo
+- Dúvida de conformidade documental
+- Veto sai como `ALERTA`, nunca como reporte de rotina
+- Parecer cita o item de `DoD` que fundamenta cada devolução
+- Ressalva sai com dono e gatilho, ou o veredito vira `inapto`
+- Indicador sem valor declara-se `definido, sem valor`
+- Número de cobertura sai com o método
+
 ## 9. Memoria autorizada e politica de contexto
 
 | Camada | Meu papel | Sob que condicao |
@@ -309,6 +370,23 @@ prioridade de quem o produziu.
 > Os tres sem valor dependem de um **ciclo de entrega de produto**, que nao existe nesta fase.
 > Declara-los medidos seria LV-12.
 
+### 11.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `qualidade`** *(F34: `CONVOCADO`; fonte `F37` da fabrica; amparo `CAP-qualidade`; extrato `sha256 5705e396b00f1cef…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F37-SETOR-QUALIDADE.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Taxa de reprovação
+- Vetos com fundamento registrado
+- Se a lição foi extraída do defeito
+- Se o veredito de aptidão foi aprovado
+- Reprovação caindo a zero
+- `apto` sem ressalva, três seguidos
+- Ressalvas abertas crescendo sem fechar
+- Veto sem fundamento
+- Verificação virando gargalo
+- `definido, sem valor`
+
 ## 12. Ciclo de vida — especializacao, fusao e retirada
 
 ### 12.1 Gatilhos de especializacao
@@ -362,7 +440,7 @@ atende o DoD ou apresenta risco nao mitigado.
 |---|---|---|---|
 | Secoes 1, 2 e 4 | Saber o que DEP-QAR faz e o que nao faz | **50 linhas** | 2026-07-28 |
 | + secoes 5 e 10 | Decidir se DEP-QAR pode aprovar ou verificar algo | **111 linhas** | 2026-07-28 |
-| Carta integral | Auditoria, revisao estrutural, extincao | **388 linhas** | 2026-07-28 |
+| Carta integral | Auditoria, revisao estrutural, extincao | **466 linhas** | 2026-08-12 |
 
 > Carregar alem do recorte aplicavel exige **gatilho declarado** (CE-01, PC-01). O recorte de
 > decisao custa **29% da Carta** — medido por `sed`+`wc -l` sobre os intervalos das secoes.

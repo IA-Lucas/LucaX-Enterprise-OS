@@ -2,7 +2,7 @@
 id: PRO-nxtrack
 titulo: NxTrack
 tipo: carta
-versao: 1.0.0
+versao: 1.1.0
 status: ativo
 camada_memoria: produto
 autor: DEP-PRD
@@ -72,6 +72,10 @@ o uso real — preservando fluxo nao destrutivo. O produto existe e opera; o que
 > **subpasta** de um repositorio de terceiro (`lucaX`) com **758** caminhos sem commit e
 > **escritor concorrente ativo**. A tabela acima descreve a custodia **que o ato do Soberano
 > institui**, nao a que existe. Achado `RD-71`.
+
+> ⚠️ **EMENDA DECLARADA em 2026-08-12, pelo item V do decimo primeiro ato ([MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md)) — o paragrafo acima ficou FALSO NO PRESENTE e permanece como registro da epoca:** o caminho `lucaX\My_WorkSpace\Meus_projetos
+xtrack` esta **MORTO**, e o nXtrack **TEM repositorio proprio** em `E:\LucasIA\Projetos
+xtrack` *(subarvore extraida — `RD-71` superado pelo fato)*. **A ancora de conteudo segue viva e canonica:** `tree b9b36be9324ae2d36ddc4149049ebbff9f40fb4b`, **custodiada em bundle restauravel** em duas sedes *(recibo sha256 `4c160d3e…e680735`; o lucaX vai deixar de existir por decisao do Fundador, e a prova sobrevive ao repositorio)*. Residuo do token 33 **FECHADO**.
 
 ## 1. Problema
 

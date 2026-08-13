@@ -235,6 +235,8 @@ Ao contrario de FIT-2026-001, **nao ha conflito nesta verificacao**: FND-10 e AD
 produzidos por DEP-GOV, e a verificacao e executada por DEP-QAR. O precedente de excecao
 aberto em FIT-2026-001 nao foi invocado — como aquele documento determinou.
 
+> ⚠️ **CORRECAO DECLARADA em 2026-08-12 — a nota acima e FALSA POR OMISSAO, e fica como registro (`LV-04`):** o frontmatter deste FIT lista **quatro** objetos avaliados, e a nota confere **dois** silenciando sobre os demais — entre eles **`ADR-0005` (autor `DEP-QAR`)**, a propria proibicao de autoverificacao **avaliada por quem a redigiu**. Medido pelo laudo `F44` da terceira convocacao da F34 *(violacao V2, confirmada por reconto externo em 2026-08-12)* e corrigido pelo item VI do decimo primeiro ato ([MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md)), no gate que o proprio laudo fixou. **A reavaliacao de `ADR-0005` por papel independente esta em [PT-2026-026](../relatorio-transicao-2026-08-12-aplicacao-ps018.md)**, autor `DEP-GOV` — `DEP-QAR` impedido.
+
 ## Aprendizado gerado
 
 | Registro APR | Licao |

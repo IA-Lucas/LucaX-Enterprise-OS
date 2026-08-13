@@ -18,6 +18,16 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **⚡ Conferência de 2026-08-12 (quinta do dia), ao aplicar o DECIMO PRIMEIRO ATO sob token 44 — na mesma sessão.**
+> **Nenhum Goal muda de estado, e a MIGRAÇÃO aconteceu:** o Soberano assinou o `PS-2026-018` (*"assino o
+> PS-2026-018"*) e a aplicação executou o rito completo — `MSG-2026-0011` + `RFC-0034` + `ADR-0039` *(o contrato
+> fábrica↔acervo em cópia literal)* + `FIT-2026-032` + `PT-2026-026`. **8 setores CONVOCADOS migrados às 5 Cartas**
+> (KMS·ENG·QAR·OPS·EXE, `H-P` publicado); **`gente` e `coo` DEVOLVIDOS ao Soberano** pela parada `§5(a)` — o freio
+> exercido. Aresta `CAP-estrategia` formalizada; `PRO-nxtrack` emendada *(resíduo do token 33 FECHADO)*; `V2` do F44
+> fechada com `ADR-0005` CONFIRMADO por papel independente; `§13.2` remedido nas 9 *(4 divergências latentes corrigidas
+> — gate de `RD-49` cobrado)*. Falta da Onda 5: só os carimbos `MIGRADO` na Oficina *(despachados)* e as 2 decisões
+> devolvidas. `0` Fundacionais · nenhuma baseline emitida *(delta no lease, token 44)*.
+
 > **📜 Conferência de 2026-08-12 (quarta do dia), ao inscrever a MINUTA sob token 42 — na mesma sessão.**
 > **Nenhum Goal muda de estado.** A **F34 fechou 20/20** (10 CONVOCADO · 10 NÃO CONVOCADO — sede F42 §4 da
 > Oficina) e a minuta do **ato C3 único** está inscrita: [`PS-2026-018`](pacote-soberano-2026-08-12-migracao-e-contrato.md),

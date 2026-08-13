@@ -2,14 +2,14 @@
 id: DEP-KMS
 titulo: Conhecimento e Memoria
 tipo: carta
-versao: 1.1.0
+versao: 1.2.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
 proprietario: DEP-EXE
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-07-28
+atualizado_em: 2026-08-12
 revisao_prevista: 2027-01-28
 decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0008, ADR-0011]
 substitui: []
@@ -144,6 +144,49 @@ para uma tarefa — e nada sobre o **merito** do que foi registrado.
 | **Registrar, numerar ou fechar incidente** de conformidade | **DEP-GOV** *(registra e numera)* · **DEP-QAR** *(fecha)* | FND-09 §8.2, linha `INC`; FND-03 §2.3 |
 | Aprovar ou revisar **esta Carta** | **SOBERANO** *(aprova)* · DEP-GOV *(revisa)* | FND-09 §8.2; RM-06b |
 
+### 4.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `aprendizado`** *(F34: `CONVOCADO`; fonte `F40` da fabrica; amparo `CAP-aprendizado-organizacional`; extrato `sha256 fa379a1f6987ca32…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F40-SETOR-APRENDIZADO.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- `qualidade` (`F37`), área `16`
+- `conhecimento` (`F24`), área `20`
+- `agentops` (`F39`), área `15`
+- `pesquisa`
+- `governanca`
+- Persistir, indexar e recuperar registros
+- Verificar se uma entrega está correta
+- Registrar violação de norma e sua correção
+- Descobrir fatos novos sobre o mundo externo
+- Calibrar o comportamento de agentes específicos
+
+> **Setor `conhecimento`** *(F34: `CONVOCADO`; fonte `F24` da fabrica; amparo `CAP-conhecimento`; extrato `sha256 b19869f7a2cc0565…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F24-SETOR-CONHECIMENTO.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Com `dados` (área `7`, `CAP-dados`) — FECHADA, `2` contra `1`, LIDA E HONRADA, não renegociada
+- Com `gente`/`coo` (área `14`, `F18`) — DECLARADA UNILATERALMENTE PELO OUTRO LADO, E MAIS AMPLA DO QUE O ACERVO CONCEDE
+- Com a meta-fábrica (área `15`, `CAP-engenharia-de-agentes`) — FECHADA E MÚTUA, `2` contra `5`, e a direção é de CONSUMO
+- Com `qualidade` (área `16`, `CAP-qualidade`) — NÃO EXISTE NO ESTRATO DA CAPABILITY E EXISTE NO DA CARTA. É o achado desta seção
+- O que a Carta diz?
+- Onde a decisão se apoia nele?
+- O que a `F22` mediu?
+- Qual é a consequência exata?
+- Quem é o dono?
+- Qual é o gatilho?
+- Definir a norma sobre o que é obrigatório registrar
+- Extrair a lição da experiência vivida
+- Transferir trabalho e contexto entre partes
+- Investigar o mundo externo
+- Sustentar a direção com histórico
+- Escrever na camada `EST`
+- Decidir a prioridade do que curar primeiro
+- Aprovar, revisar ou emendar a própria Carta
+- O ciclo de vida do conhecimento de produto — fonte, aprovação, prazo, envelhecimento
+- A medição do custo de contexto, e a baseline datada
+- O índice, e a varredura que o confere contra as fontes
+
 ## 5. O que decido — autoridade e portoes
 
 | Materia | Autonomia | Consulta obrigatoria | **Fonte da autoridade** |
@@ -177,6 +220,44 @@ para uma tarefa — e nada sobre o **merito** do que foi registrado.
 > REV-DEPARTAMENTO, dono DEP-KMS, materializado como criterio de liberacao do portao que ja
 > existia. `MEM-APR-0002` declarava **2** ocorrencias com **5** documentadas por tres ciclos —
 > QG-5 liberava sem que a licao chegasse a fonte.
+
+### 5.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `aprendizado`** *(F34: `CONVOCADO`; fonte `F40` da fabrica; amparo `CAP-aprendizado-organizacional`; extrato `sha256 fa379a1f6987ca32…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F40-SETOR-APRENDIZADO.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Causa, nunca sintoma
+- Toda lição declara condições de aplicação E de não-aplicação
+- Lição tem origem, ocorrências contadas e gatilho de refutação
+- Refutação preserva o histórico — append-first, nunca emenda
+- Loop se reporta por etapa, com a evidência e o repositório de cada uma
+- Vazio de estreia é verde; vazio de uso é achado — e os dois têm o mesmo aspecto
+- Nenhuma mudança encerra sem lição ou ausência justificada por escrito
+- Promoção sobe um degrau por vez, com evidência que resolve no disco
+- Integrar, não duplicar: o que já existe é nomeado antes de a casa crescer
+
+> **Setor `conhecimento`** *(F34: `CONVOCADO`; fonte `F24` da fabrica; amparo `CAP-conhecimento`; extrato `sha256 b19869f7a2cc0565…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F24-SETOR-CONHECIMENTO.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Número herdado é alegação — remede-se ou não se compara
+- Todo número carrega data, e valor sem data não entra no índice
+- Baseline não se edita: emite-se outra, com identificador novo
+- Divergência entre índice e fonte corrige-se NA FONTE, nunca no índice
+- Estado se DERIVA, nunca se declara
+- A lista do que endurece é explícita, e não um `!=` espalhado
+- Toda falha do juízo de procedência resulta em NÃO ENDURECER
+- Aprovação tem teto, e o teto está em constante nomeada com o motivo ao lado
+- Avisa-se ANTES de vencer, com janela que caiba na agenda de quem assina
+- Fonte nunca conferida vira aviso por IDADE, e a idade é prazo de paciência
+- Um registro pertence a exatamente UMA camada
+- Lição só é lição se tiver origem, causa raiz e valer além do caso
+- Memória informa; não obriga. Norma exige `ADR`
+- Carregar sem gatilho declarado é falha de curadoria, não zelo
+- Zero de varredura só vale com controle positivo ao lado
+- Ausência de medição não é medição de ausência, e `AUSENTE` não é `perdido`
+- Enquadramento de norma externa não se afirma daqui
 
 ## 6. Interfaces — entradas, saidas e consumidores
 
@@ -272,6 +353,56 @@ para uma tarefa — e nada sobre o **merito** do que foi registrado.
 
 > **Handoff devolvido duas vezes pelo mesmo motivo escala a DEP-EXE** — ha defeito de
 > fronteira (HO-03, FND-02 §9.2).
+
+### 8.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `aprendizado`** *(F34: `CONVOCADO`; fonte `F40` da fabrica; amparo `CAP-aprendizado-organizacional`; extrato `sha256 fa379a1f6987ca32…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F40-SETOR-APRENDIZADO.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Pergunta se a lição já existe antes de escrever outra
+- Separa o que a organização VIVEU do que ela ainda não sabe
+- Acha a causa antes de redigir
+- Conta as ocorrências contra o documentado, nunca de memória
+- Grava com condições, ação com dono e gatilho de refutação
+- Confirma que a lição chegou ao registro-fonte
+- Relato de evento sem lição extraída
+- Caso único como regra universal
+- Verificar se a entrega está correta
+- Guardar e indexar o que produziu
+- Calibrar agente específico
+- Promoção que pula degrau
+- Lição que exigiria emendar norma
+- Lição cuja causa é violação de norma
+- Refutação de lição com consequência viva
+- Cruzar vereditos do `lucaX` com a camada `APR` do acervo
+- Depreciar a Capability
+- Lição sai com situação, causa, condições e ação
+- Ocorrência conta com data e fonte; a contagem confere contra o documentado
+- Síntese de aprendizado devolvida a quem vai decidir, a cada encerramento
+- Etapa de loop reporta com evidência e repositório
+
+> **Setor `conhecimento`** *(F34: `CONVOCADO`; fonte `F24` da fabrica; amparo `CAP-conhecimento`; extrato `sha256 b19869f7a2cc0565…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F24-SETOR-CONHECIMENTO.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Procura a fonte antes de crer no número
+- Declara perímetro e sentido antes de contar
+- Põe controle positivo ao lado de todo zero
+- Deriva o estado em vez de declará-lo
+- Dá prazo, e avisa antes de vencer
+- Acusa a contradição em vez de ajustar
+- Corrige o índice contra a fonte
+- Devolve "não encontrei" quando não encontrou
+- A pergunta é se o conteúdo registrado está CERTO
+- A pergunta é o que é OBRIGATÓRIO registrar
+- A matéria é extrair a lição da experiência vivida
+- A matéria é o canal, o envelope e o aceite da transferência
+- A pergunta é sobre o dado estruturado do domínio
+- O registro exigiria escrita na camada `EST`
+- Um registro foi destruído ou é irrecuperável
+- Número citado por despacho ou por documento anterior declara a FONTE e a DATA, ou entra como premissa a medir — nunca como fato
+- Instrumento que conta AFIRMAÇÃO não pode casar MENÇÃO — e a granularidade sai declarada junto com o perímetro
 
 ## 9. Memoria autorizada e politica de contexto
 
@@ -370,6 +501,49 @@ para uma tarefa — e nada sobre o **merito** do que foi registrado.
 > ([FIT-2026-006 §Regras de medicao](../../governance/fitness/FIT-2026-006-validacao-interclasses.md)).
 > **O zero e um fato; a leitura de que ele indica pacote inutil e que estava errada.**
 
+### 11.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `aprendizado`** *(F34: `CONVOCADO`; fonte `F40` da fabrica; amparo `CAP-aprendizado-organizacional`; extrato `sha256 fa379a1f6987ca32…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F40-SETOR-APRENDIZADO.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- `6` de `6`
+- `4` de `6`
+- `nao medido`
+- Se a lição evitou o erro seguinte
+- Se a calibração melhorou o papel
+- Lições acumulando sem consumo medido
+- Lição promovida a prompt
+- Verde do painel com etapa escura fora do perímetro dele
+- `0` refutações lido como acerto permanente
+- Ocorrências declaradas subindo sem conferência na fonte
+
+> **Setor `conhecimento`** *(F34: `CONVOCADO`; fonte `F24` da fabrica; amparo `CAP-conhecimento`; extrato `sha256 b19869f7a2cc0565…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F24-SETOR-CONHECIMENTO.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- O mapa de formas do portão de procedência não mente
+- Todo número deste documento tem método ao lado
+- Todo zero de varredura vem com controle positivo
+- Todo homógrafo declara o sentido antes de ser contado
+- Nenhum número circula com dois valores sem data que os separe
+- A contagem de cegueiras do próprio instrumento é única
+- O índice bate com as fontes que ele projeta
+- Todo ativo de conhecimento tem fonte, aprovação e prazo
+- A Capability mede o que ela diz que a organização é capaz de fazer
+- Toda medição é reproduzível pelo comando que a produziu
+- REPROVA, medido nesta sessão
+- REPROVA por declaração da própria fonte
+- PASSA, medido nesta sessão
+- PASSA com ressalva declarada
+- Se o conteúdo registrado está certo
+- Se a entrega passa, e com que risco
+- "`CAP-conhecimento` é `nucleo` e está ratificada, logo a memória funciona"
+- "O número está escrito em documento da casa, logo vale hoje"
+- "Existe `retencao`/`expiracao` implementada, logo nada está vencido"
+- "O grafo cobre `200` nós, logo o acervo está indexado"
+- "O `medAlly` tem procedência de conhecimento, logo a fábrica tem competência de conhecimento"
+
 ## 12. Ciclo de vida — especializacao, fusao e retirada
 
 ### 12.1 Gatilhos de especializacao
@@ -430,7 +604,7 @@ momento certo e converte experiencia em capacidade.
 |---|---|---|---|
 | Secoes 1, 2 e 4 | Saber o que DEP-KMS faz e o que nao faz | **69 linhas** | 2026-07-28 |
 | + secoes 5 e 10 | Decidir se DEP-KMS pode decidir ou curar algo | **141 linhas** | 2026-07-28 |
-| Carta integral | Auditoria, revisao estrutural, extincao | **464 linhas** | 2026-07-28 |
+| Carta integral | Auditoria, revisao estrutural, extincao | **638 linhas** | 2026-08-12 |
 
 > Carregar alem do recorte aplicavel exige **gatilho declarado** (CE-01, PC-01). O recorte de
 > decisao custa **30% da Carta** — medido por `sed`+`wc -l` sobre os intervalos das secoes.

@@ -2,7 +2,7 @@
 id: CAP-estrategia
 titulo: Estrategia
 tipo: capability
-versao: 1.0.0
+versao: 1.1.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
@@ -128,6 +128,7 @@ de sucesso organizacional e recusar oportunidades que nao servem a direcao.
 | `CAP-coordenacao` | depende-de | A direcao que a prioridade deve servir |
 | `CAP-produto` | depende-de | Decisao de portfolio e criterios de sucesso |
 | `CAP-marketing` | depende-de | Posicionamento estrategico |
+| `CAP-aprendizado-organizacional` | depende-de | A direcao que diz quais licoes importam — a consumidora exercia a aresta sem declara-la (medido pela F40/F42 da fabrica: 0 citacoes); formalizada pelo item IV do decimo primeiro ato (MSG-2026-0011), dono DEP-EXE |
 
 ## 10. Indicadores (A-12)
 | # | Indicador | Direcao | Como se mede | Estado |

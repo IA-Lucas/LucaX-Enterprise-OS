@@ -109,7 +109,9 @@ acabou de acontecer. Definicao completa em
 > nenhum fato duravel se perde** — o que ele guarda e o **ato**, transcrito para que a fonte
 > permaneca percorrivel (LN-07).
 
-> **Contador `MSG-2026-NNNN`: ultimo atribuido `0009`; proximo `0010`** (FND-03 §2.3).
+> **Contador `MSG-2026-NNNN`: ultimo atribuido `0011`; proximo `0012`** (FND-03 §2.3).
+>
+> **⚠️ Contador exercido — e estava DEFASADO EM DOIS (2026-08-12, aplicacao do PS-2026-018), familia de `RD-32`, SEXTA ocorrencia:** dizia `0009/0010` com `MSG-2026-0010` existindo desde 2026-08-02. Antes de atribuir **`0011`**: **`0010` ✅ existe · `0011` ✅ NAO existe** contra a copia datada *(`_backups/LucaX-Enterprise-OS_2026-08-12_pre-aplicacao-ps018-t44/`)* — `V1` de MEM-APR-0006. Corrigido aqui.
 > **`RD-68` — o gatilho DISPAROU nesta emissao, e o contador estava CERTO.** O gatilho registrado
 > era *"proxima emissao de `MSG`"*; ela ocorreu, e o contador declarava *"ultimo `0008`; proximo
 > `0009`"* **enquanto a tabela acima listava `MSG-2026-0008`** — **concordam**. `MSG-2026-0009` foi

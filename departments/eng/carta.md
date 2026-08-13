@@ -2,14 +2,14 @@
 id: DEP-ENG
 titulo: Engenharia
 tipo: carta
-versao: 1.1.0
+versao: 1.2.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
 proprietario: DEP-EXE
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-07-28
+atualizado_em: 2026-08-12
 revisao_prevista: 2027-01-28
 decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0007, ADR-0011]
 substitui: []
@@ -124,6 +124,50 @@ assumida — e nenhuma sobre **o que** se constroi ou **se** a entrega e aceita.
 | Criar Capability, ou alterar escopo de Capability que custodia sem o rito | custodio + DEP-GOV + SOBERANO | FND-08 §6.3; DC-01 |
 | Importar conteudo do **LucaX Legacy** | Portao de admissao G1–G5 | [ADR-0007 §5.3](../../decisions/ADR-0007-fronteira-greenfield-legado.md) |
 
+### 4.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `agentops`** *(F34: `CONVOCADO`; fonte `F39` da fabrica; amparo `CAP-engenharia-de-agentes`; extrato `sha256 03a1580093c885f8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F39-SETOR-AGENTOPS.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- `gente`/`coo` (`F18`), área `14`
+- `conhecimento` (`F24`), área `20`
+- `qualidade` (`F37`), área `16`
+- `aprendizado` (etapa `5`), área `23`
+- `CAP-inteligencia-artificial`
+- Escolher, instruir e avaliar o modelo
+- Curar o conhecimento que alimenta os agentes
+- Definir o protocolo de troca entre partes
+- Priorizar e alocar o trabalho
+- Verificar de forma independente a saída
+- Conceder autoridade acima da norma
+- Prover ambiente de execução
+
+> **Setor `dados`** *(F34: `CONVOCADO`; fonte `F23` da fabrica; amparo `CAP-dados`; extrato `sha256 111ffaf75b6200a8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F23-SETOR-DADOS.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Com `cio` / infraestrutura (área `6`, `CAP-infraestrutura`) — FECHADA E MÚTUA, e o caso em cima da linha tem dono
+- Com `juridico` (áreas `8`/`17`, `CAP-juridico`) — DECLARADA DOS DOIS LADOS, E A SOBREPOSIÇÃO É REAL: O CORPO NORMATIVO DE DADO PESSOAL ESTÁ LÁ
+- Com `tecnologia` (área `5`, `CAP-engenharia`) — FECHADA E MÚTUA, `2` contra `2`
+- Com `conhecimento` (área `20`, `CAP-conhecimento`) — FECHADA, `2` contra `1`, e a regra do corte está escrita
+- Qual teste?
+- Qual variável?
+- O que ele roda?
+- Sobre o quê?
+- O que aconteceria em produção?
+- `medally-ci.yml`, commitado em 2026-08-05
+- Definir a estrutura técnica que hospeda o dado
+- Prover o armazenamento e o ambiente de execução
+- Treinar, avaliar e operar modelos
+- Proteger dado sensível e controlar acesso
+- Definir a base legal do tratamento
+- Investigar o mundo externo
+- Decidir expor dado vivo ao exterior
+- Decidir o que pode ser apagado, e sob que condição
+- A retenção com prazo por classe, enquanto o prazo for de engenharia e não de lei
+- A divergência entre duas fontes que respondem a mesma pergunta
+
 ## 5. O que decido — autoridade e portoes
 
 | Materia | Autonomia | Consulta obrigatoria | **Fonte da autoridade** |
@@ -150,6 +194,43 @@ assumida — e nenhuma sobre **o que** se constroi ou **se** a entrega e aceita.
 | **QG-2** *(com DEP-GOV)* | As alternativas foram consideradas e a decisao esta registrada? | ADR com ≥2 alternativas reais + "nao fazer nada", criterios antes da escolha e plano de reversao | FND-01 §6.2; VD-01 a VD-09 |
 
 > **Nenhum portao novo e criado aqui.** Os sete sao de FND-01 §6.2; acrescentar e **C3**.
+
+### 5.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `agentops`** *(F34: `CONVOCADO`; fonte `F39` da fabrica; amparo `CAP-engenharia-de-agentes`; extrato `sha256 03a1580093c885f8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F39-SETOR-AGENTOPS.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Nenhum agente amplia a própria autoridade, e ninguém pode conceder acima da norma
+- Quem audita não conserta — sem `Write` nem `Edit` no `tools:`
+- Papel nasce com `nasceu_de`: o ato, a dor medida e a fronteira, no próprio arquivo
+- Toda entrega valida contra Juiz 1, e o exemplo inválido mora ao lado do válido
+- Resultado declara a plataforma em que foi medido — e a comparação declara as DUAS máquinas
+- Defeito herdado entra declarado, com número e procedência — nunca com o número redondo do folclore
+- Peça de harness reivindicada por outro documento não entra em cargo até a disputa fechar
+- Contexto tem teto declarado e custo sob demanda
+- Prompt é instrução de execução, camada `2`: este setor decide COMO SE PEDE, nunca O QUE ENTRA
+
+> **Setor `dados`** *(F34: `CONVOCADO`; fonte `F23` da fabrica; amparo `CAP-dados`; extrato `sha256 111ffaf75b6200a8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F23-SETOR-DADOS.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Modelo se declara ANTES do uso, e mudar modelo é decisão de classe `C2`
+- Duas listas que descrevem a mesma coisa divergem — então o teste cruza as duas
+- Sensor verde prova ausência de defeito OU cegueira do sensor — então o sensor é testado contra o defeito
+- A chave é do documento, não de quem o gravou — um endereço, um conteúdo
+- Quem grava e quem procura falam a mesma chave, e isso se confere sem banco no ar
+- Divergência entre dois meios é defeito de dado, mesmo quando nenhum dos dois levanta erro
+- A quebra de linha é a mesma em todo meio e todo sistema, porque a impressão do conteúdo é prova
+- Prazo de guarda tem classe, número e base — e prazo sem base sai rotulado `PROVISORIO`
+- Quem calcula o vencido não apaga: devolve plano, e a eliminação exige confirmação
+- Expurgo se SUSPENDE por motivo declarado, e a lista é fechada
+- Exclusão silenciosamente parcial é pior que exclusão recusada
+- Backup não se apaga por `CASCADE`, e o alcance da exclusão sai declarado com o número
+- Quem julga o próprio trabalho não verifica — a verificação antecede a mudança de exposição
+- Esquema lido em código não é o banco em produção, e a diferença sai declarada
+- Ausência de medição não é medição de ausência
+- Enquadramento legal de dado pessoal exige assessoria humana — o setor produz o levantamento, não o parecer
 
 ## 6. Interfaces — entradas, saidas e consumidores
 
@@ -239,6 +320,55 @@ assumida — e nenhuma sobre **o que** se constroi ou **se** a entrega e aceita.
 > **Handoff devolvido duas vezes pelo mesmo motivo escala a DEP-EXE** — ha defeito de
 > fronteira (HO-03, FND-02 §9.2).
 
+### 8.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `agentops`** *(F34: `CONVOCADO`; fonte `F39` da fabrica; amparo `CAP-engenharia-de-agentes`; extrato `sha256 03a1580093c885f8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F39-SETOR-AGENTOPS.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Procura o papel que já existe antes de criar um novo
+- Lê o `nasceu_de` do vizinho antes de tocar fronteira
+- Escreve o escopo negativo junto com o positivo, nunca depois
+- Declara a plataforma e a máquina de toda medição
+- Valida a saída contra o Juiz 1 antes de entregar
+- Escrever no produto
+- Escolher, instruir ou avaliar o modelo
+- Priorizar e alocar o trabalho dos agentes
+- Curar o conhecimento que alimenta os agentes
+- Verificar de forma independente o que os agentes produzem
+- Publicar imagem, fazer deploy, adotar dependência nova
+- Criar, dividir ou aposentar papel
+- Transferir custódia da Capability
+- Depreciar a Capability
+- Agente operou acima da autonomia
+- Disputa de alocação com `gente` (área `14`/`15`)
+- Posse do `lease`, `frota`, `recibo`, `roteamento`
+- Parecer valida contra o Juiz 1 da cadeira
+- Toda afirmação de execução diz a plataforma
+- Defeito achado vira parecer; a correção vai para quem escreve
+- Comparação com medição da frente declara máquina e data dos dois lados
+
+> **Setor `dados`** *(F34: `CONVOCADO`; fonte `F23` da fabrica; amparo `CAP-dados`; extrato `sha256 111ffaf75b6200a8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F23-SETOR-DADOS.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Declara o modelo antes de usá-lo
+- Cruza as duas listas que descrevem o mesmo esquema
+- Testa o sensor contra o defeito
+- Mede o dado pessoal onde ele está, sem abrir banco
+- Declara o prazo com a base, e rotula o provisório
+- Calcula o expurgo e devolve o plano
+- Entrega ao jurídico a pergunta que é de lei
+- A pergunta é qual norma se aplica
+- A resposta exigiria abrir dado vivo
+- A decisão é expor o produto a usuário externo
+- A escolha é onde o banco mora, e quanto custa
+- A matéria é proteger o dado e controlar quem acessa
+- O que se extrai do número é lição, não medida
+- Lista de termos declara DE QUEM É O VOCABULÁRIO, e traz um termo do corpo medido
+- Busca por LINHA não alcança regra escrita em PARÁGRAFO
+- Placar de tabela se confere CONTRA a tabela, inclusive em artefato que não é meu
+
 ## 9. Memoria autorizada e politica de contexto
 
 | Camada | Meu papel | Sob que condicao |
@@ -321,6 +451,49 @@ assumida — e nenhuma sobre **o que** se constroi ou **se** a entrega e aceita.
 > componentes. Declarar desempenho aqui seria LV-12. Os cinco sem valor dependem de um ciclo
 > de construcao que **nao existe por determinacao**, nao por omissao.
 
+### 11.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `agentops`** *(F34: `CONVOCADO`; fonte `F39` da fabrica; amparo `CAP-engenharia-de-agentes`; extrato `sha256 03a1580093c885f8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F39-SETOR-AGENTOPS.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- `5` de `5`
+- `19` de `19`
+- `0` medidos
+- Se a saída dos agentes projetados presta
+- Se nenhum papel excede autoridade
+- Número de papéis criados
+- Linhas de harness
+- Contexto por papel subindo
+- Verde de Juiz 1 sobre entrega vazia
+- `19` de `19` com `nasceu_de` lido como saúde
+
+> **Setor `dados`** *(F34: `CONVOCADO`; fonte `F23` da fabrica; amparo `CAP-dados`; extrato `sha256 111ffaf75b6200a8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F23-SETOR-DADOS.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- O esquema declarado e os verbos que o consultam concordam
+- A mesma pergunta tem a mesma resposta nos dois meios
+- A contagem de tabelas do código bate com a do banco
+- Todo termo contado declara o sentido, e não só a palavra inteira
+- Todo zero de varredura vem com controle positivo ao lado
+- Todo dado pessoal tem tabela e coluna conhecidas
+- Todo registro é atribuível ao titular que o gerou
+- Existe caminho pelo qual o titular obtém a exclusão
+- DDL e `DELETE` de teste não alcançam banco cujo nome não diga `teste`
+- O placar de um documento confere com a tabela dele
+- REPROVA, medido nesta sessão
+- REPROVA por medição de terceiro
+- PASSA, medido nesta sessão
+- PASSA por construção, não reexecutado
+- Se o tratamento tem base legal
+- Se o dado está protegido e o acesso controlado
+- "`CAP-dados` está ratificada, logo a competência existe"
+- "Não há achado de dado pessoal, logo não há dado pessoal"
+- A existência de `retencao.py` como prova de que nada está vencido
+- "A guarda existe, logo o `DELETE` está contido"
+- "O `medAlly` tem política de retenção, logo a fábrica tem competência de dado"
+
 ## 12. Ciclo de vida — especializacao, fusao e retirada
 
 ### 12.1 Gatilhos de especializacao
@@ -377,7 +550,7 @@ longo do tempo.
 |---|---|---|---|
 | Secoes 1, 2 e 4 | Saber o que DEP-ENG faz e o que nao faz | **55 linhas** | 2026-07-28 |
 | + secoes 5 e 10 | Decidir se DEP-ENG pode decidir algo | **116 linhas** | 2026-07-28 |
-| Carta integral | Auditoria, revisao estrutural, extincao | **402 linhas** | 2026-07-28 |
+| Carta integral | Auditoria, revisao estrutural, extincao | **575 linhas** | 2026-08-12 |
 
 > Carregar alem do recorte aplicavel exige **gatilho declarado** (CE-01, PC-01). O recorte de
 > decisao custa **29% da Carta** — medido por `sed`+`wc -l` sobre os intervalos das secoes.

@@ -419,7 +419,7 @@ resultado verificavel.
 |---|---|---|---|
 | Secoes 1, 2 e 4 | Saber o que DEP-PRD faz e o que nao faz | **55 linhas** | 2026-07-29 |
 | + secoes 5 e 10 | Decidir se DEP-PRD pode definir, submeter ou aprovar algo | **145 linhas** | 2026-07-29 |
-| Carta integral | Auditoria, revisao estrutural, extincao | **445 linhas** | 2026-07-29 |
+| Carta integral | Auditoria, revisao estrutural, extincao | **446 linhas** | 2026-08-12 |
 
 > Carregar alem do recorte aplicavel exige **gatilho declarado** (CE-01, PC-01). O recorte de decisao custa **33% da Carta** — medido por
 > `sed`+`wc -l` sobre os intervalos das secoes.

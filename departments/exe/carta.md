@@ -2,14 +2,14 @@
 id: DEP-EXE
 titulo: Gabinete Executivo
 tipo: carta
-versao: 1.2.0
+versao: 1.3.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
 proprietario: DEP-EXE
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-08-02
+atualizado_em: 2026-08-12
 revisao_prevista: 2027-01-28
 decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0004, ADR-0011, ADR-0018, ADR-0019, ADR-0023, ADR-0032]
 substitui: []
@@ -145,6 +145,48 @@ exercida por **DEP-KMS**.
 | **Aprovar ou ratificar esta Carta**, ou qualquer Carta de Departamento | **SOBERANO** | FND-09 §8.2, linha `DEP`; DC-09 |
 | Alterar Carta de Capability para acomodar esta Carta | custodio da Capability | PR-2, PR-3 de ADR-0011 |
 
+### 4.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `financeiro`** *(F34: `CONVOCADO`; fonte `F22` da fabrica; amparo `CAP-financeiro`; extrato `sha256 753470afb5dbd8d8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F22-SETOR-FINANCEIRO-CFO-E-CONTROLADORIA.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Com `estrategia` (área `1`, `CAP-estrategia`) — FECHADA E MÚTUA
+- Com `juridico` (áreas `8`/`17`, `CAP-juridico`) — DECLARADA DE UM LADO SÓ, E É ACHADO
+- Com `dados` (área `7`, `CAP-dados`) — NÃO DECLARADA EM NENHUM DOS DOIS LADOS
+- Fixar preço e assinar contrato com cliente
+- Decidir prioridade e alocação de trabalho
+- Decidir direção e portfólio
+- Escolher a ferramenta externa a adotar
+- Provisionar o substrato e pagar o servidor
+- Cumprir e atestar a obrigação fiscal
+- Vetar uma escolha por ser cara
+- A medição do custo de inferência
+- O fechamento contábil mensal, enquanto ninguém o reivindicar
+- A projeção de caixa a partir do já fechado
+
+> **Setor `estrategia`** *(F34: `CONVOCADO`; fonte `F38` da fabrica; amparo `CAP-estrategia`; extrato `sha256 736e426951a7e74d…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F38-SETOR-ESTRATEGIA.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- `13`/`18`/`21` — `financeiro` (`F22`)
+- `11` — `comercial` (`F26`)
+- `3`/`4` — `produto` (`F12`), sobre quem decide o roadmap de produto
+- `2`/`9` — `novos-negocios` (`F25`), sobre quem decide entrar em mercado novo
+- O mesmo Departamento custodia as duas
+- A citação mútua é a mais densa das oito:
+- `DEP-EXE` §12.1 já avaliou especializar e decidiu NÃO
+- Priorizar a fila e alocar capacidade
+- Definir o escopo de um produto específico
+- Verificar conformidade da decisão com a norma
+- Descobrir fatos sobre mercado, público ou tecnologia
+- Posicionar e comunicar a mensagem ao público
+- Gerir custo e recursos
+- Julgar se a entrega passa
+- Extrair a lição do defeito
+- FORA por engano
+- DENTRO por medição
+
 ## 5. O que decido — autoridade e portoes
 
 | Materia | Autonomia | Consulta obrigatoria | **Fonte da autoridade** |
@@ -207,6 +249,45 @@ exercida por **DEP-KMS**.
 > **DEP-PRD segue decidindo o escopo**; e o veto de **DEP-QAR** sobre criterio de aceite nao
 > verificavel permanece integral (LV-09). **I-5 continua vedando a DEP-EXE decidir merito, e
 > o portao nao e via para contorna-lo** — e o que **I-10** declara.
+
+### 5.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `financeiro`** *(F34: `CONVOCADO`; fonte `F22` da fabrica; amparo `CAP-financeiro`; extrato `sha256 753470afb5dbd8d8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F22-SETOR-FINANCEIRO-CFO-E-CONTROLADORIA.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Custo é restrição declarada, nunca o critério dominante — e vetar por custo não é de ninguém
+- Troca de ferramenta dispara por custo MEDIDO, jamais por benchmark de terceiro
+- Modelo sem preço não vira preço zero; registro sem preço sai contado à parte
+- Insumo ausente não vira custo zero — o instrumento para com erro
+- Proxy declarada vale; proxy silenciosa não
+- Número que descreve dinheiro traz o sentido do erro, não só a margem
+- A ordem do fechamento é inviolável: extrato → categorização → Juiz 1
+- Sem o verde do Juiz 1, o mês NÃO está fechado
+- Quem julga o dado contábil não usa LLM
+- Vocabulário é contrato: categoria nova é mudança de spec com despacho, não improviso na planilha
+- Quem projeta não recategoriza; quem categoriza não projeta
+- O fechamento mora no projeto-filho e não volta para o organograma
+- Nada aqui foi conferido contra fatura — e isso sai declarado, não pressuposto
+- Sessão sem eventlog não existe para o medidor — e os três repositórios da fábrica são invisíveis
+- Preço tem data e não se atualiza sozinho
+- A obrigação fiscal exige assessoria humana — o setor não a substitui
+- Documento fiscal de serviço é competência municipal — não há uma regra só para o país
+- Enquadramento tributário limita faturamento, e o limite é numérico
+
+> **Setor `estrategia`** *(F34: `CONVOCADO`; fonte `F38` da fabrica; amparo `CAP-estrategia`; extrato `sha256 736e426951a7e74d…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F38-SETOR-ESTRATEGIA.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Toda linha de cargo deste setor declara `Direito` ao lado de `Estado`, e a fonte do `Direito` nunca é a Capability
+- Recomendar não é decidir, e o registro de recomendação nunca substitui o ato
+- Direção sem rito não vincula, e por isso este setor depende de `CAP-governanca`
+- Verde de sensor responde *"há defeito no que existe?"*, nunca *"existe o suficiente?"* — e as duas leituras não se substituem
+- Indicador sem valor declara-se `definido, sem valor`; afirmar desempenho sem medida é `LV-12`
+- Zero nunca sai sem controle positivo do MESMO perímetro
+- Percentual sem denominador declarado não entra; e razão certa não é contagem certa
+- Registro de acompanhamento não é norma, e o frontmatter tem de dizê-lo
+- Campo de julgamento só carrega valor que o humano declarou de fato; `null` é resposta, invenção não é
 
 ## 6. Interfaces — entradas, saidas e consumidores
 
@@ -304,6 +385,58 @@ exercida por **DEP-KMS**.
 > **Handoff devolvido duas vezes pelo mesmo motivo indica defeito de fronteira** (HO-03,
 > FND-02 §9.2) — e aqui a escalada nao sobe: **DEP-EXE ja e o destino da escalada**. Quando o
 > defeito de fronteira e do proprio desenho de DEP-EXE, o destino e o **SOBERANO** (E4).
+
+### 8.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `financeiro`** *(F34: `CONVOCADO`; fonte `F22` da fabrica; amparo `CAP-financeiro`; extrato `sha256 753470afb5dbd8d8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F22-SETOR-FINANCEIRO-CFO-E-CONTROLADORIA.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Mede o consumo real antes de estimar
+- Converte em dinheiro com preço datado
+- Declara a proxy e o que ela não cobre, no mesmo lugar
+- Fecha o histórico em ordem fixa, com juiz sem LLM
+- Só então projeta o futuro
+- Devolve ao Fundador o que compromete dinheiro recorrente
+- O compromisso é recorrente e novo
+- A escolha é de preço ou de contrato com cliente
+- A matéria é obrigação fiscal ou contábil formal
+- O custo exigiria vetar qualidade
+- O número exigiria abrir fatura ou painel de fornecedor
+- A projeção exigiria orçamento que o CEO ainda não preencheu
+- Contagem de termo declara o SENTIDO, não só o perímetro e a palavra inteira
+- `cita` e `integra` são medições diferentes, e a crua é a que engana
+- Fonte externa declara o estado de leitura POR ITEM, e fonte inacessível sai como inacessível
+
+> **Setor `estrategia`** *(F34: `CONVOCADO`; fonte `F38` da fabrica; amparo `CAP-estrategia`; extrato `sha256 736e426951a7e74d…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F38-SETOR-ESTRATEGIA.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Lê a direção vigente antes de propor qualquer coisa
+- Consulta o histórico antes de decidir de novo
+- Classifica a decisão por impacto e reversibilidade ANTES de tomá-la
+- Registra pelo menos duas alternativas reais e a opção *não fazer nada
+- Declara o portão antes de convocar, não depois
+- Assinala o roadmap na mesma sessão que fecha a missão
+- Decidir mérito — técnico, de produto, de qualidade ou de norma
+- Priorizar, avaliar, instruir ou alocar a Guarda
+- Reverter veto da Guarda, ainda que a fila sofra
+- Criar ou encerrar produto
+- Alterar Carta de Capability para acomodar decisão de portfólio
+- Vetar por custo uma escolha de qualidade
+- Convocar Conselho para decisão rotineira
+- Decisão `Tipo 1` de qualquer natureza
+- Mudança de portfólio — criar ou encerrar produto
+- Conflito com norma vigente
+- Veto de Guarda que se pretende reverter
+- Exposição de dado vivo, ou credencial comprometida
+- Impedimento próprio que deixe a aprovação sem executor
+- Empate entre áreas de Linha
+- Reporte sem evidência é devolvido
+- A trilha é o produto, não o subproduto
+- Lente sem achado escreve `— não coberto`; apagar a linha é que não pode
+- `0` divergências entre `6` lentes adversariais é ATENÇÃO, não aprovação
+- Divergência preservada por escrito, nunca sintetizada à força
 
 ## 9. Memoria autorizada e politica de contexto
 
@@ -407,6 +540,54 @@ exercida por **DEP-KMS**.
 > ciclos de crescimento. E o mesmo fato que R3 de FIT-2026-005 registra, visto do lado de
 > **quem tem a autoridade de agir** em vez do lado de quem mede o acervo.
 
+### 11.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `financeiro`** *(F34: `CONVOCADO`; fonte `F22` da fabrica; amparo `CAP-financeiro`; extrato `sha256 753470afb5dbd8d8…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F22-SETOR-FINANCEIRO-CFO-E-CONTROLADORIA.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- O custo publicado reproduz na máquina de quem o lê
+- Todo zero de varredura vem com controle positivo ao lado
+- Todo termo contado declara sentido, e não só palavra inteira
+- Registro sem preço é contado à parte, nunca somado como zero
+- O que o instrumento não cobre viaja dentro da saída
+- Nenhum número foi conferido contra fatura
+- O custo do trabalho da fábrica está medido
+- O mês fecha antes do Day 10, e há verde do Juiz 1
+- O juiz do dado contábil não usa LLM
+- Nenhuma escolha teve o custo decidindo em silêncio
+- Todo compromisso recorrente tem custo previsto antes
+- REPROVA, medido nesta sessão
+- REPROVA por medição de terceiro
+- PASSA, medido nesta sessão
+- Vigente por construção, não reexecutado
+- Se a obrigação fiscal está sendo cumprida
+- Se o preço cobrado é o preço certo
+- "O custo é US$ 23,50"
+- "Não há custo porque não há cobrança"
+- A lista de ferramentas contábeis como prova de mês fechado
+- `I1 = 0` e `I4 = 0` como prova de disciplina
+- "Temos controladoria, logo temos financeiro"
+
+> **Setor `estrategia`** *(F34: `CONVOCADO`; fonte `F38` da fabrica; amparo `CAP-estrategia`; extrato `sha256 736e426951a7e74d…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F38-SETOR-ESTRATEGIA.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- `6` de `8` — `75,0%`
+- `0` de `8` — `0,0%`
+- `14` dias
+- `17` de `73` — `23,3%`
+- `3` de `30`
+- Se a direção decidida produziu entrega apta
+- Se a aposta se pagou em dinheiro
+- Verde do `sensor_conselho.py`
+- Número de itens no roadmap
+- Linhas de autoridade ratificada
+- `0`, com `0` revisões propostas
+- `maturidade: emergente`
+- `4` de `4` — `100%`
+- fundamento vencido, valor NÃO MEDIDO
+
 ## 12. Ciclo de vida — especializacao, fusao e retirada
 
 ### 12.1 Gatilhos de especializacao
@@ -475,7 +656,7 @@ de Linha e responde pela entrega do que foi priorizado.
 |---|---|---|---|
 | Secoes 1, 2 e 4 | Saber o que DEP-EXE faz e o que nao faz | **63 linhas** | 2026-07-28 |
 | + secoes 5 e 10 | Decidir se DEP-EXE pode decidir, liberar ou aprovar algo | **172 linhas** | 2026-07-29 |
-| Carta integral | Auditoria, revisao estrutural, extincao | **506 linhas** | 2026-07-29 |
+| Carta integral | Auditoria, revisao estrutural, extincao | **688 linhas** | 2026-08-12 |
 
 > Carregar alem do recorte aplicavel exige **gatilho declarado** (CE-01, PC-01). O recorte de
 > decisao custa **34% da Carta** — medido por `sed`+`wc -l` sobre os intervalos das secoes.

@@ -2,14 +2,14 @@
 id: DEP-OPS
 titulo: Operacoes
 tipo: carta
-versao: 1.1.0
+versao: 1.2.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
 proprietario: DEP-EXE
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-07-30
+atualizado_em: 2026-08-12
 revisao_prevista: 2027-01-28
 decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0011, ADR-0018, ADR-0025]
 substitui: []
@@ -131,6 +131,40 @@ autoridade sobre a operacao corrente — e nenhuma sobre **o que** muda no que s
 > **violacao de norma**, registrado por DEP-GOV e fechado por DEP-QAR (FND-04 §10). Um mesmo
 > evento pode gerar os dois; **nenhum substitui o outro**.
 
+### 4.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `cio`** *(F34: `CONVOCADO`; fonte `F21` da fabrica; amparo `CAP-infraestrutura`; extrato `sha256 546ff72932a400a7…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F21-SETOR-CIO-INFRAESTRUTURA.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- `tecnologia` — área `5`
+- nada de produto
+- Consome do outro
+- Decidir a estrutura do sistema
+- Verificar que o backup presta, e que o isolamento resiste
+- Adotar e contratar capacidade externa de terceiro
+- Aprovar o custo recorrente
+- Expor dado vivo ao exterior
+- Girar a chave
+- Certificar que este setor funcionou
+- A lista do que precisa existir para uma máquina voltar
+- A reprodutibilidade do ambiente de teste
+- A custódia técnica do segredo de máquina — `A6`
+- Cópia fora desta máquina
+- A cópia foi restaurada de fato
+- Data da última restauração conferida
+- Manifesto `sha256` do que foi restaurado
+- Inventário do que a máquina precisa ter instalado
+- Onde mora o segredo, e quem o monta de volta
+- Prova de que o ambiente reproduz
+- O que ficou sujo e não foi commitado antes do evento
+- Medido e EM ORDEM
+- Medido e EM FALTA
+- `F21` Infraestrutura
+- Abertura da sessão
+- `F21` Infraestrutura — do 1º ao 4º commit
+- `F21` — DA ABERTURA ao 4º commit
+
 ## 5. O que decido — autoridade e portoes
 
 | Materia | Autonomia | Consulta obrigatoria | **Fonte da autoridade** |
@@ -169,6 +203,35 @@ DEP-QAR + DEP-GOV *(QG-6)*.
 > P4, aplicada ao portao.
 
 > **Nenhum portao novo e criado aqui.** Os sete sao de FND-01 §6.2; acrescentar e **C3**.
+
+### 5.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `cio`** *(F34: `CONVOCADO`; fonte `F21` da fabrica; amparo `CAP-infraestrutura`; extrato `sha256 546ff72932a400a7…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F21-SETOR-CIO-INFRAESTRUTURA.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- O segredo mora fora do repositório; o que entra é o NOME da variável
+- O portão pergunta pelo CONTEÚDO, não só pelo caminho
+- Cadastro declarado não prova recurso provisionado
+- Ao encontrar credencial em texto, registra-se localização e tipo — nunca o valor
+- Rotação é ato de terceiro; o setor RECOMENDA e não executa
+- Controle positivo antes de acreditar num zero
+- Sem cópia datada e verificada, não executa — e não há exceção formal possível
+- Backup é a cópia da qual se CONSEGUIU voltar — quatro elos
+- Quem faz a cópia não é quem atesta que ela presta
+- A impressão digital sai de snapshot consistente, nunca do arquivo cru
+- Backup de disco não é backup de banco, e chamar de backup é o defeito
+- `down` preserva; `down -v` apaga — e o dado mora em volume NOMEADO
+- Publicação falha FECHADA — sem credencial, sem backup real e sem imagem limpa, não sobe
+- Host pronto não é aplicação implantada
+- O portão roda DENTRO do comando que publica, não ao lado
+- Serviço local escuta em `127.0.0.1`; expor é decisão do Fundador
+- O que sobe é o commit, e prova-se por `sha256` do que está servido
+- Ambiente reproduzível não é higiene: é a condição de o verde significar algo
+- Não aprova o próprio custo recorrente
+- Não decide a estrutura do sistema nem modela o dado
+- Não verifica a própria proteção
+- 0 · 0 · 0
 
 ## 6. Interfaces — entradas, saidas e consumidores
 
@@ -263,6 +326,28 @@ DEP-QAR + DEP-GOV *(QG-6)*.
 > **Handoff devolvido duas vezes pelo mesmo motivo escala a DEP-EXE** — ha defeito de
 > fronteira (HO-03, FND-02 §9.2).
 
+### 8.3 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `cio`** *(F34: `CONVOCADO`; fonte `F21` da fabrica; amparo `CAP-infraestrutura`; extrato `sha256 546ff72932a400a7…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F21-SETOR-CIO-INFRAESTRUTURA.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Mede o disco antes de crer no inventário
+- Escolhe o substrato com o preço decomposto
+- Endurece antes de implantar
+- Prova que o dado volta
+- Publica com o portão dentro do comando
+- Declara o que NÃO provou, no mesmo documento
+- Falta a credencial de máquina
+- A ação é destrutiva e não há cópia verificada
+- O custo é recorrente e novo
+- A mudança é estrutural no que se opera
+- Expor dado vivo ao exterior
+- A ferramenta externa ainda não foi adotada
+- Número que descreve infraestrutura cita a FONTE PRIMÁRIA, não o documento que a citou
+- Instrumento declara ONDE achou o corpus, e nunca o recebe como constante
+- Contagem de termo declara PERÍMETRO e PALAVRA INTEIRA, ou não é contagem
+
 ## 9. Memoria autorizada e politica de contexto
 
 | Camada | Meu papel | Sob que condicao |
@@ -354,6 +439,36 @@ DEP-QAR + DEP-GOV *(QG-6)*.
 > valem zero por determinacao**, e os cinco sem valor dependem de um ciclo de operacao que nao
 > existe. Declara-los medidos seria **LV-12**.
 
+### 11.1 Materia migrada da fabrica — decimo primeiro ato (2026-08-12)
+
+> **Setor `cio`** *(F34: `CONVOCADO`; fonte `F21` da fabrica; amparo `CAP-infraestrutura`; extrato `sha256 546ff72932a400a7…`)* — migrado pelo item II de [MSG-2026-0011](../../memory/operacional/MSG-2026-0011-ato-soberano-migracao-e-contrato.md); a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F21-SETOR-CIO-INFRAESTRUTURA.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- O inventário de infraestrutura foi medido, não declarado
+- Todo repositório com trabalho declara onde a cópia dele existe
+- Data da última restauração CONFERIDA
+- Toda decisão de substrato traz o preço decomposto
+- Publicação prova o commit servido por `sha256`
+- A suíte roda em ambiente que não é o de quem a escreveu
+- Nenhuma credencial em arquivo versionado
+- Todo zero de varredura vem com controle positivo ao lado
+- Serviço local escuta em loopback
+- Portão de publicação falha fechado
+- Cada número de infraestrutura cita a fonte primária
+- REPROVA, medido nesta sessão
+- PARCIAL, medido nesta sessão
+- PASSA, medido nesta sessão
+- PASSA, alegado por terceiro e não reconferido
+- Vigente por decisão escrita, não reexecutado
+- Se o backup é íntegro e restaurável
+- Se o isolamento entre ambientes resiste
+- "Temos backup"
+- "O servidor está pronto"
+- A lista de cadastros como prova de capacidade
+- Suíte verde como prova de que o produto sobe
+- "Não perdemos nada"
+
 ## 12. Ciclo de vida — especializacao, fusao e retirada
 
 ### 12.1 Gatilhos de especializacao
@@ -412,7 +527,7 @@ backup verificado e continuidade.
 |---|---|---|---|
 | Secoes 1, 2 e 4 | Saber o que DEP-OPS faz e o que nao faz | **59 linhas** | 2026-07-28 |
 | + secoes 5 e 10 | Decidir se DEP-OPS pode executar ou acionar algo | **136 linhas** | 2026-07-28 |
-| Carta integral | Auditoria, revisao estrutural, extincao | **437 linhas** | 2026-07-28 |
+| Carta integral | Auditoria, revisao estrutural, extincao | **553 linhas** | 2026-08-12 |
 
 > Carregar alem do recorte aplicavel exige **gatilho declarado** (CE-01, PC-01). O recorte de decisao custa **31% da Carta** — medido por
 > `sed`+`wc -l` sobre os intervalos das secoes.
