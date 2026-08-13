@@ -982,6 +982,16 @@ completa na **QUINTA DIVERGÊNCIA**.
 > `A-231`, `A-233`, `A-281`). Lastro reproduzível no commit `c83665b`; nenhuma segunda
 > política de segredo, baseline, ativação, contrato ou escopo foi criada.
 
+> **⚙️ Conferência de 2026-08-13, ao fechar F55 e E7.CU.** O grupo de custo/contexto
+> foi encerrado por confronto completo: **6/6** fontes, **1 `ADAPT`** (`A-263`) e
+> **5 `REJECT`** motivados (`A-151`, `A-174`, `A-234`, `A-235`, `A-258`). A lacuna
+> reproduziu no projeto novo: `ação` media 2 tokens no metering e 1 no CAG, auditor e
+> Provider. O commit `b49864a` do Corpo concentrou os quatro consumidores na fonte E7.CU
+> `bytes/3,4`; a reversão do fio do Provider derrubou 2 testes, a suíte fechou em
+> **246/246** e o mapa E7.GD em **111 nós/125 arestas**. A Oficina congelou a decisão antes
+> da spec em `ee8cb72` e amarrou a prova final em `6dcfe0f`. Hooks, cache local e overhead
+> do Claude Code não entraram no runtime novo.
+
 > **Regra permanente de contagem, determinada pelo Fundador nesta continuação da Onda 7:**
 > `triado` **não** é `migrado`. Cada lote segue fonte integral → agrupamento por capacidade →
 > comparação com a sede nova → decisão `ADAPT`/`REWRITE`/`REJECT` por fibra → spec e vermelho
@@ -997,7 +1007,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: aprendizado **20/20 fechado**; F54: integridade **7/7 fechada**; filas seguintes: skills/agentes/Capabilities, orquestração e séries de custo; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232 + E7.CU/A-263; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: aprendizado **20/20 fechado**; F54: integridade **7/7 fechada**; F55: custo/contexto **6/6 fechado**; filas seguintes: skills/agentes/Capabilities, orquestração e ingestão E4.I; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
