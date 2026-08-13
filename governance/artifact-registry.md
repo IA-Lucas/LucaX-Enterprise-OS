@@ -1224,9 +1224,9 @@ admissao de cada candidato (CV-04).
 | Data | **2026-08-13** |
 | Marco | **A baseline da FUNDACAO OPERANTE** — publica o delta acumulado dos tokens 38–46: as Ondas 3–6 do plano do Corpo, a F34 exercida 20/20, a PRIMEIRA migracao fabrica→acervo (11º e 12º atos), o contrato fabrica↔acervo como norma e o 13º ato que aprova os quatro Frameworks |
 | Artefatos | **267** |
-| Linhas | **<PENDENTE-BL-13-LINHAS>** |
-| Manifesto | `<PENDENTE-BL-13-MANIFESTO>` |
-| Impressao digital | `<PENDENTE-BL-13-IMPRESSAO>` — **por construcao irreproduzivel da arvore viva** (`RD-109`); o estado POS-inscricao vive no **`fencing_token` 47 do lease** |
+| Linhas | **76.846** |
+| Manifesto | `86ffb8c0a3ea15670331abbadcc85bd3e4786a3bb97505c97666489f526a39d3` |
+| Impressao digital | `7b8a9e081ce97ee45167c4af9d1e7268b25fb85431692ae95c5fb9fd14d5cadf` — **por construcao irreproduzivel da arvore viva** (`RD-109`); o estado POS-inscricao vive no **`fencing_token` 47 do lease** |
 | Supera | **`BL-2026-08-10-01`** — §10.30 |
 | Superada por | *(nenhuma — esta e a baseline vigente)* |
 | Evidencia de integridade | **§10.31**, integral |
@@ -2546,9 +2546,9 @@ DEPOIS do uso**, identico ao das tres emissoes anteriores.
 |---|---|
 | Instrumento | **`IR-BL/6`**, `sha256` `738624a23f2db3212937f629e7f31c2a42b836d450586694876722b2b69252e0` — **INALTERADO pela setima emissao consecutiva**, conferido por hash antes de rodar |
 | Artefatos | **267** — `+13` sobre `BL-2026-08-10-01`, **decompostos TOKEN A TOKEN no proprio lease** *(t38 `+3` Onda 3 · t41 `+2` MEM-APR · t42 `+1` minuta · t44 `+5` aplicacao do 11º ato · t45 `+1` 12º ato · t46 `+1` 13º ato; t39/t40/t43 `+0` artefatos)* — **a primeira emissao cuja cadeia inteira de deltas esta declarada nas liberacoes de lease, sem lacuna** |
-| Linhas | **<PENDENTE-BL-13-LINHAS>** — `+2.163` sobre `74.696`, dominadas pela migracao dos 10 setores as 5 Cartas *(`+1.115` no t44)* e pelos ritos dos atos 11º–13º |
-| Manifesto | `<PENDENTE-BL-13-MANIFESTO>` |
-| Impressao digital | `<PENDENTE-BL-13-IMPRESSAO>` |
+| Linhas | **76.846** — `+2.163` sobre `74.696`, dominadas pela migracao dos 10 setores as 5 Cartas *(`+1.115` no t44)* e pelos ritos dos atos 11º–13º |
+| Manifesto | `86ffb8c0a3ea15670331abbadcc85bd3e4786a3bb97505c97666489f526a39d3` |
+| Impressao digital | `7b8a9e081ce97ee45167c4af9d1e7268b25fb85431692ae95c5fb9fd14d5cadf` |
 | Convencao `RD-109` | Os quatro campos foram medidos **com os placeholders `<PENDENTE-BL-13-*>` no lugar**. Pos-inscricao: **artefatos, linhas e manifesto REPRODUZEM da arvore viva** *(a substituicao e neutra em contagem de linhas, e o manifesto e funcao dos CAMINHOS, nao do conteudo — `IR-BL/1-3`)*; **so a impressao e por construcao irreproduzivel** *(funcao do conteudo desde `IR-BL/4`)* — o estado POS-inscricao integral vive no **token 47 do lease**, como o precedente do token 37 |
 | O que esta emissao NAO faz | `0` atos novos · `0` Fundacionais · `0` bytes no medidor · `0` bytes em `docs/`/`_SAIDA-COMPANY-OS/` · nao abre os ritos dos Frameworks *(fila propria)* |
 
