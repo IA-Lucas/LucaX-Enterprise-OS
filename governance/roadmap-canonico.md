@@ -18,6 +18,13 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **🧰 Conferência de 2026-08-13 (quarta do dia), ao fechar o Goal 1.14 sob token 50 — na mesma sessão.**
+> **O Goal `1.14` sai de `[~]` para `[x]`** — o Tool & Model Framework é norma (`ADR-0041`, TF-01–TF-32). O candidato
+> foi remedido com a inspeção do homônimo que ele mesmo ensinou; os defeitos do `TPL-ferramenta` (AF-1/AF-2) entram
+> **abertos como pré-condição de uso** — a via da classe `modelo` fica bloqueada até a emenda própria do template.
+> **Restam da ordem: 1.17 Agent e 1.18 Execution & Evaluation.** A ata da 1ª convocação do Conselho (F49) está na
+> vista do Soberano com 4 decisões pendentes. `0` atos · nenhuma baseline emitida.
+
 > **🔄 Conferência de 2026-08-13 (terceira do dia), ao fechar o Goal 1.16 sob token 49 — na mesma sessão.**
 > **O Goal `1.16` sai de `[~]` para `[x]`** — o Workflow Framework é norma (`ADR-0040`, WF-01–WF-30 dentro do ADR,
 > método de ADR-0033), com o candidato **remedido na admissão** (zeros da lacuna seguram; `L5` resolvida pelos fatos)
@@ -725,7 +732,7 @@ completa na **QUINTA DIVERGÊNCIA**.
       "Produto existe"**: junto com `SKL`, **é o componente mais barato do acervo**.
       **Espera decisão do Fundador.**
 
-- [~] **1.14 — Tool & Model Framework.** *(APROVADO pelo 13º ato, 2026-08-13 — rito em fila, ordem despachada)* Model é classe de Ferramenta; sem
+- [x] **1.14 — Tool & Model Framework.** ✅ **FECHADO em 2026-08-13 — `RFC-0036` → `ADR-0041` (TF-01–TF-32) → `FIT-2026-034`, sob token 50; `AF-1`–`AF-3` confirmados e abertos como pre-condicao de uso.** Model é classe de Ferramenta; sem
       framework paralelo. Registro, permissões, classificação de dados,
       isolamento, sandbox, credenciais, custo, limites de contexto, seleção,
       fallback, roteamento, falhas, observabilidade, versionamento,
