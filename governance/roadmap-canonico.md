@@ -18,6 +18,12 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **📏 Conferência de 2026-08-13 (segunda do dia), ao emitir `BL-2026-08-13-01` sob token 47 — na mesma sessão.**
+> **Nenhum Goal muda de estado.** A baseline da fundação operante fecha a janela dos tokens 38–46 (254→267
+> artefatos, cadeia de deltas declarada token a token no lease, sem lacuna). Rito RD-109 na letra; **§10.0
+> rotacionado na MESMA emissão** — a dívida das cinco emissões não se repetiu. `IR-BL/6` inalterado (sétima
+> emissão). Valores canônicos em §10.31 do catálogo (2.42.0).
+
 > **📜 Conferência de 2026-08-13, ao registrar o DECIMO TERCEIRO ato sob token 46 — na mesma sessão.**
 > **QUATRO Goals mudam de estado: `1.16`, `1.14`, `1.17` e `1.18` saem de `[!]` para `[~]`** — aprovados pelo
 > despacho verbatim em [`MSG-2026-0013`](../memory/operacional/MSG-2026-0013-despacho-frameworks-e-fila.md), rito na
