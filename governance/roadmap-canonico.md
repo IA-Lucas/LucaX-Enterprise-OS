@@ -918,6 +918,13 @@ completa na **QUINTA DIVERGÊNCIA**.
 > do legado viraram `MEM-APR-0009..0012`). Restam por conta das ondas: mapeamento fino para
 > Capabilities, cutover e a retirada física — esta última só por ato explícito do Fundador.
 
+> **⚙️ Conferência de 2026-08-13, após a remessa ordinária Mente da F51 (tokens 55–58).**
+> A F51 classificou **133 ADRs** — o antigo “134” contava o README; `059` nunca existiu. Seis
+> lições entraram na Mente (`MEM-APR-0013..0018`) e seis candidaturas foram resolvidas por
+> dedupe ou destino. Permanecem fora dessa remessa `ADR-013`/`017` (fila explícita do Fundador)
+> e `ADR-112` (lastro taxonômico, rito próprio); o mapeamento para Capabilities e a extração
+> do `kb/` seguem abertos.
+
 - [x] Firewall de migração *(exercido: legado somente leitura em todas as varreduras; admissão só por rito na Mente e por TDD/consumidor no Corpo)*
 - [x] Inventário somente leitura ✅ **F50 (Oficina `caf8ce2`) + adendo unificado (`2b7f7a6`): 14 áreas + `My_WorkSpace`, 0 sem veredito**
 - [x] Proveniência *(âncora `tree b9b36be9…fb4b` custodiada em bundle nas duas sedes, sha `4c160d3e…`; backups datados com manifesto sha256 por produto)*
@@ -927,7 +934,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope; filas: 174 precedentes, 134 ADRs, skills, séries de custo)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; filas: 174 precedentes, skills, séries de custo; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
