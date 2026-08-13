@@ -930,6 +930,15 @@ completa na **QUINTA DIVERGÊNCIA**.
 > loop aninhado/recursão pedem revisão; exceção exige limite, justificativa e teste existente.
 > A suíte do Corpo passou de **206 para 216 verdes**, com vermelho inicial e reversão provados.
 
+> **⚙️ Conferência de 2026-08-13, ao fechar E7.VF no Corpo.** Os `ADR-003`, `ADR-019` e
+> `ADR-070` da F51 estenderam o contrato de veredito já vigente no commit `d694344`:
+> referências (`acervo`/`adr`/`skills`) e as seis fases técnicas passaram a ser obrigatórias,
+> e `aprovado + FAIL` é contradição bloqueada. O porte preservou uma única verdade:
+> `veredito` já cumpre a função de status, então um segundo campo `status` foi recusado; o
+> factory de placeholders do legado também não entrou porque não existe consumidor equivalente
+> no Corpo. A suíte passou de **216 para 226 verdes**, com 9 vermelhos iniciais e reversão da
+> obrigatoriedade provada.
+
 - [x] Firewall de migração *(exercido: legado somente leitura em todas as varreduras; admissão só por rito na Mente e por TDD/consumidor no Corpo)*
 - [x] Inventário somente leitura ✅ **F50 (Oficina `caf8ce2`) + adendo unificado (`2b7f7a6`): 14 áreas + `My_WorkSpace`, 0 sem veredito**
 - [x] Proveniência *(âncora `tree b9b36be9…fb4b` custodiada em bundle nas duas sedes, sha `4c160d3e…`; backups datados com manifesto sha256 por produto)*
@@ -939,7 +948,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; filas: 174 precedentes, skills, séries de custo; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; filas: 174 precedentes, skills, séries de custo; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
