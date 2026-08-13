@@ -109,7 +109,7 @@ acabou de acontecer. Definicao completa em
 > nenhum fato duravel se perde** — o que ele guarda e o **ato**, transcrito para que a fonte
 > permaneca percorrivel (LN-07).
 
-> **Contador `MSG-2026-NNNN`: ultimo atribuido `0013`; proximo `0014`** (FND-03 §2.3).
+> **Contador `MSG-2026-NNNN`: ultimo atribuido `0014`; proximo `0015`** (FND-03 §2.3).
 >
 > **Contador exercido (2026-08-12, decimo segundo ato):** `0011` ✅ existe · `0012` ✅ NAO existia — `V1`; movido na mesma mudanca.
 >
