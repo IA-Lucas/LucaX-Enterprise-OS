@@ -968,6 +968,14 @@ completa na **QUINTA DIVERGÊNCIA**.
 > última-palavra arbitrária, `rg` e cache “mais recente” foram recusados com motivo. Suíte do
 > Corpo: **226→237 verdes**; os três levers desligados produziram **3/3 vermelhos**.
 
+> **⚙️ Conferência de 2026-08-13, ao fechar E7.GD no Corpo.** Os precedentes
+> `A-203`/`A-232` foram comparados com o KAG atual e a dívida reproduziu: o
+> `graphify_map.json` rastreado tinha **34 nós/25 arestas**, contra **108/116** antes da
+> spec — **74** arquivos novos fora do mapa. O commit `0bc1399` adaptou somente o princípio
+> de índice vivo: `--check` read-only compara nós e arestas, geração é atômica e arquivo
+> nascido depois do índice deixa a suíte vermelha. Obsidian, wikilinks e geradores de README
+> foram rejeitados por não pertencerem ao Corpo. Mapa final: **109/117**; suíte **241 verdes**.
+
 > **Regra permanente de contagem, determinada pelo Fundador nesta continuação da Onda 7:**
 > `triado` **não** é `migrado`. Cada lote segue fonte integral → agrupamento por capacidade →
 > comparação com a sede nova → decisão `ADAPT`/`REWRITE`/`REJECT` por fibra → spec e vermelho
@@ -983,7 +991,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: grupo de aprendizado **20/20 fechado** com 8 adaptações e 12 rejeições motivadas; filas seguintes: skills/agentes/Capabilities, orquestração, séries de custo e integridade; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: grupo de aprendizado **20/20 fechado** com 8 adaptações e 12 rejeições motivadas; filas seguintes: skills/agentes/Capabilities, orquestração, séries de custo e integridade; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
