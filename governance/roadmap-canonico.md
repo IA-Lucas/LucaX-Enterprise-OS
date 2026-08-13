@@ -18,6 +18,13 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **🔄 Conferência de 2026-08-13 (terceira do dia), ao fechar o Goal 1.16 sob token 49 — na mesma sessão.**
+> **O Goal `1.16` sai de `[~]` para `[x]`** — o Workflow Framework é norma (`ADR-0040`, WF-01–WF-30 dentro do ADR,
+> método de ADR-0033), com o candidato **remedido na admissão** (zeros da lacuna seguram; `L5` resolvida pelos fatos)
+> e os achados AW-1–AW-3 abertos com dono. **Próximo da ordem: 1.14 Tool & Model.** O 14º ato (`MSG-2026-0014`) fechou
+> B1 (anexado ①) e ordenou a primeira convocação do Conselho — em execução na Oficina. `0` atos · nenhuma baseline
+> emitida *(a vigente tem horas)*.
+
 > **📏 Conferência de 2026-08-13 (segunda do dia), ao emitir `BL-2026-08-13-01` sob token 47 — na mesma sessão.**
 > **Nenhum Goal muda de estado.** A baseline da fundação operante fecha a janela dos tokens 38–46 (254→267
 > artefatos, cadeia de deltas declarada token a token no lease, sem lacuna). Rito RD-109 na letra; **§10.0
@@ -702,7 +709,7 @@ completa na **QUINTA DIVERGÊNCIA**.
       **ou (b)** surgir **consumidor que leia `ADR-0033` isolado, sem passar pelo catálogo** —
       **o que ocorrer primeiro**. **Decisão de registro: `0` `ADR`, `0` atos, `0` baseline nova.**
 
-- [~] **1.16 — Workflow Framework.** *(APROVADO pelo 13º ato, 2026-08-13 — rito em fila, ordem despachada)* Estados, transições, papéis, handoffs,
+- [x] **1.16 — Workflow Framework.** ✅ **FECHADO em 2026-08-13 — `RFC-0035` → `ADR-0040` (WF-01–WF-30) → `FIT-2026-033`, sob token 49; candidato remedido na admissao; `AW-1`–`AW-3` abertos com dono.** Estados, transições, papéis, handoffs,
       Pacotes de Contexto, portões, impedimentos, retries, timeouts,
       compensação, rollback, escalonamento, incidentes, intervenção humana,
       ato soberano, evidências, memória, retomada. Depende de papéis, nunca de
