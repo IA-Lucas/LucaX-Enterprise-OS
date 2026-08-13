@@ -2,19 +2,19 @@
 id: IDX-mem-aprendizado
 titulo: Camada de Aprendizado da Memoria
 tipo: relatorio
-versao: 1.2.0
+versao: 1.3.0
 status: ativo
 camada_memoria: aprendizado
 autor: DEP-GOV
 proprietario: DEP-KMS
 aprovador: DEP-KMS
 criado_em: 2026-07-28
-atualizado_em: 2026-07-29
+atualizado_em: 2026-08-13
 revisao_prevista: null
 decisoes_relacionadas: [ADR-0001, ADR-0008, ADR-0011]
 substitui: []
 substituido_por: null
-resumo: Indexa a camada de aprendizado, seus seis registros e as regras que invalidam uma licao.
+resumo: Indexa a camada de aprendizado, seus doze registros e as regras que invalidam uma licao.
 perfil_contexto: sob-demanda
 confidencialidade: interno
 revisor: DEP-QAR
@@ -107,8 +107,21 @@ deixou de acreditar tem valor proprio.
 | [**MEM-APR-0006**](MEM-APR-0006-exercer-o-contador-revela-o-defeito.md) | **Exercer o instrumento revela o defeito que ler o instrumento nao revela** | **alta** | **1** | `ativo` |
 | [**MEM-APR-0007**](MEM-APR-0007-plausibilidade-nao-e-verificacao.md) | **Plausibilidade nao e verificacao** — coerencia usada como evidencia, a causa n. 1 de reprovacao medida (9 de 17) | **alta** | **9** | `ativo` |
 | [**MEM-APR-0008**](MEM-APR-0008-campo-obrigatorio-com-escape-vazio.md) | **Campo obrigatorio com escape vazio e falso cumprimento** — o campo que aceita o valor que o esvazia (5 de 17) | **media** | **5** | `ativo` |
+| [**MEM-APR-0009**](MEM-APR-0009-veredito-dependente-do-ambiente.md) | **Veredito dependente do ambiente nao e veredito** — juiz que consulta o SO muda de opiniao com a maquina | **alta** | **2** | `ativo` |
+| [**MEM-APR-0010**](MEM-APR-0010-parametro-aceito-e-nao-aplicado.md) | **Parametro aceito e nao aplicado** — default silencioso sobre valor declarado quebra a lei sem sintoma | **alta** | **1** | `ativo` |
+| [**MEM-APR-0011**](MEM-APR-0011-limiar-sem-instrumento-e-prosa.md) | **Limiar sem instrumento e prosa** — a norma que escreve MEDIDO sem nomear quem mede nao dispara nunca | **alta** | **2** | `ativo` |
+| [**MEM-APR-0012**](MEM-APR-0012-parecer-persiste-antes-do-scratch-sumir.md) | **Parecer bruto persiste antes do scratch sumir** — e transcricao ausente declara-se, nunca se fabrica | **media** | **1** | `ativo` |
 
-**Contador oficial:** ultimo `MEM-APR-0006` · proximo **`MEM-APR-0007`**.
+**Contador oficial:** ultimo `MEM-APR-0012` · proximo **`MEM-APR-0013`**.
+
+> ⚠️ **Correcao declarada, nao silenciosa — 2026-08-13 (token 53).** Ate esta data o
+> contador dizia *ultimo `0006` · proximo `0007`* com **`0007` e `0008` na propria
+> tabela** — defasado em DOIS, e o `resumo` do frontmatter dizia *"seis registros"*
+> com oito indexados. **Setima cobranca da familia `RD-32`**, e a nota logo abaixo
+> vira contraexemplo do contraexemplo: o contador que a varredura encontrou correto
+> foi movimentado depois (`0007`/`0008`, sob token 41) **sem mover o cabecalho na
+> mesma mudanca** — exatamente a regra `SF-32`. Corrigido junto com a entrada de
+> `0009..0012`, na mesma escrita que move o contador.
 
 > **Este contador estava correto quando `RD-32` mediu todos.** A varredura cobriu **9
 > sequencias em 7 indices** — `ADR`, `RFC`, `FIT` *(em dois indices)*, `EXC`, `INC`, `MEM-APR`,
