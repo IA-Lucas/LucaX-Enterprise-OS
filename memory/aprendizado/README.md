@@ -2,7 +2,7 @@
 id: IDX-mem-aprendizado
 titulo: Camada de Aprendizado da Memoria
 tipo: relatorio
-versao: 1.4.0
+versao: 1.5.0
 status: ativo
 camada_memoria: aprendizado
 autor: DEP-GOV
@@ -14,7 +14,7 @@ revisao_prevista: null
 decisoes_relacionadas: [ADR-0001, ADR-0008, ADR-0011]
 substitui: []
 substituido_por: null
-resumo: Indexa a camada de aprendizado, seus dezesseis registros e as regras que invalidam uma licao.
+resumo: Indexa a camada de aprendizado, seus dezoito registros e as regras que invalidam uma licao.
 perfil_contexto: sob-demanda
 confidencialidade: interno
 revisor: DEP-QAR
@@ -115,8 +115,10 @@ deixou de acreditar tem valor proprio.
 | [**MEM-APR-0014**](MEM-APR-0014-medicao-censurada-pelo-proprio-limiar.md) | **Medicao censurada pelo proprio limiar** — log que so grava acima do corte transforma taxa em tautologia | **alta** | **1** | `ativo` |
 | [**MEM-APR-0015**](MEM-APR-0015-exit-zero-nao-e-sucesso.md) | **Exit 0 nao e sucesso** — rodada automatica exige artefato materializado ou ausencia declarada | **alta** | **1** | `ativo` |
 | [**MEM-APR-0016**](MEM-APR-0016-subagente-nem-micro-nem-macro.md) | **Subagente nem micro nem macro** — boot desperdicado de um lado, degradacao importada do outro | **media** | **1** | `ativo` |
+| [**MEM-APR-0017**](MEM-APR-0017-handoff-urgente-nasce-na-sessao-viva.md) | **Handoff urgente nasce na sessao viva** — processo cego automatiza formulario, nao contexto | **alta** | **1** | `ativo` |
+| [**MEM-APR-0018**](MEM-APR-0018-baseline-sem-destino-e-divida-invisivel.md) | **Baseline sem destino e divida invisivel** — falha medida precisa de proximo responsavel ou limite declarado | **alta** | **1** | `ativo` |
 
-**Contador oficial:** ultimo `MEM-APR-0016` · proximo **`MEM-APR-0017`**.
+**Contador oficial:** ultimo `MEM-APR-0018` · proximo **`MEM-APR-0019`**.
 
 > ⚠️ **Correcao declarada, nao silenciosa — 2026-08-13 (token 53).** Ate esta data o
 > contador dizia *ultimo `0006` · proximo `0007`* com **`0007` e `0008` na propria
