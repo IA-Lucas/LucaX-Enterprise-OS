@@ -2,7 +2,7 @@
 id: PT-2026-026
 titulo: Relatorio de transicao e revisao (REV) — a aplicacao do decimo primeiro ato (PS-2026-018)
 tipo: relatorio
-versao: 1.0.0
+versao: 1.1.0
 status: ativo
 camada_memoria: operacional
 autor: DEP-GOV
@@ -45,6 +45,8 @@ ratificacao: nao-exigida
 |---|---|---|
 | **`gente`** | o documento de origem (`F18`) cita **`0`** `CAP-`/`DEP-`; o par `CAP-engenharia-de-agentes` *("projetar a forca de trabalho")* existe **so na convocacao** — aplicar seria esticar | criar/apontar custodia para materia de pessoas, **ou** aceitar por despacho o par da convocacao |
 | **`coo`** | mesma origem (`F18`), mesmo silencio; o par `CAP-operacoes` e da convocacao | idem — aceitar `CAP-operacoes`/`DEP-OPS` por despacho, ou apontar outra sede |
+
+> ✅ **DECIDIDO em 2026-08-12, no mesmo dia:** o Soberano despachou **"aceito os pares da convocacao"** ([MSG-2026-0012](../memory/operacional/MSG-2026-0012-aceite-dos-pares-da-convocacao.md)) — `gente` → `CAP-engenharia-de-agentes`/`DEP-ENG` e `coo` → `CAP-operacoes`/`DEP-OPS`. Os dois migraram sob o token 45 *(Cartas ENG e OPS 1.3.0)*: **a migracao fechou `10` de `10`**.
 
 ## §3 — Resolucao mecanica do mapa de destinos *(declarada, nunca julgada)*
 

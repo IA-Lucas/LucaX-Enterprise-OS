@@ -2,7 +2,7 @@
 id: DEP-ENG
 titulo: Engenharia
 tipo: carta
-versao: 1.2.0
+versao: 1.3.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-EXE
@@ -168,6 +168,32 @@ assumida — e nenhuma sobre **o que** se constroi ou **se** a entrega e aceita.
 - A retenção com prazo por classe, enquanto o prazo for de engenharia e não de lei
 - A divergência entre duas fontes que respondem a mesma pergunta
 
+### 4.2 Materia migrada da fabrica — decimo segundo ato (2026-08-12)
+
+> **Setor `gente`** *(F34: `CONVOCADO`; fonte `F18/F45-A4` da fabrica; custodia por DESPACHO SOBERANO — `CAP-engenharia-de-agentes`, [MSG-2026-0012](../../memory/operacional/MSG-2026-0012-aceite-dos-pares-da-convocacao.md); extrato `sha256 a2737f94079b7bcb…`)* — a devolucao de §5(a) fechada pelo aceite; a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F18-SETOR-PESSOAS-E-OPERACAO-INTERNA.md`, seção `PARTE 6`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Construir, orquestrar, testar sob pressão, revisar e aposentar agente
+- Custo em token, assinatura e fatura
+- Conhecimento técnico do produto, com procedência e validade
+- Certificar que este setor funcionou
+- Custódia, rotação e escrow de chave
+- Escrever código no produto
+- Escolher e pagar ferramenta de terceiro
+- Decidir a fronteira `14` entre `gente` e `coo`
+- Decidir a fronteira do `frontend`
+- Publicar: `remote`, `push`, `tag`
+- `agentops`
+- Um cargo novo
+- Um agente que falha
+- Escolha de modelo
+- Uma fronteira em disputa
+- O lease e o handoff entre sessões
+- O lease, o fencing e a exclusão de escrita
+- O handoff entre sessões
+- A lição sobre como se opera
+
 ## 5. O que decido — autoridade e portoes
 
 | Materia | Autonomia | Consulta obrigatoria | **Fonte da autoridade** |
@@ -231,6 +257,45 @@ assumida — e nenhuma sobre **o que** se constroi ou **se** a entrega e aceita.
 - Esquema lido em código não é o banco em produção, e a diferença sai declarada
 - Ausência de medição não é medição de ausência
 - Enquadramento legal de dado pessoal exige assessoria humana — o setor produz o levantamento, não o parecer
+
+### 5.4 Materia migrada da fabrica — decimo segundo ato (2026-08-12)
+
+> **Setor `gente`** *(F34: `CONVOCADO`; fonte `F18/F45-A4` da fabrica; custodia por DESPACHO SOBERANO — `CAP-engenharia-de-agentes`, [MSG-2026-0012](../../memory/operacional/MSG-2026-0012-aceite-dos-pares-da-convocacao.md); extrato `sha256 a2737f94079b7bcb…`)* — a devolucao de §5(a) fechada pelo aceite; a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F18-SETOR-PESSOAS-E-OPERACAO-INTERNA.md`, seção `PARTE 2`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Um escritor por recurso, e a exclusão aqui é DECLARADA, não instrumentada
+- Verificar no início é necessário e NÃO é suficiente
+- Token de fencing monotônico crescente: escrita com token menor que o vigente é inválida
+- Aquisição declara titular, estado fenceado, ponto de rollback e cópia datada; liberação SÓ depois da pós-verificação
+- Missão com duas ordens de escrita precisa de dois tokens, ou de um só liberado no fim
+- Prefixo de missão no nome do arquivo, e `git add` com caminho explícito — nunca `-A`
+- Não encerrar deixando arquivo alterado sem commit; trabalho pela metade vira `wip:` declarado
+- Arquivo novo que não entra no commit precisa estar declarado no `.gitignore`, com motivo
+- Toda delegação declara seis coisas ou não é delegação — é um pedido vago com consequência
+- `FULLY-AUTONOMOUS` sobre operação irreversível é `INVALIDO`
+- Quem retoma não é quem caiu: o registro do que está em curso mora na raiz do repositório, nunca no scratchpad da sessão
+- Toda retomada após queda lê o registro de mutante ativo ANTES de qualquer medição
+- Autonomia total só sobre o que se desfaz — e quem escreve declara a reversibilidade, ninguém a infere
+- Erro se corrige com commit NOVO — nunca reescrevendo histórico
+- A mensagem existe pelo PORQUÊ, e número nela é contado por ferramenta
+- Decisão superada NÃO se apaga: fica ao lado, com a razão da superação
+- Todo setor e todo cargo declara de onde nasceu
+- Publicar move byte para fora da máquina, e isso não se desfaz: `remote`, `push` e `tag` são ato do Fundador
+- Quem constrói não certifica
+- Critério de parada com três condições, e a que faltava é o SALDO
+- Classificação por família é OBRIGATÓRIA — sem ela a condição (b) não é aferível
+- `BLOCKED` é portão de ABERTURA, não de execução
+- Sob congelamento, achado novo é registrado com dono e gatilho e NÃO gera missão
+- Controle positivo antes de crer no zero
+- Trava consultiva não exclui escritor: quem não pede a trava escreve igual
+- Token de fencing é o que impede o titular expirado de escrever
+- Decisão de arquitetura mora num registro imutável, numerado e com contexto — não na memória de quem decidiu
+- Segregação de funções: quem executa não é quem verifica
+- Contratação, jornada, férias, avaliação de desempenho
+- `SLA` de resposta entre setores
+- Escala de plantão, rodízio, sucessão
+- Teto de custo por sessão em dinheiro
 
 ## 6. Interfaces — entradas, saidas e consumidores
 
@@ -369,6 +434,30 @@ assumida — e nenhuma sobre **o que** se constroi ou **se** a entrega e aceita.
 - Busca por LINHA não alcança regra escrita em PARÁGRAFO
 - Placar de tabela se confere CONTRA a tabela, inclusive em artefato que não é meu
 
+### 8.4 Materia migrada da fabrica — decimo segundo ato (2026-08-12)
+
+> **Setor `gente`** *(F34: `CONVOCADO`; fonte `F18/F45-A4` da fabrica; custodia por DESPACHO SOBERANO — `CAP-engenharia-de-agentes`, [MSG-2026-0012](../../memory/operacional/MSG-2026-0012-aceite-dos-pares-da-convocacao.md); extrato `sha256 a2737f94079b7bcb…`)* — a devolucao de §5(a) fechada pelo aceite; a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F18-SETOR-PESSOAS-E-OPERACAO-INTERNA.md`, seção `PARTE 3`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Confirma a exclusão
+- Adquire o token
+- Trabalha sob prefixo próprio
+- Commita ao fim de cada bloco
+- Roda os portões executáveis
+- Libera só depois da pós-verificação
+- Mede a folga
+- Reescrever histórico para corrigir erro
+- Há sinal de outra sessão viva
+- O critério de parada dispara
+- A operação é irreversível
+- A fronteira entre dois setores está em disputa
+- O ato move byte para fora da máquina
+- A premissa do despacho não se reproduz
+- A folga entre a conferência de exclusão e a escrita alheia se MEDE e se registra, mesmo sem dano
+- "Sem dano" só se afirma com a interseção de arquivos medida — nunca por ausência de sintoma
+- Premissa de despacho que não se reproduz volta MEDIDA antes de qualquer entrega
+
 ## 9. Memoria autorizada e politica de contexto
 
 | Camada | Meu papel | Sob que condicao |
@@ -494,6 +583,17 @@ assumida — e nenhuma sobre **o que** se constroi ou **se** a entrega e aceita.
 - "A guarda existe, logo o `DELETE` está contido"
 - "O `medAlly` tem política de retenção, logo a fábrica tem competência de dado"
 
+### 11.2 Materia migrada da fabrica — decimo segundo ato (2026-08-12)
+
+> **Setor `gente`** *(F34: `CONVOCADO`; fonte `F18/F45-A4` da fabrica; custodia por DESPACHO SOBERANO — `CAP-engenharia-de-agentes`, [MSG-2026-0012](../../memory/operacional/MSG-2026-0012-aceite-dos-pares-da-convocacao.md); extrato `sha256 a2737f94079b7bcb…`)* — a devolucao de §5(a) fechada pelo aceite; a origem recebe carimbo `MIGRADO`.
+
+*(fonte: `missoes/F18-SETOR-PESSOAS-E-OPERACAO-INTERNA.md`, seção `PARTE 5`; destilado às linhas normativas — o enunciado de cada item; evidência e origem ficam na fonte)*
+
+- Número de commits
+- "Nenhuma colisão relatada"
+- "A sessão confirmou que fechou"
+- Organograma completo
+
 ## 12. Ciclo de vida — especializacao, fusao e retirada
 
 ### 12.1 Gatilhos de especializacao
@@ -550,7 +650,7 @@ longo do tempo.
 |---|---|---|---|
 | Secoes 1, 2 e 4 | Saber o que DEP-ENG faz e o que nao faz | **55 linhas** | 2026-07-28 |
 | + secoes 5 e 10 | Decidir se DEP-ENG pode decidir algo | **116 linhas** | 2026-07-28 |
-| Carta integral | Auditoria, revisao estrutural, extincao | **575 linhas** | 2026-08-12 |
+| Carta integral | Auditoria, revisao estrutural, extincao | **675 linhas** | 2026-08-12 |
 
 > Carregar alem do recorte aplicavel exige **gatilho declarado** (CE-01, PC-01). O recorte de
 > decisao custa **29% da Carta** — medido por `sed`+`wc -l` sobre os intervalos das secoes.

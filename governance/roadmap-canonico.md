@@ -18,6 +18,13 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **✅ Conferência de 2026-08-12 (sexta do dia), ao fechar a MIGRAÇÃO em 10/10 sob token 45 — na mesma sessão.**
+> **Nenhum Goal muda de estado.** O DECIMO SEGUNDO ato (*"aceito os pares da convocação"*, `MSG-2026-0012`) fechou
+> a devolução de §5(a): `gente`→ENG e `coo`→OPS migraram *(Cartas 1.3.0, §13.2 remedido)* — **a primeira migração
+> fábrica→acervo está completa: 10 de 10**. A Onda 5 do plano do Corpo FECHA; seguem: adoção do contrato do juiz
+> pelo Corpo *(despacho: "adoção primeiro, libera a onda depois")* e a Onda 6. `0` Fundacionais · nenhuma baseline
+> emitida *(delta no lease, token 45)*.
+
 > **⚡ Conferência de 2026-08-12 (quinta do dia), ao aplicar o DECIMO PRIMEIRO ATO sob token 44 — na mesma sessão.**
 > **Nenhum Goal muda de estado, e a MIGRAÇÃO aconteceu:** o Soberano assinou o `PS-2026-018` (*"assino o
 > PS-2026-018"*) e a aplicação executou o rito completo — `MSG-2026-0011` + `RFC-0034` + `ADR-0039` *(o contrato
