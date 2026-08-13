@@ -2,7 +2,7 @@
 id: IDX-mem-aprendizado
 titulo: Camada de Aprendizado da Memoria
 tipo: relatorio
-versao: 1.5.0
+versao: 1.6.0
 status: ativo
 camada_memoria: aprendizado
 autor: DEP-GOV
@@ -14,7 +14,7 @@ revisao_prevista: null
 decisoes_relacionadas: [ADR-0001, ADR-0008, ADR-0011]
 substitui: []
 substituido_por: null
-resumo: Indexa a camada de aprendizado, seus dezoito registros e as regras que invalidam uma licao.
+resumo: Indexa a camada de aprendizado, seus vinte e seis registros e as regras que invalidam uma licao.
 perfil_contexto: sob-demanda
 confidencialidade: interno
 revisor: DEP-QAR
@@ -117,8 +117,16 @@ deixou de acreditar tem valor proprio.
 | [**MEM-APR-0016**](MEM-APR-0016-subagente-nem-micro-nem-macro.md) | **Subagente nem micro nem macro** — boot desperdicado de um lado, degradacao importada do outro | **media** | **1** | `ativo` |
 | [**MEM-APR-0017**](MEM-APR-0017-handoff-urgente-nasce-na-sessao-viva.md) | **Handoff urgente nasce na sessao viva** — processo cego automatiza formulario, nao contexto | **alta** | **1** | `ativo` |
 | [**MEM-APR-0018**](MEM-APR-0018-baseline-sem-destino-e-divida-invisivel.md) | **Baseline sem destino e divida invisivel** — falha medida precisa de proximo responsavel ou limite declarado | **alta** | **1** | `ativo` |
+| [**MEM-APR-0019**](MEM-APR-0019-estado-implantado-nao-e-intencao-local.md) | **Estado implantado nao e intencao local** — diagnostico identifica o artefato em execucao antes da causa | **alta** | **1** | `ativo` |
+| [**MEM-APR-0020**](MEM-APR-0020-similaridade-lexical-nao-e-equivalencia.md) | **Similaridade lexical nao e equivalencia** — dedupe declara o que nao reconhece | **alta** | **1** | `ativo` |
+| [**MEM-APR-0021**](MEM-APR-0021-metrica-cumulativa-prova-monotonicidade.md) | **Metrica cumulativa prova monotonicidade** — campo instantaneo nao responde pela sessao | **alta** | **1** | `ativo` |
+| [**MEM-APR-0022**](MEM-APR-0022-configuracao-de-processo-fica-na-borda.md) | **Configuracao de processo fica na borda** — import nao toma posse de recurso global | **alta** | **1** | `ativo` |
+| [**MEM-APR-0023**](MEM-APR-0023-referencia-operacional-resolve-desde-a-raiz.md) | **Referencia operacional resolve desde a raiz** — agente isolado nao herda intuicao de caminho | **alta** | **2** | `ativo` |
+| [**MEM-APR-0024**](MEM-APR-0024-chave-derivada-exige-caso-de-colisao.md) | **Chave derivada exige caso de colisao** — unicidade presumida produz falso verde | **alta** | **1** | `ativo` |
+| [**MEM-APR-0025**](MEM-APR-0025-diagnostico-que-escreve-precisa-convergir.md) | **Diagnostico que escreve precisa convergir** — medir nao consome silenciosamente o recurso | **alta** | **1** | `ativo` |
+| [**MEM-APR-0026**](MEM-APR-0026-entrega-de-copia-unica-expira.md) | **Entrega de copia unica expira** — sem segunda custodia, a lacuna fica explicita | **alta** | **2** | `ativo` |
 
-**Contador oficial:** ultimo `MEM-APR-0018` · proximo **`MEM-APR-0019`**.
+**Contador oficial:** ultimo `MEM-APR-0026` · proximo **`MEM-APR-0027`**.
 
 > ⚠️ **Correcao declarada, nao silenciosa — 2026-08-13 (token 53).** Ate esta data o
 > contador dizia *ultimo `0006` · proximo `0007`* com **`0007` e `0008` na propria

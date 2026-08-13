@@ -2,14 +2,14 @@
 id: IDX-artifact-registry
 titulo: Catalogo Mestre do Acervo
 tipo: relatorio
-versao: 2.51.0
+versao: 2.52.0
 status: ativo
 camada_memoria: operacional
 autor: DEP-GOV
 proprietario: DEP-GOV
 aprovador: DEP-QAR
 criado_em: 2026-07-28
-atualizado_em: 2026-08-12
+atualizado_em: 2026-08-13
 revisao_prevista: 2027-01-28
 decisoes_relacionadas: [ADR-0006, ADR-0007, ADR-0008, ADR-0009, ADR-0010, ADR-0011, ADR-0012, ADR-0020, ADR-0021, ADR-0026]
 substitui: []
@@ -606,7 +606,7 @@ Verificados contra T1–T4 de FND-10 §10.2: **19 de 19 passam.**
 > de catalogo, ou segunda admissao de Produto — o que ocorrer primeiro"*. **ABERTO, e nao gera
 > missao:** congelamento em vigor. **Os indices seguem `12`.**
 
-### 4.7 Cognitiva — 6 indices e **73** registros, entidades `MEM` e `MSG`
+### 4.7 Cognitiva — 6 indices e **81** registros, entidades `MEM` e `MSG`
 
 | Registro | Camada | Perfil | Linhas | Resumo operacional |
 |---|---|---|---|---|
@@ -629,6 +629,14 @@ Verificados contra T1–T4 de FND-10 §10.2: **19 de 19 passam.**
 | [**MEM-APR-0016**](../memory/aprendizado/MEM-APR-0016-subagente-nem-micro-nem-macro.md) | APR | S | **76** | **Subagente nem micro nem macro** *(ADR-058)*: tarefa deterministica paga ~12-15K de boot para o que codigo faz em zero token; despacho com historico nao-destilado importa a degradacao que o subagente existia para evitar. Escada: codigo antes de agente, carga destilada sempre. Confianca `media` — promover exige medicao propria |
 | [**MEM-APR-0017**](../memory/aprendizado/MEM-APR-0017-handoff-urgente-nasce-na-sessao-viva.md) | APR | S | **55** | **Handoff urgente nasce na sessao viva** *(ADR-066)*: processo headless sem a conversa deixou despacho e resumo vazios; **14+ handoffs cegos** mostram que automatizar formulario nao preserva contexto. O limite mede e sinaliza; a sessao viva materializa o handoff. |
 | [**MEM-APR-0018**](../memory/aprendizado/MEM-APR-0018-baseline-sem-destino-e-divida-invisivel.md) | APR | S | **54** | **Baseline sem destino e divida invisivel** *(ADR-071)*: cada falha tem proximo responsavel ou fronteira declarada; a fonte mediu **10 vermelhas falsas** quando o runner mudou o ambiente e **8 fantasmas** no paralelo. So rodada nova, herdando o ambiente e reconfirmada em serial, muda estado. |
+| [**MEM-APR-0019**](../memory/aprendizado/MEM-APR-0019-estado-implantado-nao-e-intencao-local.md) | APR | S | **60** | **Estado implantado nao e intencao local** *(`A-031`, F53)*: diagnostico remoto identifica revisao/hash realmente servido antes de atribuir causa ao estado local. |
+| [**MEM-APR-0020**](../memory/aprendizado/MEM-APR-0020-similaridade-lexical-nao-e-equivalencia.md) | APR | S | **59** | **Similaridade lexical nao e equivalencia** *(`A-077`)*: quase copia e conceito duplicado sao classes distintas; limiar e limite acompanham o veredito. |
+| [**MEM-APR-0021**](../memory/aprendizado/MEM-APR-0021-metrica-cumulativa-prova-monotonicidade.md) | APR | S | **58** | **Metrica cumulativa prova monotonicidade** *(`A-116`)*: `total_output_tokens` caiu de 3726 para 4 na mesma sessao e refutou a semantica presumida. |
+| [**MEM-APR-0022**](../memory/aprendizado/MEM-APR-0022-configuracao-de-processo-fica-na-borda.md) | APR | S | **58** | **Configuracao de processo fica na borda** *(`A-130`)*: import nao reconfigura recurso global; o entrypoint possui o processo. |
+| [**MEM-APR-0023**](../memory/aprendizado/MEM-APR-0023-referencia-operacional-resolve-desde-a-raiz.md) | APR | S | **58** | **Referencia operacional resolve desde a raiz** *(`A-139` + fibra de `A-031`)*: agente isolado e hook sob outro `cwd` nao herdam intuicao do autor. **2 ocorrencias**. |
+| [**MEM-APR-0024**](../memory/aprendizado/MEM-APR-0024-chave-derivada-exige-caso-de-colisao.md) | APR | S | **58** | **Chave derivada exige caso de colisao** *(`A-204`)*: um `README` marcou ~89 homonimos e escondeu 110 orfaos; fixture sem repeticao repetia a suposicao. |
+| [**MEM-APR-0025**](../memory/aprendizado/MEM-APR-0025-diagnostico-que-escreve-precisa-convergir.md) | APR | S | **58** | **Diagnostico que escreve precisa convergir** *(`A-296`)*: a sonda ocupou a quinta vaga, disse “Tudo passou” e a repeticao recebeu 402. |
+| [**MEM-APR-0026**](../memory/aprendizado/MEM-APR-0026-entrega-de-copia-unica-expira.md) | APR | S | **59** | **Entrega de copia unica expira** *(`A-297` + Hub atual)*: commit local nao e segunda custodia; seis produtos sem remoto aparecem como lacuna, nunca como “em dia”. **2 ocorrencias**. |
 | [**MSG-2026-0001**](../memory/operacional/MSG-2026-0001-ato-soberano-ratificacao-cartas-piloto.md) | **OPR** | **M** | **222** | **Fonte canonica unica** do ato soberano de 2026-07-28 sobre `DEP-QAR` e `DEP-ENG`, com IDs, versoes e hashes vinculados. **Primeira instancia do tipo `Diretiva`** |
 | [**MSG-2026-0002**](../memory/operacional/MSG-2026-0002-ato-soberano-cartas-comando-plataforma-e-contexto.md) | **OPR** | **M** | **303** | **Fonte canonica unica** do ato soberano de 2026-07-28 sobre `DEP-EXE`, `DEP-KMS`, `MEM-EST-0001`, os dois `FIT` e a Primeira Revisao Estrutural. **Tres hashes por artefato** e o **teste de reconstrucao** do texto ratificado |
 | [**MSG-2026-0003**](../memory/operacional/MSG-2026-0003-ato-soberano-emenda-qar-e-criterio-de-consolidacao.md) | **OPR** | **M** | **295** | **Fonte canonica unica** do ato soberano de 2026-07-28 sobre a emenda **`DEP-QAR` 1.1.0** e o **criterio de consolidacao**. Preserva a versao **1.0.0** por quatro vias; **dez** verificacoes de eficacia |
@@ -641,7 +649,7 @@ Verificados contra T1–T4 de FND-10 §10.2: **19 de 19 passam.**
 | [produto/README](../memory/produto/README.md) | PRD | S | 73 | Camada de entendimento de produto — **0 registros.** Continua vazia: **nenhum produto existe**, e criar produto e ato do SOBERANO — achado `RD-33` |
 | [tecnica/README](../memory/tecnica/README.md) | TEC | S | 78 | Camada de como o sistema esta construido — 0 registros |
 | [operacional/README](../memory/operacional/README.md) | OPR | S | **140** | Camada de estado corrente, efemera por padrao — **6 registros**. **`1.2.1`**, correcao `C0` do achado **`RD-29`** |
-| [aprendizado/README](../memory/aprendizado/README.md) | APR | S | **122** | Camada de licoes extraidas — **18 registros**, **`1.5.0`** *(setima cobranca `RD-32` corrigida e declarada no token 53; contadores movidos na mesma mudanca desde entao)* |
+| [aprendizado/README](../memory/aprendizado/README.md) | APR | S | **149** | Camada de licoes extraidas — **26 registros**, **`1.6.0`** *(F53: 20 candidatos comparados, 8 adaptados e 12 rejeitados por dedupe; contadores movidos na mesma mudanca)* |
 
 | [**MSG-2026-0004**](../memory/operacional/MSG-2026-0004-ato-soberano-cartas-emenda-constitucional-e-regime-do-fitness-check.md) | OPR | M | **293** | **Ato soberano** de 2026-07-29: cinco Cartas, ADR-0014 e regime do `FIT`. Fonte canonica unica |
 | [**MSG-2026-0005**](../memory/operacional/MSG-2026-0005-ato-soberano-aplicacao-dep-qar.md) | OPR | M | **221** | **Ato soberano** que libera a **aplicacao** de `DEP-QAR` 1.2.0 e determina a Missao 1.11 |
@@ -2726,6 +2734,7 @@ Norma: [FND-10 §10.4](../foundation/10-artifact-framework.md)
 | Versao | Data | Autor | Mudanca |
 |---|---|---|---|
 | 1.0.0 | 2026-07-28 | DEP-GOV | Catalogo inicial: 85 artefatos classificados. |
+| 2.52.0 | 2026-08-13 | DEP-GOV | ⚙️ **ONDA 7, F53 — aprendizado do legado confrontado com o projeto novo.** **20/20** candidatos `MEM-APR` comparados contra as 18 licoes vigentes e consumidores atuais: **8 `ADAPT`** viram `MEM-APR-0019..0026`; **12 `REJECT`** permanecem fechados por destino funcional, sem duplicacao. As novas fibras cobrem artefato realmente implantado, limite do dedupe lexical, monotonicidade, import-safe, caminhos desde a raiz, colisao de chave derivada, sonda convergente e segunda custodia. Fontes integrais e hashes custodiados pela Oficina em `F53` (`948acc9`). Contadores movidos na mesma mudanca. `0` atos · `0` Fundacionais tocadas · nenhuma baseline emitida. Escrito sob **`fencing_token` 65**. |
 | 1.1.0 | 2026-07-28 | DEP-GOV | Emenda por ADR-0007 e ADR-0008: proveniencia curada (§9) e baseline como projecao (§10); 93 artefatos. |
 | 2.51.0 | 2026-08-13 | DEP-GOV | ⚙️ **ONDA 7, fechamento da fila Mente da F51 — quatro candidatos lidos integralmente, nenhuma licao artificial criada.** **ADR-044 NAO sobe:** teto/hierarquia de instrucao ja migrou como teto inteligente **E4.T no Corpo**; manutencao legada 2b/2c foi cancelada. **ADR-050 NAO sobe:** nucleo minimo e recurso sob demanda ja sao sede de `CAP-conhecimento`, `FND-05` e `FND-06`. **ADR-051 NAO sobe:** nascimento e admissao de Skill sao governados pelo Framework de Skills (`ADR-0033`/`0037`), nao por nova memoria. **ADR-036 NAO sobe ainda:** taxonomia curada e insumo declarado da triagem `kb/` para `CAP-conhecimento`, nao licao separavel antes do mapeamento. `0` criados · `0` atos · `0` Fundacionais tocadas · nenhuma baseline emitida. Escrito sob **`fencing_token` 57**. |
 | 2.50.0 | 2026-08-13 | DEP-GOV | ⚙️ **ONDA 7, terceira leva da F51 — duas licoes novas e duas duplicacoes recusadas.** **`MEM-APR-0017`** *(ADR-066)* registra que handoff cujo valor depende de contexto vivido nasce na sessao viva; os **14+ handoffs cegos** provam o custo do processo headless. **`MEM-APR-0018`** *(ADR-071)* registra que baseline sem destino e divida invisivel; as **10** vermelhas falsas por ambiente alterado e **8** fantasmas do paralelo exigem medicao nova, herdada e serial para mudar estado. **NAO sobem:** ADR-010, ja mecanizado pelo sensor e pela fibra de `MEM-APR-0011`; ADR-074, ja coberto por `MEM-APR-0006` e pelo contador/sensor. Fontes integrais em somente-leitura e dedupe contra `0001..0016` conferidos. Contadores movidos na mesma mudanca. `0` atos · `0` Fundacionais tocadas · nenhuma baseline emitida. Escrito sob **`fencing_token` 56**. |

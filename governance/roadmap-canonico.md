@@ -954,6 +954,13 @@ completa na **QUINTA DIVERGÊNCIA**.
 > obrigatoriamente pelo confronto com Mente/Corpo/produtos, decisão
 > `ADAPT`/`REWRITE`/`REJECT`, spec, vermelho, consumidor e reversão.
 
+> **⚙️ Conferência de 2026-08-13, ao fechar o grupo de aprendizado da F53.** Os
+> **20/20** candidatos `MEM-APR` da F52 foram comparados com a Mente e os consumidores
+> atuais: **8 fibras adaptadas** como `MEM-APR-0019..0026` e **12 rejeitadas** por
+> duplicação funcional, com destino e motivo no commit `948acc9` da Oficina. Este grupo
+> conta como migrado porque atravessou a fonte integral, dedupe e escrita na sede nova;
+> nenhum código ou vocabulário de produto do legado foi copiado.
+
 > **⚙️ Conferência de 2026-08-13, ao fechar E7.BS no Corpo.** Os precedentes
 > `A-052`/`A-058`/`A-063` foram comparados com o E4.M e adaptados como uma única busca local
 > zero-token no commit `a62558c`: AST de símbolos, refino limitado e índice→detalhe na mesma
@@ -976,7 +983,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado, agora em dedupe e adaptação por capacidade — triagem não conta como migração antes da adaptação/rejeição motivada; filas seguintes: skills, séries de custo; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: grupo de aprendizado **20/20 fechado** com 8 adaptações e 12 rejeições motivadas; filas seguintes: skills/agentes/Capabilities, orquestração, séries de custo e integridade; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
