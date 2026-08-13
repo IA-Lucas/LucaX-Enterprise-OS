@@ -18,6 +18,13 @@ criado_em: 2026-08-01
 > raiz.** Conferir e assinalar **na mesma sessão que fecha** a missão; fechar
 > missão sem conferir o roadmap é entrega incompleta.
 
+> **🤖 Conferência de 2026-08-13 (quinta do dia), ao fechar o Goal 1.17 sob token 51 — na mesma sessão.**
+> **O Goal `1.17` sai de `[~]` para `[x]`** — o Agent Framework é norma (`ADR-0042`, AR-01–AR-30), **com a fronteira
+> dos agentes intacta**: `FND-02 §10` sem um byte, 0 agentes criados, e os dois pilotos contrastantes ficam para rito
+> próprio — com a armadilha do piloto de guarda (`ES-02`) nomeada antes do desenho. A regra central que o roadmap
+> pedia está enunciada para o agente pela primeira vez (AA-3 fechada como lacuna). **Resta da ordem: 1.18.**
+> `0` atos · nenhuma baseline emitida.
+
 > **🧰 Conferência de 2026-08-13 (quarta do dia), ao fechar o Goal 1.14 sob token 50 — na mesma sessão.**
 > **O Goal `1.14` sai de `[~]` para `[x]`** — o Tool & Model Framework é norma (`ADR-0041`, TF-01–TF-32). O candidato
 > foi remedido com a inspeção do homônimo que ele mesmo ensinou; os defeitos do `TPL-ferramenta` (AF-1/AF-2) entram
@@ -747,7 +754,7 @@ completa na **QUINTA DIVERGÊNCIA**.
       `FND-09 §8.2`): **a norma não custa ato; toda Ferramenta que ela governar custará.**
       **Espera decisão do Fundador** — admitir, manter fora do acervo, ou descartar.
 
-- [~] **1.17 — Agent Framework.** *(APROVADO pelo 13º ato, 2026-08-13 — rito em fila, ordem despachada)* Identidade, Departamento, Capabilities,
+- [x] **1.17 — Agent Framework.** ✅ **FECHADO em 2026-08-13 — `RFC-0037` → `ADR-0042` (AR-01–AR-30) → `FIT-2026-035`, sob token 51; `FND-02 §10` intacta; pilotos em rito proprio com `ES-02` nomeada.** Identidade, Departamento, Capabilities,
       missão, autoridade, limites, Specs, Skills, ferramentas, Commands,
       Workflows, memória, contexto, autonomia, escalonamento, avaliação, custo,
       ciclo de vida. Regra central: um agente não escreve, revisa e aprova
