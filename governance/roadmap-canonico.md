@@ -856,6 +856,24 @@ completa na **QUINTA DIVERGÊNCIA**.
       cadeia de `1.19` não tem nem sequer a primeira aresta**, e é isso, não o número de elos,
       que a torna não atravessável. É o mesmo achado que deixa **`SK-21` (b) não exercida**.
 
+      ⚙️ **Conferência de 2026-08-13, ao criar o primeiro `Workflow` real.**
+      [`WFL-GOV-migracao-por-ondas-do-legado.md`](../workflows/WFL-GOV-migracao-por-ondas-do-legado.md)
+      documenta o procedimento já exercido **cinco vezes** nesta Onda 7 (F53/F54/F55/F57/F58),
+      contrato completo de `ADR-0040` (`WF-05`/`WF-08`, 18 blocos). **Fecha `AW-1`/`RD-113`**
+      (`workflows/` deixava de existir); `AW-2`/`RD-114` e `AW-3`/`RD-115` seguem abertos —
+      corrigir o `TPL-workflow` fica fora do escopo desta instância. **A cadeia de `1.19` ganha
+      a PRIMEIRA aresta real:** a etapa 3 do Workflow invoca
+      `SKL-custodia-criar-copia-datada` no mesmo gatilho que a própria Skill já declarava
+      (`SK-11`, *"adquirir lease de escrita"*) — as três Skills deixam de ser mutuamente
+      independentes. **Gap declarado junto, não escondido:** as cópias datadas dos tokens
+      71–74 desta Onda 7 usaram contagem de arquivos, não o manifesto `sha256` completo de
+      `SK-15` — a aresta é real, o exercício pleno da Skill ainda não é. **Contagem de `1.19`
+      passa a `3/10` elos instanciados** (Skill, Workflow, e a aresta entre eles) — restam
+      Ferramenta, Command *(vive no `gatilho`, não é arquivo próprio)*, Agentes. **Ferramenta
+      e Agente (se `Tipo 1`) exigem ratificação do Soberano na adoção** — redigir a ficha é
+      possível sem ato; admitir não é. Registrado sob `fencing_token` 74, catálogo mestre
+      **2.53.0**.
+
 ---
 
 ## ÉPICO 2 — Kernel Técnico

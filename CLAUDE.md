@@ -67,11 +67,34 @@ Regra permanente, gravada por **determinacao (c) do TERCEIRO DESPACHO do Soberan
 entrada nao declarada na raiz (portao de raiz, achado `RD-53`). A recusa e o
 portao funcionando, nao falha.
 
-**Instrumento vigente: `IR-BL/6`**, `sha256`
-`738624a23f2db3212937f629e7f31c2a42b836d450586694876722b2b69252e0`, em
+**Instrumento vigente: `IR-BL/7`**, `sha256`
+`b465633c85149bb91c14a2cc0a5bd9abd42a35c2bae0c0a1250eec6252c345de`, em
 `E:\LucasIA\Projetos\_sincronizacao-2026-08-10\ferramentas\baseline.sh`.
-Lado `NAO_ACERVO`: `.obsidian`, `_SAIDA-COMPANY-OS`, `CLAUDE.md`, `.git`,
-`.gitattributes`, `docs`.
+Lado `ACERVO`: acrescido de `workflows` nesta geracao. Lado `NAO_ACERVO`:
+`.obsidian`, `_SAIDA-COMPANY-OS`, `CLAUDE.md`, `.git`, `.gitattributes`,
+`docs`.
+
+> ### ⚠️ Terceira correcao declarada, nao silenciosa — 2026-08-13
+>
+> Ate agora este paragrafo apontava **`IR-BL/6`** como vigente. `IR-BL/7`
+> acrescenta `workflows` ao lado **`ACERVO`** — o lado MEDIDO, nao o lado
+> `NAO_ACERVO` das duas correcoes anteriores. **Mesma classe de emenda que
+> `products` (`IR-BL/2`) e `skills` (`IR-BL/5`):** move a contagem de
+> artefato, linha e impressao, com fundamento normativo citado — `ADR-0040`
+> ja declarava `workflows/<WFL-id>.md` como local canonico (`FND-03 §3.10` e
+> `§7`, "fase futura"), e
+> [`WFL-GOV-migracao-por-ondas-do-legado.md`](workflows/WFL-GOV-migracao-por-ondas-do-legado.md)
+> e o primeiro Workflow real (fencing_token 74). **Nao exige ato do
+> Soberano:** `FND-09 §8.2` linha `WFL` poe *Ratifica* = `—`. Quatro provas
+> de inercia executadas ANTES do uso, no cabecalho do proprio instrumento:
+> arvore sem `workflows/` reproduz os quatro valores de `IR-BL/6`; arvore
+> viva com `workflows/` mede `EXIT=0` com os tres valores movendo pelo
+> conteudo real; entrada nova nao declarada continua recusando (`EXIT=2`);
+> desfeita a linha, o `EXIT=2` volta.
+>
+> Corrigido aqui **na mesma passagem e sem rito**, pelo mesmo motivo das
+> duas correcoes anteriores: este arquivo declara-se nao-artefato, e por
+> isso a correcao **nao exige** `ADR`, hash, baseline nem ato.
 
 > ### ⚠️ Segunda correcao declarada, nao silenciosa — 2026-08-10
 >
