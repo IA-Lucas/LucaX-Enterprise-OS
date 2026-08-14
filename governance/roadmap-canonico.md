@@ -1040,6 +1040,62 @@ completa na **QUINTA DIVERGÊNCIA**.
 > (`2b7ee3e`) estão todas refletidas no Corpo: 3 ADAPT (`A-190`→E7.OP, `A-150`/`A-245`→
 > E7.OD) e 7 REJECT (cascas e duplicações do SuperCondutor).
 
+> **⚙️ Conferência de 2026-08-13 — F58, triagem da fila "skills/agentes/Capabilities".**
+> Localizado o manifesto da F52 (`.scratch/F52_triagem_precedentes_lote{1..7}.csv` na
+> Oficina, 175 linhas + 5 fontes pré-lidas = 180/180): o único grupo do horizonte
+> integral ainda sem fase própria era "Agentes, skills e Capabilities" — **10
+> precedentes** (`A-148`, `A-188`, `A-197`, `A-159`, `A-226`, `A-267`, `A-214`, `A-259`,
+> `A-162`, `A-149`), todos com veredito `CANDIDATO-MENTE` no CSV, nenhum ainda
+> confrontado. **Achado que orientou a triagem inteira:** ao contrário de F53–F57 (que
+> tratavam de mecanismo de PRODUTO), este grupo é majoritariamente sobre a
+> **ferramentaria interna do Claude Code do próprio Legado** — arquivos de subagente,
+> convenção de nascimento de skill do Claude Code, curadoria de tags de `kb/`,
+> organograma de "cadeiras" — já duas vezes declarada fora de escopo nesta Onda 7
+> ("infraestrutura do Claude Code, não do Corpo", E7.L5; "sem emissor, seria
+> estimativa", E7.H). O mesmo critério foi aplicado aqui.
+>
+> **1 ADAPT parcial — `A-188` → `E7.IL`, commit `b8eb0bd` no Corpo.** O sensor
+> `injecao_web.py` (E7.S) só casava padrão de injeção contra texto plano; a Mente já
+> havia confirmado por inspeção direta uma injeção REAL em leetspeak no README do
+> `CL4R1T4S` (`AC-05-REP-003`, transcrita em
+> `_SAIDA-COMPANY-OS/07_FICHAS-DE-EVIDENCIA/05_SKILLS-E-PROMPTS.md`). A tabela de
+> normalização de A-188 (`0→o 1→i 3→e 4→a 5→s 7→t 8→b`) fechou o gap: linha original
+> tentada primeiro, normalizada só se não casar (sem duplicar achado em texto sem
+> dígito). Prova por reprodução usa o próprio bloco já confirmado como achado na
+> Mente — dado, nunca instrução, protocolo de conteúdo hostil do `CLAUDE.md`. A outra
+> metade de A-188 (sensor de deriva de orçamento por subagente) já estava absorvida
+> pelo `deriva_orcamento` de E7.S; não porta de novo. 8 testes novos; suíte **271 →
+> 279** (275 passed + 4 skipped); mapa **114/140**.
+>
+> **8 REJECT motivados, mesma razão-mãe (infraestrutura do Claude Code do Legado ou
+> sem consumidor real no Corpo):** `A-148` (log de execução de faxina de nomenclatura,
+> sem mecanismo portável) · `A-197` (convenção de nascimento de skill do Claude Code)
+> · `A-159` (subagente `.claude/agents/juridico.md` + parecer específico de persona do
+> Legado) · `A-226` (auditor de frontmatter do Legado; conferido `skills/*.yaml` e
+> `PRD.json` do Corpo — nenhum placeholder real, seria peça decorativa) · `A-214`
+> (regras de custo de carregamento de contexto do `CLAUDE.md` do Legado; a Mente já
+> tem modelo próprio de Capabilities, independente deste precedente) · `A-259`
+> ("cadeiras" de design do organograma do Legado; Corpo não tem domínio de design) ·
+> `A-162` (regra de prioridade de fonte para pesquisa; sem consumidor — as rotas
+> `market_research`/`realtime_social` chamam LLM sem retrieval nem citação) · `A-149`
+> (curadoria de vocabulário de tags do `kb/` do Legado; sem estrutura análoga no Corpo).
+>
+> **`A-267` (ADR-112) NÃO decidido aqui.** Já estava reservado por nome desde a F51 —
+> *"`ADR-112` (lastro taxonômico, rito próprio)"* — e esta triagem não o reabre.
+>
+> **Nota de referência, registrada por decisão do Fundador — não migra ao Corpo, mas
+> fica marcada para quem trabalhar no Agent Framework da própria Mente (`1.17`, já
+> fechado com `ADR-0042`/`AR-01`–`30`).** `A-226` (matriz que audita 44 artefatos:
+> domínios + agentes + skills, achando falso "0 problemas"), `A-259` (4 "cadeiras" de
+> design com contrato próprio e Juiz 1 por especialidade) e `A-267`/`ADR-112` (cadeira
+> como material sob demanda, não subagente residente — resolve custo de contexto por
+> convocação) descrevem, juntos, um modelo maduro de agente-sob-demanda do Legado.
+> Nenhum dos três vira código no Corpo por esta triagem; ficam como material de
+> consulta, não como decisão de migração.
+>
+> **F58 fecha 10/10.** Não há próxima fase F5x definida — a fila que motivou esta
+> triagem está esgotada.
+
 > **Regra permanente de contagem, determinada pelo Fundador nesta continuação da Onda 7:**
 > `triado` **não** é `migrado`. Cada lote segue fonte integral → agrupamento por capacidade →
 > comparação com a sede nova → decisão `ADAPT`/`REWRITE`/`REJECT` por fibra → spec e vermelho
@@ -1055,7 +1111,7 @@ completa na **QUINTA DIVERGÊNCIA**.
 - [x] ADOPT / ADAPT / REWRITE / RETIRE *(vereditos por área: 10 APROVEITAR com destino e como · 7 DESCARTAR-rótulo, nada apagado)*
 - [x] Migração-piloto ✅ **MEM-APR-0009..0012 sob token 53 — primeira matéria do legado admitida na Mente pela via do mérito; 7 produtos separados com história e prova**
 - [x] Validação *(pós-verificação do piloto: EXIT=0 antes/depois, dedupe contra 0001..0008, evidência transcrita da fonte, CR=0, contadores movidos na mesma mudança)*
-- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232 + E7.CU/A-263 + E7.OP/A-190 + E7.OD/A-150+A-245; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: aprendizado **20/20 fechado**; F54: integridade **7/7 fechada**; F55: custo/contexto **6/6 fechado**; F57: **10/10 fechados** (3 ADAPT/7 REJECT do confronto de orquestração); fila executável paralela: skills/agentes/Capabilities; F56 ingestão `A-083/A-180` aguarda objeto externo e não conta como migrada; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
+- [~] Migração por ondas *(em curso — frente Corpo: lote 1 de sensores + contrato envelope + E7.CO/ADR-053 + E7.VF/ADR-003/019/070 + E7.BS/A-052/058/063 + E7.GD/A-203/232 + E7.CU/A-263 + E7.OP/A-190 + E7.OD/A-150+A-245 + E7.IL/A-188; F51: 133 ADRs classificados, remessa ordinária Mente resolvida; F52: horizonte integral **180/180** lido e triado; F53: aprendizado **20/20 fechado**; F54: integridade **7/7 fechada**; F55: custo/contexto **6/6 fechado**; F57: **10/10 fechados** (3 ADAPT/7 REJECT do confronto de orquestração); F58: **10/10 fechados** (1 ADAPT/8 REJECT da fila skills/agentes/Capabilities; `A-267`/`ADR-112` segue reservado); nenhuma fase F5x aberta; F56 ingestão `A-083/A-180` aguarda objeto externo e não conta como migrada; `013`/`017` aguardam Fundador e `112` rito taxonômico próprio)*
 - [ ] Cutover
 - [ ] Retirada do legado
 
