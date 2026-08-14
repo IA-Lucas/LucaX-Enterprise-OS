@@ -1152,6 +1152,27 @@ completa na **QUINTA DIVERGÊNCIA**.
 > **F58 fecha 10/10.** Não há próxima fase F5x definida — a fila que motivou esta
 > triagem está esgotada.
 
+> **⚙️ Conferência de 2026-08-14 — triagem do resgate antigravity e RFC-0040/ADR-0045.**
+> Chegaram três peças externas de análise (auditoria 2026-08-12 · segunda varredura
+> 2026-08-13 · transcrições Whisper de 207 vídeos 2026-08-14, sede em
+> `_backups\transcricoes-videos-2026-08-14-resgate-antigravity\`), cada uma propondo um
+> plano de ondas para o `ai-orchestrator-starter`. O fit-gap medido na triagem
+> (`LucaX-Enterprise-Research/docs/handoffs/2026-08-14-triagem-resgate-antigravity.md`)
+> mostrou **15 de ~30 recomendações já absorvidas** pelas ondas 2–7 do Corpo; o único
+> gap com consumidor ativo virou **E6.4 — golden runs** no mesmo dia (Corpo `ca3b826`,
+> suíte 297→307, gabarito congelado de 7 cenários, reversão exercida no fio real).
+> A parte de governança subiu como **RFC-0040 → ADR-0045** (token 79): **D1** os dois
+> planos externos declarados SUPERADOS pelo checklist do Corpo e por este roadmap
+> (vigente como registro) · **D2** as 3 fontes classificadas por lastro — transcrições
+> Whisper `base` são 🥉, **pista, nunca conclusão**; contradição 175×207 vídeos
+> registrada, reconciliação pendente na Oficina (vigente como registro) · **D3** rito
+> semestral de poda de instruções comportamentais, salvaguardas 🔒 fora por desenho,
+> 1ª poda 2027-02 com o Corpo de piloto — lastro 🥈: Boris Cherny/YC + corte de ~80%
+> do system prompt do Claude Code pela Anthropic (**pendente de ato**) · **D4** campo
+> `nivel_de_autonomia` (conduzido/assistido/autônomo) em missão de Carta criada ou
+> emendada (**pendente de ato**). Pendências que ficam na Oficina: registro de entrada
+> físico das 3 peças e reconciliação de contagem.
+
 > **Regra permanente de contagem, determinada pelo Fundador nesta continuação da Onda 7:**
 > `triado` **não** é `migrado`. Cada lote segue fonte integral → agrupamento por capacidade →
 > comparação com a sede nova → decisão `ADAPT`/`REWRITE`/`REJECT` por fibra → spec e vermelho
