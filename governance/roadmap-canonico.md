@@ -1168,10 +1168,17 @@ completa na **QUINTA DIVERGÊNCIA**.
 > registrada, reconciliação pendente na Oficina (vigente como registro) · **D3** rito
 > semestral de poda de instruções comportamentais, salvaguardas 🔒 fora por desenho,
 > 1ª poda 2027-02 com o Corpo de piloto — lastro 🥈: Boris Cherny/YC + corte de ~80%
-> do system prompt do Claude Code pela Anthropic (**pendente de ato**) · **D4** campo
-> `nivel_de_autonomia` (conduzido/assistido/autônomo) em missão de Carta criada ou
-> emendada (**pendente de ato**). Pendências que ficam na Oficina: registro de entrada
-> físico das 3 peças e reconciliação de contagem.
+> do system prompt do Claude Code pela Anthropic · **D4** campo `nivel_de_autonomia`
+> (conduzido/assistido/autônomo) em missão de Carta criada ou emendada. Pendências que
+> ficam na Oficina: registro de entrada físico das 3 peças e reconciliação de contagem.
+> **✅ RATIFICADO NO MESMO DIA — décimo sexto ato soberano, `MSG-2026-0016`** (*"Ratifico
+> o ADR-0045 em 2026-08-14"*, push autorizado no ato): D3/D4 vigentes com os defaults
+> `Q1` (piloto no Corpo) e `Q2` (por Carta) sem objeção. **Compromissos agendados que
+> este roadmap passa a carregar:** `[ ]` **1ª poda de instruções — 2027-02, piloto no
+> Corpo** (remover patch comportamental → observar → recolocar o que degradar; matéria
+> 🔒 nunca entra) · `[~]` **`nivel_de_autonomia` em toda missão de Carta criada ou
+> emendada a partir de 2026-08-14** (em curso por natureza: aplica-se Carta a Carta,
+> na primeira missão que tocar cada uma).
 
 > **Regra permanente de contagem, determinada pelo Fundador nesta continuação da Onda 7:**
 > `triado` **não** é `migrado`. Cada lote segue fonte integral → agrupamento por capacidade →

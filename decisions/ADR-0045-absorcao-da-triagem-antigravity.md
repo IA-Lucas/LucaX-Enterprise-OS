@@ -2,8 +2,8 @@
 id: ADR-0045-absorcao-da-triagem-antigravity
 titulo: Absorver a triagem do resgate antigravity — planos externos superados, fontes classificadas, poda semestral e nível de autonomia nas Cartas
 tipo: adr
-versao: 1.0.0
-status: em-revisao
+versao: 1.1.0
+status: ativo
 camada_memoria: estrategica
 autor: DEP-GOV
 proprietario: DEP-GOV
@@ -11,7 +11,7 @@ aprovador: SOBERANO
 criado_em: 2026-08-14
 atualizado_em: 2026-08-14
 revisao_prevista: 2027-02-14
-decisoes_relacionadas: [ADR-0038, ADR-0039]
+decisoes_relacionadas: [ADR-0038, ADR-0039, MSG-2026-0016]
 substitui: []
 substituido_por: null
 classe_mudanca: C2
@@ -22,16 +22,18 @@ resumo: D1 declara superados os planos de ondas dos relatórios externos; D2 cla
 perfil_contexto: sob-demanda
 confidencialidade: interno
 revisor: DEP-QAR
-ratificacao: pendente
+ratificacao: ratificada
 ---
 
 # ADR-0045: Absorção da triagem do resgate antigravity
 
-> ## ⏳ ESTE ADR NÃO ESTÁ EM VIGOR NA PARTE QUE EXIGE ATO.
+> ## ✅ ESTE ADR ESTÁ EM VIGOR POR INTEIRO — ratificado em 2026-08-14.
 >
-> `status: em-revisao` · `ratificacao: pendente`. **D1 e D2 vigoram desde já** como
-> registro de estado (competência de `DEP-GOV`, nenhuma norma emendada). **D3 e D4 só
-> vigoram com o ato do Soberano** sobre este texto.
+> `status: ativo` · `ratificacao: ratificada`, pelo ato registrado em
+> [`MSG-2026-0016`](../memory/operacional/MSG-2026-0016-ato-soberano-ratificacao-adr-0045.md)
+> (*"Ratifico o ADR-0045 em 2026-08-14"*). D1/D2 já vigoravam como registro; **D3 e D4
+> vigoram desde o ato**, com os defaults `Q1` (1ª poda 2027-02, piloto no Corpo) e `Q2`
+> (campo por Carta, na primeira missão que a tocar) sem objeção.
 > A fonte corrente do estado é o frontmatter, nunca este bloco.
 
 ## Propósito
@@ -134,7 +136,8 @@ com clientes reais vai fazer primeiro: *quem decide — o humano ou o agente?*
 | **Tipo de reversibilidade** | `Tipo 1` |
 | **Aprovador/Ratificador** | `SOBERANO` para D3/D4; `DEP-GOV` para D1/D2 |
 | Instrumento | RFC → ADR → Ratificação ([RFC-0040](../rfcs/RFC-0040-absorcao-da-triagem-antigravity.md)) |
-| Data da decisão | 2026-08-14 (D1/D2) · *pendente de ato* (D3/D4) |
+| Data da decisão | **2026-08-14** — D1/D2 na emissão; D3/D4 pelo ato [`MSG-2026-0016`](../memory/operacional/MSG-2026-0016-ato-soberano-ratificacao-adr-0045.md) |
+| Data de vigência | **2026-08-14** |
 
 > **Por que `C2` e não `C3`.** Nenhum princípio imutável, linha vermelha ou hierarquia
 > é alterado — D3 explicitamente se subordina à matéria 🔒, e D4 não muda quem decide
@@ -162,7 +165,7 @@ com clientes reais vai fazer primeiro: *quem decide — o humano ou o agente?*
 |---|---|
 | Origem | [RFC-0040](../rfcs/RFC-0040-absorcao-da-triagem-antigravity.md) · triagem de 2026-08-14 (Oficina, handoffs) |
 | Execução-irmã no Corpo | E6.4 golden runs, commit `ca3b826` (mesma triagem, matéria técnica) |
-| Ato de ratificação | *(pendente)* |
+| Ato de ratificação | [MSG-2026-0016](../memory/operacional/MSG-2026-0016-ato-soberano-ratificacao-adr-0045.md) — "Ratifico o ADR-0045 em 2026-08-14" (décimo sexto ato) |
 | Achados/pendências que permanecem abertos | Registro de entrada físico das 3 peças (Oficina) · reconciliação 175×207 (Oficina) |
 
 ---
@@ -185,3 +188,4 @@ com clientes reais vai fazer primeiro: *quem decide — o humano ou o agente?*
 | Versão | Data | Autor | Mudança |
 |---|---|---|---|
 | 1.0.0 | 2026-08-14 | DEP-GOV | Decisão inicial: D1/D2 vigentes como registro; D3/D4 `em-revisao`, ratificação pendente. Lastro de D3 elevado a 🥈 por verificação da mesma data, com a primária declarada ausente. |
+| 1.1.0 | 2026-08-14 | DEP-GOV | **RATIFICADO** — `MSG-2026-0016`, *"Ratifico o ADR-0045 em 2026-08-14"* (décimo sexto ato). `status: ativo`, `ratificacao: ratificada`. `Q1`/`Q2` sem objeção — valem os defaults (piloto no Corpo; por Carta). Compromissos criados: 1ª poda **2027-02**; `nivel_de_autonomia` obrigatório em missão de Carta criada/emendada. |
