@@ -874,6 +874,22 @@ completa na **QUINTA DIVERGÊNCIA**.
       possível sem ato; admitir não é. Registrado sob `fencing_token` 74, catálogo mestre
       **2.53.0**.
 
+      ⚙️ **Conferência de 2026-08-14, ao redigir a primeira ficha de `Ferramenta`.**
+      [`TOL-local-baseline-do-acervo.md`](../tools/TOL-local-baseline-do-acervo.md) registra
+      o instrumento de baseline (já citado em 20+ tokens de lease e sete gerações),
+      contrato completo de `ADR-0041` (18 blocos). **Fecha `AF-3`** (`tools/` deixava de
+      existir); `AF-1`/`AF-2` (defeitos do `TPL-ferramenta`) seguem abertos, declarado.
+      **A contagem de `1.19` NÃO sobe para `4/10`:** `status: rascunho` /
+      `ratificacao: pendente` — diferente de `SKL`/`WFL`, adoção de `TOL` exige
+      ratificação do Soberano sempre (`TF-10`); a ficha existe, o elo instanciado não,
+      até o ato. **⚠️ Gap de lease exercido e corrigido na própria sessão, declarado no
+      lease sob `fencing_token` 75:** as escritas desta ficha e da emenda do instrumento
+      começaram com o lease **liberado** (mesmo padrão já fechado no `CLAUDE.md`, escritas
+      de 2026-08-02) — nenhum commit havia ocorrido, e o token foi readquirido antes de
+      commitar. Instrumento emendado para `IR-BL/8`: `tools` entra em `ACERVO`, mesma
+      classe de `workflows`/`IR-BL/7`, 4 provas de inércia executadas antes do uso.
+      Registrado sob `fencing_token` 75, catálogo mestre **2.54.0**.
+
 ---
 
 ## ÉPICO 2 — Kernel Técnico

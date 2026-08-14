@@ -67,12 +67,35 @@ Regra permanente, gravada por **determinacao (c) do TERCEIRO DESPACHO do Soberan
 entrada nao declarada na raiz (portao de raiz, achado `RD-53`). A recusa e o
 portao funcionando, nao falha.
 
-**Instrumento vigente: `IR-BL/7`**, `sha256`
-`b465633c85149bb91c14a2cc0a5bd9abd42a35c2bae0c0a1250eec6252c345de`, em
+**Instrumento vigente: `IR-BL/8`**, `sha256`
+`124b36ad82319177b74c21f2ca698649079941025a2ff99cfd5a6d3f6d0e3a00`, em
 `E:\LucasIA\Projetos\_sincronizacao-2026-08-10\ferramentas\baseline.sh`.
-Lado `ACERVO`: acrescido de `workflows` nesta geracao. Lado `NAO_ACERVO`:
-`.obsidian`, `_SAIDA-COMPANY-OS`, `CLAUDE.md`, `.git`, `.gitattributes`,
-`docs`.
+Lado `ACERVO`: acrescido de `workflows` (`IR-BL/7`) e `tools` (`IR-BL/8`)
+nestas duas ultimas geracoes. Lado `NAO_ACERVO`: `.obsidian`,
+`_SAIDA-COMPANY-OS`, `CLAUDE.md`, `.git`, `.gitattributes`, `docs`.
+
+> ### ⚠️ Quarta correcao declarada, nao silenciosa — 2026-08-14
+>
+> Ate agora este paragrafo apontava **`IR-BL/7`** como vigente. `IR-BL/8`
+> acrescenta `tools` ao lado **`ACERVO`** — mesma classe de emenda que
+> `workflows` (`IR-BL/7`), `products` (`IR-BL/2`) e `skills` (`IR-BL/5`):
+> move a contagem, com fundamento normativo ja citado — `ADR-0041` ja
+> declarava `tools/TOL-<classe>-<slug>.md` como local canonico (`FND-03 §7`,
+> achado `AF-3`, "fase futura"), e
+> [`TOL-local-baseline-do-acervo.md`](tools/TOL-local-baseline-do-acervo.md)
+> e a primeira Ferramenta registrada do acervo. **Diferenca declarada em
+> relacao a `workflows`:** `FND-09 §8.2` linha `TOL` exige ratificacao do
+> Soberano **na adocao** (`TF-10`) — a ficha entra como `status: rascunho` /
+> `ratificacao: pendente`; medir a ficha no instrumento nao e adotar a
+> Ferramenta. Quatro provas de inercia executadas ANTES do uso: arvore sem
+> `tools/` reproduz os quatro valores de `IR-BL/7`; arvore viva com
+> `tools/` mede `EXIT=0` com os tres valores movendo pelo conteudo real;
+> entrada nova nao declarada continua recusando (`EXIT=2`); desfeita a
+> linha, o `EXIT=2` volta.
+>
+> Corrigido aqui **na mesma passagem e sem rito**, pelo mesmo motivo das
+> tres correcoes anteriores: este arquivo declara-se nao-artefato, e por
+> isso a correcao **nao exige** `ADR`, hash, baseline nem ato.
 
 > ### ⚠️ Terceira correcao declarada, nao silenciosa — 2026-08-13
 >
