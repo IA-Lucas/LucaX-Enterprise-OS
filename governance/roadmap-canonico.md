@@ -890,6 +890,16 @@ completa na **QUINTA DIVERGÊNCIA**.
       classe de `workflows`/`IR-BL/7`, 4 provas de inércia executadas antes do uso.
       Registrado sob `fencing_token` 75, catálogo mestre **2.54.0**.
 
+      ⚙️ **Conferência de 2026-08-14, ao redigir `RFC-0039` → `ADR-0044`.** Submete ao
+      Soberano a ratificação de `TOL-local-baseline-do-acervo`: rito `C2 · Tipo 1`
+      completo (`TF-10`) até a Ratificação — Proposta, Autoria, Revisão, Avaliação de
+      risco e Aprovação percorridos nesta sessão; **Ratificação pendente, indelegável**.
+      `ADR-0044` nasce **`em-revisão` / `ratificação: pendente`**, mesma classe de
+      `ADR-0026` (medAlly) — **retido por falta de ato, não por falta de forma.** `0`
+      bytes do script alterados; `0` entidades criadas. **`1.19` permanece em `3/10`** —
+      o elo de Ferramenta só conta após o ato do Soberano sobre `ADR-0044`. Registrado
+      sob `fencing_token` 76, catálogo mestre **2.55.0**.
+
 ---
 
 ## ÉPICO 2 — Kernel Técnico
