@@ -2,8 +2,8 @@
 id: ADR-0044-adocao-da-baseline-como-ferramenta
 titulo: Adotar TOL-local-baseline-do-acervo como a primeira Ferramenta ratificada do acervo
 tipo: adr
-versao: 1.0.0
-status: em-revisao
+versao: 1.1.0
+status: ativo
 camada_memoria: estrategica
 autor: DEP-TLS
 proprietario: DEP-TLS
@@ -11,7 +11,7 @@ aprovador: SOBERANO
 criado_em: 2026-08-14
 atualizado_em: 2026-08-14
 revisao_prevista: 2027-02-14
-decisoes_relacionadas: [ADR-0041]
+decisoes_relacionadas: [ADR-0041, MSG-2026-0015]
 substitui: []
 substituido_por: null
 classe_mudanca: C2
@@ -22,17 +22,18 @@ resumo: Adota TOL-local-baseline-do-acervo como primeira Ferramenta vigente, sem
 perfil_contexto: sob-demanda
 confidencialidade: interno
 revisor: DEP-QAR
-ratificacao: pendente
+ratificacao: ratificada
 ---
 
 # ADR-0044: Adoção da baseline canônica como Ferramenta
 
-> ## ⛔ ESTE ADR NÃO ESTÁ EM VIGOR.
+> ## ✅ ESTE ADR ESTÁ EM VIGOR — ratificado em 2026-08-14.
 >
-> `status: em-revisao` · `ratificacao: pendente`. **`C2 · Tipo 1` exige ato explícito e
-> datado do Soberano sobre o texto final** (`LM-02`, `TF-10`). Enquanto o ato não ocorrer,
-> `tools/TOL-local-baseline-do-acervo.md` permanece `status: rascunho`, e o elo de
-> Ferramenta em `1.19` **não conta como instanciado**.
+> `status: ativo` · `ratificacao: ratificada`, pelo ato registrado em
+> [`MSG-2026-0015`](../memory/operacional/MSG-2026-0015-ato-soberano-ratificacao-adr-0044.md)
+> (*"Ratifico o ADR-0044 em 2026-08-14"*). `tools/TOL-local-baseline-do-acervo.md` passa a
+> `status: ativo` / `ratificacao: ratificada` pela mesma aplicação, e o elo de Ferramenta em
+> `1.19` **conta como instanciado**.
 >
 > **A fonte corrente do estado é o frontmatter** (`FND-10 §5.4`, `PJ-04`), nunca este bloco.
 
@@ -151,8 +152,8 @@ Aprovação (`SOBERANO`, pendente), Ratificação (`SOBERANO`, indelegável, pen
 | **Tipo de reversibilidade** | `Tipo 1` |
 | **Aprovador/Ratificador** | `SOBERANO` — indelegável (`TF-10`) |
 | Instrumento | RFC → ADR → Ratificação ([RFC-0039](../rfcs/RFC-0039-adocao-da-baseline-como-ferramenta.md)) |
-| Data da decisão | *(em branco — o ato não ocorreu)* |
-| Data de vigência | *(em branco)* |
+| Data da decisão | **2026-08-14** — [`MSG-2026-0015`](../memory/operacional/MSG-2026-0015-ato-soberano-ratificacao-adr-0044.md) |
+| Data de vigência | **2026-08-14** |
 
 > **Por que `C2` e não `C3`.** Cria um componente (`FND-04 §2`), não altera princípio
 > imutável, linha vermelha, hierarquia normativa ou a Fundação. `0` fundacionais emendadas.
@@ -182,6 +183,7 @@ Aprovação (`SOBERANO`, pendente), Ratificação (`SOBERANO`, indelegável, pen
 | Campo | Conteúdo |
 |---|---|
 | Origem | [RFC-0039](../rfcs/RFC-0039-adocao-da-baseline-como-ferramenta.md) |
+| Ato de ratificação | [MSG-2026-0015](../memory/operacional/MSG-2026-0015-ato-soberano-ratificacao-adr-0044.md) — "Ratifico o ADR-0044 em 2026-08-14" |
 | Artefatos criados pelo ato | *(nenhum novo — a ficha já existe; o ato só muda `status`/`ratificacao` dela)* |
 | Artefatos do acervo alterados pelo ato | `tools/TOL-local-baseline-do-acervo.md` (`status`, `ratificacao`, `atualizado_em`) |
 | Bytes do script alterados | `0` |
@@ -208,3 +210,4 @@ Aprovação (`SOBERANO`, pendente), Ratificação (`SOBERANO`, indelegável, pen
 | Versão | Data | Autor | Mudança |
 |---|---|---|---|
 | 1.0.0 | 2026-08-14 | DEP-TLS | Decisão inicial, **`em-revisao`, não vigente**. Instrumenta a Opção A de `RFC-0039`: adota a ficha já redigida, `0` bytes do script alterados, `0` entidades criadas. Uma ausência de evidência declarada (`DEP-EXE`). Duas questões não bloqueantes ao Soberano. |
+| 1.1.0 | 2026-08-14 | DEP-GOV | **RATIFICADO** — `MSG-2026-0015`, *"Ratifico o ADR-0044 em 2026-08-14"*. `status: ativo`, `ratificacao: ratificada`. Nenhuma das duas questões (`Q1`/`Q2`) recebeu objeção — permanecem no valor original da ficha. `tools/TOL-local-baseline-do-acervo.md` aplicado na mesma mudança. |

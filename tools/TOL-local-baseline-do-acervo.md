@@ -2,8 +2,8 @@
 id: TOL-local-baseline-do-acervo
 titulo: Baseline canônica do acervo — reprodução read-only por lista fechada positiva
 tipo: ferramenta
-versao: 1.0.0
-status: rascunho
+versao: 1.1.0
+status: ativo
 camada_memoria: tecnica
 autor: DEP-TLS
 proprietario: DEP-TLS
@@ -11,14 +11,14 @@ aprovador: DEP-EXE
 criado_em: 2026-08-14
 atualizado_em: 2026-08-14
 revisao_prevista: 2027-02-14
-decisoes_relacionadas: [ADR-0041]
+decisoes_relacionadas: [ADR-0041, ADR-0044, MSG-2026-0015]
 substitui: []
 substituido_por: null
 resumo: Mede artefatos, linhas e impressão digital do acervo por lista fechada positiva, recusando raiz não declarada, sem escrever nada.
 perfil_contexto: sob-demanda
 confidencialidade: interno
 revisor: DEP-QAR
-ratificacao: pendente
+ratificacao: ratificada
 capabilities: [CAP-governanca]
 classe: local
 dado_trafegado: nenhum
@@ -170,8 +170,8 @@ digital`) impressas em `stdout` para quem o invocou.
 ## 16. Rastreabilidade
 | Campo | Conteúdo |
 |---|---|
-| ADR de adoção | *(pendente — ver §17)* |
-| Ratificação do Soberano (data) | **Pendente.** `TF-10`: adoção de Ferramenta é `C2 · Tipo 1`, ratificação indelegável do Soberano. Esta ficha registra a **proposta**; a **vigência** só ocorre após `ratificacao: ratificada` (`LM-02`) |
+| ADR de adoção | [`ADR-0044`](../decisions/ADR-0044-adocao-da-baseline-como-ferramenta.md) — `ativo` · `ratificada` |
+| Ratificação do Soberano (data) | **2026-08-14** — [`MSG-2026-0015`](../memory/operacional/MSG-2026-0015-ato-soberano-ratificacao-adr-0044.md), *"Ratifico o ADR-0044 em 2026-08-14"* |
 | Revisão prevista | `2027-02-14`, ou na primeira falha *plausível e errada* observada (`L4` de `ADR-0041`), o que ocorrer primeiro |
 
 ## 17. Não-proliferação (`FND-04 §6.1`), respondida por escrito
@@ -190,3 +190,4 @@ digital`) impressas em `stdout` para quem o invocou.
 | Versão | Data | Autor | Mudança |
 |---|---|---|---|
 | 1.0.0 | 2026-08-14 | DEP-TLS | Criação — primeira Ferramenta registrada do acervo. `status: rascunho`, `ratificacao: pendente`: a proposta existe, a adoção aguarda ato do Soberano (`TF-10`). `0` bytes do script alterados; a ficha registra a capacidade, não move nem reescreve o instrumento. |
+| 1.1.0 | 2026-08-14 | DEP-GOV | **RATIFICADA** — `ADR-0044` → `MSG-2026-0015`, *"Ratifico o ADR-0044 em 2026-08-14"*. `status: ativo`, `ratificacao: ratificada`. Primeira Ferramenta vigente do acervo. `0` bytes do script alterados. |

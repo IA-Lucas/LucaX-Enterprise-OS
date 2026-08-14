@@ -900,6 +900,18 @@ completa na **QUINTA DIVERGÊNCIA**.
       o elo de Ferramenta só conta após o ato do Soberano sobre `ADR-0044`. Registrado
       sob `fencing_token` 76, catálogo mestre **2.55.0**.
 
+      ⚙️ **Conferência de 2026-08-14 — RATIFICADO.** O Fundador emitiu o ato *"Ratifico o
+      ADR-0044 em 2026-08-14"*, registrado em
+      [`MSG-2026-0015`](../memory/operacional/MSG-2026-0015-ato-soberano-ratificacao-adr-0044.md)
+      com âncora de hash sobre o texto do ADR no momento do ato. Aplicado na mesma sessão
+      (escopo mínimo, risco quase nulo, `0` dependente criado): `ADR-0044` e
+      `TOL-local-baseline-do-acervo.md` passam a `status: ativo` / `ratificacao:
+      ratificada`. **`tools/` deixa de ser "fase futura" e `1.19` sobe de `3/10` para
+      `4/10` elos instanciados** (Skill, Workflow, aresta Workflow→Skill, Ferramenta) —
+      restam Agente e a travessia de execução/avaliação/evidência/decisão/memória/
+      aprendizado da própria missão vertical. `0` bytes do script alterados. Registrado
+      sob `fencing_token` 77.
+
 ---
 
 ## ÉPICO 2 — Kernel Técnico
