@@ -45,7 +45,8 @@ Regra permanente, gravada por **determinacao (c) do TERCEIRO DESPACHO do Soberan
   nao foi hipotese: **foi exercida** por sessao alheia enquanto o token 16 estava vivo.
   **Regra mais estreita que o fence deixa porta aberta com aparencia de porta fechada.**
 
-- **Instrumento:** `E:\LucasIA\Projetos\_leases\LucaX-Enterprise-OS.lease`. Vive **fora
+- **Instrumento:** `E:\LucasIA\Projetos\infraestrutura\leases\LucaX-Enterprise-OS.lease`
+  *(ate 2026-08-15: `_leases\` na raiz de Projetos; movido na reorganizacao da pasta)*. Vive **fora
   do acervo** e **nao e artefato**.
 - **Token monotonico crescente.** Escrita com token menor que o vigente e invalida.
 - **Adquirir ANTES da primeira escrita**, declarando: titular, motivo, `estado_fenceado`
@@ -69,7 +70,9 @@ portao funcionando, nao falha.
 
 **Instrumento vigente: `IR-BL/8`**, `sha256`
 `124b36ad82319177b74c21f2ca698649079941025a2ff99cfd5a6d3f6d0e3a00`, em
-`E:\LucasIA\Projetos\_sincronizacao-2026-08-10\ferramentas\baseline.sh`.
+`E:\LucasIA\Projetos\descontinuado-legacy\missoes-encerradas\_sincronizacao-2026-08-10\ferramentas\baseline.sh`
+*(ate 2026-08-15: `_sincronizacao-2026-08-10\` na raiz de Projetos; movida na
+reorganizacao da pasta — sha256 e conteudo intactos, so o endereco mudou)*.
 Lado `ACERVO`: acrescido de `workflows` (`IR-BL/7`) e `tools` (`IR-BL/8`)
 nestas duas ultimas geracoes. Lado `NAO_ACERVO`: `.obsidian`,
 `_SAIDA-COMPANY-OS`, `CLAUDE.md`, `.git`, `.gitattributes`, `docs`.

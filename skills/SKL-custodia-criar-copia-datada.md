@@ -76,7 +76,7 @@ carregar.
 | Caminho da arvore de origem | quem invoca | **sim** |
 | **Carimbo de data** | **decisao de quem invoca** — nunca do relogio | **sim.** Ausente, a Skill **recusa** *(saida `2`)* |
 | Rotulo | quem invoca | nao — compoe o nome do destino |
-| Caminho de destino | quem invoca | nao — padrao: `_backups/` irma da origem |
+| Caminho de destino | quem invoca | nao — padrao: `backups/` na raiz de Projetos *(ate 2026-08-15: `_backups/` irma da origem; renomeada na reorganizacao)* |
 | Modo `--verificar` | quem invoca | nao — reconfere copia **ja existente**, sem copiar |
 
 ## 3. Procedimento — `SK-14`, `SK-15`

@@ -129,7 +129,7 @@ digital`) impressas em `stdout` para quem o invocou.
 |---|---|
 | O que se registra | As quatro linhas de saída (`artefatos`, `linhas`, `manifesto`, `impressão digital`) e o `EXIT` code — nada além disso é emitido pelo próprio instrumento |
 | Onde | `stdout`/`stderr` da invocação; a sessão que invoca transcreve o resultado no lease (`estado_fenceado`/`estado_no_fechamento`) como registro persistente |
-| Por quanto tempo | O instrumento não retém nada; a persistência é do **lease** (`_leases/LucaX-Enterprise-OS.lease`), fora do escopo desta ficha |
+| Por quanto tempo | O instrumento não retém nada; a persistência é do **lease** (`infraestrutura/leases/LucaX-Enterprise-OS.lease`, na raiz de Projetos; até 2026-08-15 `_leases/`), fora do escopo desta ficha |
 | Quem lê | Quem adquire ou libera lease de escrita na Mente, e qualquer sessão que retome uma missão em curso (`WFL-GOV-migracao-por-ondas-do-legado.md` §16, Retomada) |
 
 > Nenhum dado `sensivel` passa pelo registro — as quatro linhas são contagens e hashes de

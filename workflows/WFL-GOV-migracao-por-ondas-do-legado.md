@@ -57,7 +57,7 @@ roadmap — nunca cópia, nunca peça decorativa.
 |---|---|---|
 | Lista de precedentes do grupo (`A-XXX`) | Manifesto de triagem F52 (Oficina) | Sim |
 | Estado real do Corpo (código, `PRD.json`, `CLAUDE.md`) na área tocada | Repositório Corpo (`lucax-enterprise`) | Sim |
-| Lease vigente da Mente (token, `estado_fenceado`) | `_leases/LucaX-Enterprise-OS.lease` | Sim, antes de qualquer escrita na Mente |
+| Lease vigente da Mente (token, `estado_fenceado`) | `infraestrutura/leases/LucaX-Enterprise-OS.lease` *(ate 2026-08-15: `_leases/`)* | Sim, antes de qualquer escrita na Mente |
 
 ## 3. Etapas
 | # | Etapa | Responsável | Entrada | Saída | Portão |
@@ -211,7 +211,7 @@ lição de `RD-103` — declarar não preserva, verificar preserva):
 | Campo | Conteúdo |
 |---|---|
 | De onde retoma | O último `estado_no_fechamento` registrado no lease da Mente (contagem de artefatos/linhas, manifesto, impressão digital, `HEAD` do commit) |
-| O que precisa estar preservado | O arquivo de lease (`_leases/LucaX-Enterprise-OS.lease`) íntegro e o histórico git dos três repositórios (Oficina, Corpo, Mente) |
+| O que precisa estar preservado | O arquivo de lease (`infraestrutura/leases/LucaX-Enterprise-OS.lease`, até 2026-08-15 `_leases/`) íntegro e o histórico git dos três repositórios (Oficina, Corpo, Mente) |
 | Quem verifica | Quem retoma roda `baseline.sh` (instrumento `IR-BL` vigente) e confere que o resultado bate com o `estado_no_fechamento` do último token liberado **antes de prosseguir** — é o mesmo passo que abriu esta sessão ("verifique onde parou"), agora nomeado como parte formal do Workflow |
 
 ## 17. Handoffs internos — ponto de intervenção humana
