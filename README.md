@@ -2,14 +2,14 @@
 id: IDX-raiz
 titulo: LucaX Enterprise OS — Indice Mestre
 tipo: relatorio
-versao: 1.22.0
+versao: 1.23.0
 status: ativo
 camada_memoria: estrategica
 autor: DEP-GOV
 proprietario: DEP-GOV
 aprovador: SOBERANO
 criado_em: 2026-07-28
-atualizado_em: 2026-08-01
+atualizado_em: 2026-08-15
 revisao_prevista: 2027-01-28
 decisoes_relacionadas: [ADR-0001, ADR-0002, ADR-0003, ADR-0004, ADR-0005, ADR-0006, ADR-0009, ADR-0010, ADR-0011, ADR-0012, ADR-0013, ADR-0021]
 substitui: []
@@ -31,7 +31,7 @@ nao existe por decisao deliberada.
 
 ## Escopo
 Todo o repositorio. Este documento **indexa**; nao normatiza. A norma esta em
-[`foundation/`](foundation/).
+[`foundation/`](foundation/README.md).
 
 ## Responsaveis
 | Papel | Responsavel |
@@ -394,16 +394,17 @@ seguem sem resposta.** Quatro achados novos, **`RD-83`** a **`RD-86`**, e mais *
 
 | Diretorio | Conteudo | Estado |
 |---|---|---|
-| [`foundation/`](foundation/) | Os **11** documentos normativos + 19 templates + **7** revisoes arquiteturais + **1 revisao estrutural** | **Completo** — **quatro fundacionais emendadas e uma criada** pelo ato de 2026-07-30: `FND-01` **1.7.0**, `FND-02` **1.4.0**, `FND-03` **1.6.0**, `FND-10` **1.5.0** e **`FND-11` 1.0.0** |
-| [`capabilities/`](capabilities/) | 23 Capabilities + catalogo + **matriz Departamento × Capability** + revisao | **Completo** |
-| [`decisions/`](decisions/) | ADRs — decisoes tomadas | **30** registros — **27 `ativo`** *(`+1`: `ADR-0030`, aplicado)*, **1 `aprovado`** *(`ADR-0006`)* e **2 `em-revisao`**, ambos **retidos por falta de ato** *(`ADR-0026`, `ADR-0028`)*. **A fila de retidos por falta de APLICACAO zerou** |
-| [`rfcs/`](rfcs/) | RFCs — propostas em analise | **25** registros — **25 `aprovado`**, **`0` em outro estado**. `RFC-0025` foi aplicada pela **variante**: o ciclo de `RFC` termina em `aprovado` |
-| [`memory/`](memory/) | Memoria organizacional, 5 camadas | **6** na APR, **1** na EST *(em vigor)*, **9** na OPR — os **nove atos soberanos** |
-| [`governance/`](governance/) | Catalogo mestre, baseline, excecoes, incidentes, aptidao, **pacote soberano** e **roadmap** | **23** `FIT`, **15** `PS`, **15** `PT` *(`+1`: `PT-2026-015`)*, 2 `INC` *(ambos `fechado`)*, 0 `EXC`, **1** roadmap |
-| [`departments/`](departments/) | **Indice e projecao comparativa** + as Cartas de departamento | **9 de 9 escritas e 9 de 9 em vigor** — `0` em `em-revisao`. **Cinco em 1.1.0** pelo ato de 2026-07-30 |
+| [`foundation/`](foundation/README.md) | Os **11** documentos normativos + 19 templates + **7** revisoes arquiteturais + **1 revisao estrutural** | **Completo** — **quatro fundacionais emendadas e uma criada** pelo ato de 2026-07-30: `FND-01` **1.7.0**, `FND-02` **1.4.0**, `FND-03` **1.6.0**, `FND-10` **1.5.0** e **`FND-11` 1.0.0** |
+| [`capabilities/`](capabilities/README.md) | 23 Capabilities + catalogo + **matriz Departamento × Capability** + revisao | **Completo** |
+| [`decisions/`](decisions/README.md) | ADRs — decisoes tomadas | **30** registros — **27 `ativo`** *(`+1`: `ADR-0030`, aplicado)*, **1 `aprovado`** *(`ADR-0006`)* e **2 `em-revisao`**, ambos **retidos por falta de ato** *(`ADR-0026`, `ADR-0028`)*. **A fila de retidos por falta de APLICACAO zerou** |
+| [`rfcs/`](rfcs/README.md) | RFCs — propostas em analise | **25** registros — **25 `aprovado`**, **`0` em outro estado**. `RFC-0025` foi aplicada pela **variante**: o ciclo de `RFC` termina em `aprovado` |
+| [`memory/`](memory/README.md) | Memoria organizacional, 5 camadas | **6** na APR, **1** na EST *(em vigor)*, **9** na OPR — os **nove atos soberanos** |
+| [`governance/`](governance/README.md) | Catalogo mestre, baseline, excecoes, incidentes, aptidao, **pacote soberano** e **roadmap** | **23** `FIT`, **15** `PS`, **15** `PT` *(`+1`: `PT-2026-015`)*, 2 `INC` *(ambos `fechado`)*, 0 `EXC`, **1** roadmap |
+| [`departments/`](departments/README.md) | **Indice e projecao comparativa** + as Cartas de departamento | **9 de 9 escritas e 9 de 9 em vigor** — `0` em `em-revisao`. **Cinco em 1.1.0** pelo ato de 2026-07-30 |
 | [`CLAUDE.md`](CLAUDE.md) | **Instrucoes permanentes de trabalho** — a regra do roadmap. **NAO e artefato:** sem `id`, sem versao de sequencia, sem entrada de catalogo | **Fora da lista fechada do medidor** — o portao de raiz **recusa medir** ate o Fundador declarar o lado. Achado **`RD-81`** |
 | [`governance/roadmap-canonico.md`](governance/roadmap-canonico.md) | **Registro de acompanhamento** — Epicos e Goals, com `[ ]` `[x]` `[~]` `[!]`. **Autoridade nenhuma, nao normativo**; atualizar nao exige ADR, hash, baseline nem ato | **Vive DENTRO da raiz medida** e por isso **conta como artefato**, sem ter entrada no catalogo. Achado **`RD-80`** |
 | [`products/`](products/) | **Produtos** — Cartas de Produto, entidade `PRO` | **EXISTE desde 2026-08-01**, criada pelo **item III do nono ato**. **1** Produto: [`PRO-nxtrack`](products/nxtrack/carta.md), `ativo` · `ratificada`, **263** linhas, **5** Capabilities. **Sem indice de diretorio** — achado `RD-85`, aberto |
+| `_SAIDA-COMPANY-OS/` | **Saida da pesquisa do acervo** (Fases 0–2 do Programa de Inteligencia) — `NAO_ACERVO`, congelado `RESEARCH-READY-FROZEN` | **So leitura** — porta de entrada: [`01_ESTADO-DA-ANALISE.md`](_SAIDA-COMPANY-OS/01_ESTADO-DA-ANALISE.md); escrita la dentro exige despacho. *Linha criada em 2026-08-15 (plano de sincronizacao do vault): o diretorio existia sem porta declarada neste indice* |
 | `projects/` | Projetos | fase futura |
 | `skills/` · `workflows/` · `tools/` | Capacidades, sequencias e ferramentas | fase futura |
 

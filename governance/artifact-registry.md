@@ -2,14 +2,14 @@
 id: IDX-artifact-registry
 titulo: Catalogo Mestre do Acervo
 tipo: relatorio
-versao: 2.58.0
+versao: 2.59.0
 status: ativo
 camada_memoria: operacional
 autor: DEP-GOV
 proprietario: DEP-GOV
 aprovador: DEP-QAR
 criado_em: 2026-07-28
-atualizado_em: 2026-08-14
+atualizado_em: 2026-08-15
 revisao_prevista: 2027-01-28
 decisoes_relacionadas: [ADR-0006, ADR-0007, ADR-0008, ADR-0009, ADR-0010, ADR-0011, ADR-0012, ADR-0020, ADR-0021, ADR-0026]
 substitui: []
@@ -583,7 +583,7 @@ Verificados contra T1–T4 de FND-10 §10.2: **19 de 19 passam.**
 | Indice | Indexa | Perfil | Linhas | Resumo operacional |
 |---|---|---|---|---|
 | [**IDX-atos-superados**](atos-superados.md) | os atos soberanos **superados por evidencia posterior** | S | **95** | **Registro exigido por `SA-6`**, criado pelo **oitavo ato** que ratificou `ADR-0029`. **Nasce com o contador em `0`** — `0` atos superados, `0` instauracoes abertas, **8** atos vigentes superaveis. **E fonte, nao projecao** |
-| [IDX-raiz](../README.md) | o acervo *(composto, IX-03)* | S | **569** | Porta de entrada: o que existe, o que nao existe por decisao, por onde comecar |
+| [IDX-raiz](../README.md) | o acervo *(composto, IX-03)* | S | **515** | Porta de entrada: o que existe, o que nao existe por decisao, por onde comecar. *Linhas corrigidas de **569** (vencido, familia RD-101) para **515** contadas por ferramenta em 2026-08-15, na emenda 1.23.0 do indice (links resolviveis + porta do `_SAIDA-COMPANY-OS`)* |
 | [IDX-foundation](../foundation/README.md) | `FND` e `TPL` | S | **238** | Indexa os 10 documentos normativos e os 19 templates, com ordem de leitura. **Declara o candidato `FND-11`, submetido e nao vigente** |
 | [IDX-decisions](../decisions/README.md) | `ADR` | S | **162** | Contador oficial da sequencia ADR; **projeta** o estado de ratificacao de INC-2026-001 §11. **Contador corrigido de `0019` para `0021`** — achado `RD-32` |
 | [IDX-rfcs](../rfcs/README.md) | `RFC` | S | **113** | Contador oficial da sequencia RFC e resultado de cada proposta. **Contador corrigido de `0015` para `0017`** — achado `RD-32` |

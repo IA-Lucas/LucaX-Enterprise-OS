@@ -203,3 +203,13 @@ de portas de veto diz *"V1 — 1 (`AC-05-REP-003`, injecao confirmada por leitur
 direta)"* (Fase 2). **A segunda e a vigente**, e a ficha e o lastro. A primeira
 esta vencida. Nenhuma das duas foi alterada por esta missao: `_SAIDA-COMPANY-OS/`
 esta congelado em `RESEARCH-READY-FROZEN` e o despacho G2 nao autoriza toca-lo.
+
+---
+
+## Nota declarada — `.obsidian/` e RASTREADO no git de proposito (2026-08-15)
+
+Corpo e Oficina ignoram o `.obsidian/` no git; aqui ele e **rastreado** (4
+arquivos). A auditoria de padrao ouro de 2026-08-15 apontou a divergencia e o
+**Fundador decidiu mante-la**: a config do vault viaja no clone da outra maquina.
+Nada muda nas duas listas da regra de lease acima — `.obsidian/` continua
+`NAO_ACERVO` para MEDIR e continua DENTRO do lease para ESCREVER.
